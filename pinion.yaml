@@ -1,0 +1,2481 @@
+name: RBCX 1.2
+description: Interactive diagram of the RBCX - a highly universal PCB for medium-complexity robots.
+components:
+    B1:
+        description: Piezo buzzer for your buzzing needs
+        highlight: true
+    BAT1:
+        description: CR2032 battery for time keeping
+        pins:
+            VSS:
+                name: BAT1.VSS
+                description: RTC battery negative terminal
+            VBAT:
+                name: BAT1.VBAT
+                description: RTC battery positive terminal
+        highlight: true
+    C1:
+        description: Main bulk capacitor
+        groups: [Bulk capacitance]
+        highlight: true
+    C2:
+        description: Main bulk capacitor
+        groups: [Bulk capacitance]
+        highlight: true
+    C40:
+        description: Bulk capacitor
+        groups: [Bulk capacitance]
+        highlight: true
+    C24:
+        description: Servo bulk capacitor
+        groups: [Bulk capacitance]
+        highlight: true
+    C25:
+        description: Servo bulk capacitor
+        groups: [Bulk capacitance]
+        highlight: true
+    C26:
+        description: Servo bulk capacitor
+        groups: [Bulk capacitance]
+        highlight: true
+    C27:
+        description: Servo bulk capacitor
+        groups: [Bulk capacitance]
+        highlight: true
+    IC1:
+        description: AMS1117-3.3 - linear regulator for 3V3S
+        highlight: true
+    IC10:
+        description: INA180A4 - servo current sensing amplifier
+        groups: [Current sense]
+        highlight: true
+    IC11:
+        description: INA180A4 - servo current sensing amplifier
+        groups: [Current sense]
+        highlight: true
+    IC12:
+        description: >
+            MPU-6050 - inertial measurement sensor
+
+            Connected to coprocessor I2C bus.
+        highlight: true
+    IC13:
+        description: STM32F103VCT6 - realtime coprocessor
+        pins:
+            "75":
+                name: +3V3S
+            "74":
+                name: GND
+            "73":
+                name: ""
+            "72":
+                name: SWDIO
+            "71":
+                name: USB_DP
+            "70":
+                name: USB_DM
+            "69":
+                name: LED4
+            "68":
+                name: LED3
+            "67":
+                name: LED2
+            "66":
+                name: SERVO4
+            "65":
+                name: SERVO3
+            "64":
+                name: SERVO2
+            "63":
+                name: SERVO1
+            "62":
+                name: /Coprocessor/MPU_INT
+            "61":
+                name: BUTTON_ON
+            "60":
+                name: ENC1B
+            "59":
+                name: ENC1A
+            "58":
+                name: BUTTON4
+            "57":
+                name: BUTTON2
+            "56":
+                name: UTS4_ECHO
+            "55":
+                name: UTS3_ECHO
+            "54":
+                name: STM_SPI_MOSI
+            "53":
+                name: STM_SPI_MISO
+            "52":
+                name: STM_SPI_SCK
+            "51":
+                name: STM_SPI_~CS
+            "25":
+                name: VUSB_DET
+            "24":
+                name: ENC2B
+            "23":
+                name: ENC2A
+            "22":
+                name: +3V3S
+            "21":
+                name: +3V3S
+            "20":
+                name: GND
+            "19":
+                name: GND
+            "18":
+                name: SI1
+            "17":
+                name: SI2
+            "16":
+                name: SI3
+            "15":
+                name: SI4
+            "14":
+                name: NRST
+            "13":
+                name: /Coprocessor/OSC_OUT
+            "12":
+                name: /Coprocessor/OSC_IN
+            "11":
+                name: +3V3S
+            "10":
+                name: GND
+            "9":
+                name: /Coprocessor/OSC32_OUT
+            "8":
+                name: /Coprocessor/OSC32_IN
+            "7":
+                name: POWER
+            "6":
+                name: VBAT
+            "5":
+                name: UTS1_ECHO
+            "4":
+                name: IN4A
+            "3":
+                name: UTS4_TRIG
+            "2":
+                name: UTS3_TRIG
+            "1":
+                name: UTS2_TRIG
+            "100":
+                name: +3V3S
+            "99":
+                name: GND
+            "98":
+                name: UTS1_TRIG
+            "97":
+                name: BUTTON1
+            "96":
+                name: /Coprocessor/STM_I2C_SDA
+            "95":
+                name: /Coprocessor/STM_I2C_SCL
+            "94":
+                name: BOOT0
+            "93":
+                name: USER_RX
+            "92":
+                name: USER_TX
+            "91":
+                name: ENC4B
+            "90":
+                name: ENC4A
+            "89":
+                name: ENC3B/SWO
+            "88":
+                name: UTS2_ECHO
+            "87":
+                name: TUNNEL_RX
+            "86":
+                name: TUNNEL_TX
+            "85":
+                name: ESP_EN
+            "84":
+                name: BUZZER
+            "83":
+                name: USB_DP_PULLUP
+            "82":
+                name: STM_CAN_TX
+            "81":
+                name: STM_CAN_RX
+            "80":
+                name: INTELLIGENT_SERVO
+            "79":
+                name: DEBUG_RX
+            "78":
+                name: DEBUG_TX
+            "77":
+                name: ENC3A
+            "76":
+                name: SWCLK
+            "50":
+                name: +3V3S
+            "49":
+                name: GND
+            "48":
+                name: CONTROL_RX/SDA
+            "47":
+                name: CONTROL_TX/SCL
+            "46":
+                name: BUTTON_OFF
+            "45":
+                name: PWM4
+            "44":
+                name: PWM3A
+            "43":
+                name: PWM3B
+            "42":
+                name: PWM2A
+            "41":
+                name: PWM2B
+            "40":
+                name: PWM1A
+            "39":
+                name: PWM1B
+            "38":
+                name: IN4B
+            "37":
+                name: BUTTON3
+            "36":
+                name: MI4
+            "35":
+                name: MI3
+            "34":
+                name: MI2
+            "33":
+                name: MI1
+            "32":
+                name: LED1
+            "31":
+                name: V_BAT
+            "30":
+                name: STM_AIO2
+            "29":
+                name: STM_AIO1
+            "28":
+                name: +3V3S
+            "27":
+                name: GND
+            "26":
+                name: V_BAT/2
+        highlight: true
+    IC2:
+        description: DRV8833PWP - Motor driver
+        highlight: true
+    IC3:
+        description: INA180A4 - motor current sensing amplifier
+        groups: [Current sense]
+        highlight: true
+    IC4:
+        description: INA180A4 - motor current sensing amplifier
+        groups: [Current sense]
+        highlight: true
+    IC5:
+        description: DRV8833PWP - Motor driver
+        highlight: true
+    IC6:
+        description: INA180A4 - motor current sensing amplifier
+        groups: [Current sense]
+        highlight: true
+    IC7:
+        description: INA180A4 - motor current sensing amplifier
+        groups: [Current sense]
+        highlight: true
+    IC8:
+        description: INA180A4 - servo current sensing amplifier
+        groups: [Current sense]
+        highlight: true
+    IC9:
+        description: INA180A4 - servo current sensing amplifier
+        groups: [Current sense]
+        highlight: true
+    IM1:
+        description: >
+            Main 5V stepdown converter
+
+            Required for standalone operation from battery.
+        groups: [Stepdown converters]
+        pins:
+            EN:
+                name: /Power/3V3_EN
+                description: ""
+            IN:
+                name: /Power/5V_IN
+                description: ""
+            GND:
+                name: GND
+                description: ""
+            OUT:
+                name: +5V
+                description: ""
+        highlight: true
+    IM2:
+        description: >
+            Extra 5V stepdown converter for the "intelligent" LEDs
+
+            May be populated for increased current capability.
+            Respective shunt MUST be removed.
+        groups: [Stepdown converters]
+        pins:
+            EN:
+                name: /Connectors/ILED_EN
+                description: ""
+            IN:
+                name: VCC
+                description: ""
+            GND:
+                name: GND
+                description: ""
+            OUT:
+                name: /Connectors/ILED_PWR
+                description: ""
+        highlight: true
+    IM3:
+        description: >
+            OLED I2C display connector with holes
+
+            Connected to coprocessor I2C bus.
+        pins:
+            "4":
+                name: STM-I2C-SDA
+                description: ""
+            "3":
+                name: STM-I2C-SCL
+                description: ""
+            "2":
+                name: +3V3S
+                description: ""
+            "1":
+                name: GND
+                description: ""
+        highlight: true
+    IM4:
+        description: >
+            OLED I2C display connector
+
+            Connected to coprocessor I2C bus.
+        pins:
+            "4":
+                name: STM-I2C-SDA
+                description: ""
+            "3":
+                name: STM-I2C-SCL
+                description: ""
+            "2":
+                name: +3V3S
+                description: ""
+            "1":
+                name: GND
+                description: ""
+        highlight: true
+    IM5:
+        description: >
+            Extra 5V stepdown converter for servo 1
+
+            May be populated for increased current capability.
+            Respective shunt MUST be removed.
+        groups: [Stepdown converters]
+        pins:
+            EN:
+                name: /Servos/SERVO1_EN
+                description: ""
+            IN:
+                name: VCC
+                description: ""
+            GND:
+                name: GND
+                description: ""
+            OUT:
+                name: /Servos/SERVO1PWR
+                description: ""
+        highlight: true
+    IM6:
+        description: >
+            Extra 5V stepdown converter for servo 2
+
+            May be populated for increased current capability.
+            Respective shunt MUST be removed.
+        groups: [Stepdown converters]
+        pins:
+            EN:
+                name: /Servos/SERVO2_EN
+                description: ""
+            IN:
+                name: VCC
+                description: ""
+            GND:
+                name: GND
+                description: ""
+            OUT:
+                name: /Servos/SERVO2PWR
+                description: ""
+        highlight: true
+    IM7:
+        description: >
+            Extra 5V stepdown converter for servo 3
+
+            May be populated for increased current capability.
+            Respective shunt MUST be removed.
+        pins:
+            EN:
+                name: /Servos/SERVO3_EN
+            IN:
+                name: VCC
+            GND:
+                name: GND
+            OUT:
+                name: /Servos/SERVO3PWR
+        highlight: true
+    IM8:
+        description: STEPDOWN
+        pins:
+            EN:
+                name: /Servos/SERVO4_EN
+                description: ""
+            IN:
+                name: VCC
+                description: ""
+            GND:
+                name: GND
+                description: ""
+            OUT:
+                name: /Servos/SERVO4PWR
+                description: ""
+        highlight: true
+    IM9:
+        description: ESP32 DEVKITC socket
+        pins:
+            "38":
+                name: GND
+                description: ""
+            "37":
+                name: SPI_MOSI
+                description: ""
+            "36":
+                name: I2C_SCL
+                description: ""
+            "35":
+                name: UART_TX
+                description: ""
+            "34":
+                name: UART_RX
+                description: ""
+            "33":
+                name: I2C_SDA
+                description: ""
+            "32":
+                name: GND
+                description: ""
+            "31":
+                name: SPI_MISO
+                description: ""
+            "30":
+                name: SPI_SCK
+                description: ""
+            "29":
+                name: SPI_~SS1
+                description: ""
+            "28":
+                name: UART2_TX
+                description: ""
+            "27":
+                name: UART2_RX
+                description: ""
+            "26":
+                name: SPI_~SS2
+                description: ""
+            "25":
+                name: /ESP/EXPANDER_RX
+                description: ""
+            "24":
+                name: /ESP/EXPANDER_TX
+                description: ""
+            "23":
+                name: SPI_~SS3~/TDO
+                description: ""
+            "22":
+                name: /ESP/IO8_NC
+                description: ""
+            "21":
+                name: /ESP/IO7_NC
+                description: ""
+            "20":
+                name: /ESP/IO6_NC
+                description: ""
+            "19":
+                name: ESP_+5V
+                description: ""
+            "18":
+                name: /ESP/IO11_NC
+                description: ""
+            "17":
+                name: /ESP/IO10_NC
+                description: ""
+            "16":
+                name: /ESP/IO9_NC
+                description: ""
+            "15":
+                name: GPIO7/TCK
+                description: ""
+            "14":
+                name: GND
+                description: ""
+            "13":
+                name: I_LED/TDI
+                description: ""
+            "12":
+                name: GPIO6/TMS
+                description: ""
+            "11":
+                name: GPIO5
+                description: ""
+            "10":
+                name: GPIO4
+                description: ""
+            "9":
+                name: GPIO3
+                description: ""
+            "8":
+                name: GPIO2
+                description: ""
+            "7":
+                name: GPIO1
+                description: ""
+            "6":
+                name: IN4
+                description: ""
+            "5":
+                name: IN3
+                description: ""
+            "4":
+                name: IN2
+                description: ""
+            "3":
+                name: IN1
+                description: ""
+            "2":
+                name: ESP_EN
+                description: ""
+            "1":
+                name: +3V3
+                description: ""
+        highlight: true
+    JP1:
+        description: 3V3_EN
+        pins:
+            "1":
+                name: /Power/3V3_EN
+                description: ""
+        highlight: false
+    JP10:
+        description: ESP_I2C_AUX1_VSEL
+        pins:
+            "3":
+                name: /Connectors/ESP-I2C-PWR
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Connectors/GPIO-1-VSEL
+                description: ""
+        highlight: false
+    JP11:
+        description: ESP_UART_AUX
+        pins:
+            "3":
+                name: +3V3
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Connectors/GPIO-5
+                description: ""
+        highlight: false
+    JP12:
+        description: ESP_SPI_AUX1
+        pins:
+            "3":
+                name: +3V3
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Connectors/GPIO-1
+                description: ""
+        highlight: false
+    JP13:
+        description: Ultrasonic rangefinder 2
+        groups: [Ultrasonic rangefinders]
+        pins:
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: /Connectors/UTS2-ECHO
+                description: ""
+            "2":
+                name: /Connectors/UTS2-TRIG
+                description: ""
+            "1":
+                name: +5V
+                description: ""
+        highlight: true
+    JP14:
+        description: ESP_I2C2_VSEL
+        pins:
+            "4":
+                name: /Connectors/ESP-I2C-SDA-VSEL
+                description: ""
+            "3":
+                name: /Connectors/ESP-I2C-SCL-VSEL
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Connectors/ESP-I2C-PWR
+                description: ""
+        highlight: false
+    JP15:
+        description: ESP_SPI2
+        pins:
+            "6":
+                name: /Connectors/ESP-SPI-~CS2
+                description: ""
+            "5":
+                name: /Connectors/ESP-SPI-SCK
+                description: ""
+            "4":
+                name: /Connectors/ESP-SPI-MISO
+                description: ""
+            "3":
+                name: /Connectors/ESP-SPI-MOSI
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: +3V3
+                description: ""
+        highlight: false
+    JP16:
+        description: Ultrasonic rangefinder 3
+        groups: [Ultrasonic rangefinders]
+        pins:
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: /Connectors/UTS3-ECHO
+                description: ""
+            "2":
+                name: /Connectors/UTS3-TRIG
+                description: ""
+            "1":
+                name: +5V
+                description: ""
+        highlight: true
+    JP17:
+        description: ESP_I2C_AUX2_VSEL
+        pins:
+            "3":
+                name: /Connectors/ESP-I2C-PWR
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Connectors/IN3-5V
+                description: ""
+        highlight: false
+    JP18:
+        description: STM_UART
+        pins:
+            "4":
+                name: /Connectors/STM-UART-RX
+                description: ""
+            "3":
+                name: /Connectors/STM-UART-TX
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Connectors/STM_UART_PWR
+                description: ""
+        highlight: false
+    JP19:
+        description: ESP_SPI_AUX2
+        pins:
+            "3":
+                name: +3V3
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: IN1
+                description: ""
+        highlight: false
+    JP2:
+        description: +3V3STM
+        pins:
+            "8":
+                name: GND
+                description: ""
+            "7":
+                name: +3V3S
+                description: ""
+            "6":
+                name: GND
+                description: ""
+            "5":
+                name: +3V3S
+                description: ""
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: +3V3S
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: +3V3S
+                description: ""
+        highlight: false
+    JP20:
+        description: Ultrasonic rangefinder 4
+        groups: [Ultrasonic rangefinders]
+        pins:
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: /Connectors/UTS4-ECHO
+                description: ""
+            "2":
+                name: /Connectors/UTS4-TRIG
+                description: ""
+            "1":
+                name: +5V
+                description: ""
+        highlight: true
+    JP21:
+        description: ESP_SPI3
+        pins:
+            "6":
+                name: /Connectors/ESP-SPI-~CS3
+                description: ""
+            "5":
+                name: /Connectors/ESP-SPI-SCK
+                description: ""
+            "4":
+                name: /Connectors/ESP-SPI-MISO
+                description: ""
+            "3":
+                name: /Connectors/ESP-SPI-MOSI
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: +3V3
+                description: ""
+        highlight: false
+    JP22:
+        description: ESP_I2C1
+        pins:
+            "4":
+                name: ESP-I2C-SDA
+                description: ""
+            "3":
+                name: ESP-I2C-SCL
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: +3V3
+                description: ""
+        highlight: false
+    JP23:
+        description: ESP_UCOM
+        pins:
+            "4":
+                name: /Connectors/GPIO-4
+                description: ""
+            "3":
+                name: /Connectors/GPIO-3
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Connectors/ESP_UCOM_PWR
+                description: ""
+        highlight: false
+    JP24:
+        description: ESP_SPI_AUX3
+        pins:
+            "3":
+                name: +3V3
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: IN2
+                description: ""
+        highlight: false
+    JP25:
+        description: ESP_I2C_AUX1
+        pins:
+            "3":
+                name: +3V3
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: GPIO-2
+                description: ""
+        highlight: false
+    JP26:
+        description: ESP_UCOM_AUX
+        pins:
+            "3":
+                name: +3V3
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Connectors/GPIO-6
+                description: ""
+        highlight: false
+    JP27:
+        description: ILED_EN
+        pins:
+            "1":
+                name: /Connectors/ILED_EN
+                description: ""
+        highlight: false
+    JP28:
+        description: ESP_I2C2
+        pins:
+            "4":
+                name: ESP-I2C-SDA
+                description: ""
+            "3":
+                name: ESP-I2C-SCL
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: +3V3
+                description: ""
+        highlight: false
+    JP29:
+        description: Dedicated analog I/O
+        pins:
+            "8":
+                name: +5V
+                description: ""
+            "7":
+                name: +5V
+                description: ""
+            "6":
+                name: +3V3S
+                description: ""
+            "5":
+                name: +3V3S
+                description: ""
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: GND
+                description: ""
+            "2":
+                name: Net-(JP29-Pad2)
+                description: ""
+            "1":
+                name: Net-(JP29-Pad1)
+                description: ""
+        highlight: true
+    JP3:
+        description: +3V3
+        pins:
+            "8":
+                name: GND
+                description: ""
+            "7":
+                name: +3V3
+                description: ""
+            "6":
+                name: GND
+                description: ""
+            "5":
+                name: +3V3
+                description: ""
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: +3V3
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: +3V3
+                description: ""
+        highlight: false
+    JP30:
+        description: ESP_I2C_AUX2
+        pins:
+            "3":
+                name: +3V3
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: IN4
+                description: ""
+        highlight: false
+    JP31:
+        description: \'Smart\' serial LED connector
+        groups: [\'Smart\' LED]
+        pins:
+            "3":
+                name: GND
+                description: ""
+            "2":
+                name: /Connectors/ILED_PWR
+                description: ""
+            "1":
+                name: ILED-5V
+                description: ""
+        highlight: true
+    JP32:
+        description: USB breakout
+        groups: [USB]
+        pins:
+            "5":
+                name: GND
+                description: ""
+            "4":
+                name: /Auxiliary connectors/USB_ID
+                description: ""
+            "3":
+                name: USB_DP
+                description: ""
+            "2":
+                name: USB_DM
+                description: ""
+            "1":
+                name: VUSB
+                description: ""
+        highlight: true
+    JP33:
+        description: SWD debugging connector (STM32 coprocessor)
+        pins:
+            "6":
+                name: /Auxiliary connectors/SWO
+                description: ""
+            "5":
+                name: NRST
+                description: ""
+            "4":
+                name: /Auxiliary connectors/SWDIO_
+                description: ""
+            "3":
+                name: GND
+                description: ""
+            "2":
+                name: /Auxiliary connectors/SWCLK_
+                description: ""
+            "1":
+                name: +3V3S
+                description: ""
+        highlight: true
+    JP34:
+        description: Debug UART connector
+        pins:
+            "4":
+                name: /Auxiliary connectors/DEBUG-TX
+                description: ""
+            "3":
+                name: /Auxiliary connectors/DEBUG-RX
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: +3V3S
+                description: ""
+        highlight: true
+    JP35:
+        description: USBC_AUX
+        pins:
+            "4":
+                name: /Auxiliary connectors/USB_CC2
+                description: ""
+            "3":
+                name: /Auxiliary connectors/USB_SBU2
+                description: ""
+            "2":
+                name: /Auxiliary connectors/USB_CC1
+                description: ""
+            "1":
+                name: /Auxiliary connectors/USB_SBU1
+                description: ""
+        highlight: false
+    JP36:
+        description: BOOT_SW
+        pins:
+            "2":
+                name: BOOT0
+                description: ""
+            "1":
+                name: +3V3S
+                description: ""
+        highlight: false
+    JP37:
+        description: ESP32_JTAG
+        pins:
+            "6":
+                name: GND
+                description: ""
+            "5":
+                name: +3V3
+                description: ""
+            "4":
+                name: SPI_~SS3~/TDO
+                description: ""
+            "3":
+                name: GPIO7/TCK
+                description: ""
+            "2":
+                name: I_LED/TDI
+                description: ""
+            "1":
+                name: GPIO6/TMS
+                description: ""
+        highlight: false
+    JP38:
+        description: MPU_I2C
+        pins:
+            "4":
+                name: /Auxiliary connectors/MPU-SDA
+                description: ""
+            "3":
+                name: /Auxiliary connectors/MPU-SCL
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: +3V3S
+                description: ""
+        highlight: false
+    JP39:
+        description: EXPANDER_UART
+        pins:
+            "6":
+                name: /Auxiliary connectors/CONTROL-INT
+                description: ""
+            "5":
+                name: /Auxiliary connectors/CONTROL-DIR
+                description: ""
+            "4":
+                name: /Auxiliary connectors/CONTROL-RX/SDA
+                description: ""
+            "3":
+                name: /Auxiliary connectors/CONTROL-TX/SCL
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Auxiliary connectors/EXPANDER_COM_PWR
+                description: ""
+        highlight: false
+    JP4:
+        description: +5V
+        pins:
+            "8":
+                name: GND
+                description: ""
+            "7":
+                name: +5V
+                description: ""
+            "6":
+                name: GND
+                description: ""
+            "5":
+                name: +5V
+                description: ""
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: +5V
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: +5V
+                description: ""
+        highlight: false
+    JP40:
+        description: ESP_PROG_UART
+        pins:
+            "4":
+                name: /Auxiliary connectors/ESP-UART-RX
+                description: ""
+            "3":
+                name: /Auxiliary connectors/ESP-UART-TX
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: +3V3S
+                description: ""
+        highlight: false
+    JP41:
+        description: EXPANDER_CAN/I2C
+        pins:
+            "6":
+                name: /Auxiliary connectors/CONTROL-INT
+                description: ""
+            "5":
+                name: /Auxiliary connectors/CONTROL-DIR
+                description: ""
+            "4":
+                name: /Auxiliary connectors/STM-CAN-RX
+                description: ""
+            "3":
+                name: /Auxiliary connectors/STM-CAN-TX
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Auxiliary connectors/EXPANDER_COM_PWR
+                description: ""
+        highlight: true
+    JP42:
+        description: LEDS
+        pins:
+            "8":
+                name: GND
+                description: ""
+            "7":
+                name: LED-4
+                description: ""
+            "6":
+                name: GND
+                description: ""
+            "5":
+                name: LED-3
+                description: ""
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: LED-2
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: LED-1
+                description: ""
+        highlight: false
+    JP43:
+        description: BUTTONS
+        pins:
+            "8":
+                name: GND
+                description: ""
+            "7":
+                name: BUTTON-4
+                description: ""
+            "6":
+                name: GND
+                description: ""
+            "5":
+                name: BUTTON-3
+                description: ""
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: BUTTON-2
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: BUTTON-1
+                description: ""
+        highlight: false
+    JP44:
+        description: BUZZER
+        pins:
+            "1":
+                name: BUZZER-GATE
+                description: ""
+        highlight: false
+    JP45:
+        description: PWR_BUTTONS
+        pins:
+            "8":
+                name: GND
+                description: ""
+            "7":
+                name: NRST
+                description: ""
+            "6":
+                name: GND
+                description: ""
+            "5":
+                name: ESP_EN
+                description: ""
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: BUTTON-ON
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: BUTTON-OFF
+                description: ""
+        highlight: false
+    JP46:
+        description: M12FAULT
+        pins:
+            "1":
+                name: /Motors/~M12_FAULT
+                description: ""
+        highlight: false
+    JP47:
+        description: M34FAULT
+        pins:
+            "1":
+                name: /Motors/~M34_FAULT
+                description: ""
+        highlight: false
+    JP48:
+        description: SERVO1_EN
+        pins:
+            "1":
+                name: /Servos/SERVO1_EN
+                description: ""
+        highlight: false
+    JP49:
+        description: SERVO2_EN
+        pins:
+            "1":
+                name: /Servos/SERVO2_EN
+                description: ""
+        highlight: false
+    JP5:
+        description: VCC
+        pins:
+            "8":
+                name: GND
+                description: ""
+            "7":
+                name: VCC
+                description: ""
+            "6":
+                name: GND
+                description: ""
+            "5":
+                name: VCC
+                description: ""
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: VCC
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: VCC
+                description: ""
+        highlight: false
+    JP50:
+        description: SERVO3_EN
+        pins:
+            "1":
+                name: /Servos/SERVO3_EN
+                description: ""
+        highlight: false
+    JP51:
+        description: SERVO4_EN
+        pins:
+            "1":
+                name: /Servos/SERVO4_EN
+                description: ""
+        highlight: false
+    JP52:
+        description: RC servo output 1
+        groups: [RC servos]
+        pins:
+            "3":
+                name: GND
+                description: ""
+            "2":
+                name: /Servos/SERVO_1_PWR
+                description: ""
+            "1":
+                name: /Servos/SERVO_1
+                description: ""
+        highlight: true
+    JP53:
+        description: RC servo output 2
+        groups: [RC servos]
+        pins:
+            "3":
+                name: GND
+                description: ""
+            "2":
+                name: /Servos/SERVO_2_PWR
+                description: ""
+            "1":
+                name: /Servos/SERVO_2
+                description: ""
+        highlight: true
+    JP54:
+        description: RC servo output 3
+        groups: [RC servos]
+        pins:
+            "3":
+                name: GND
+                description: ""
+            "2":
+                name: /Servos/SERVO_3_PWR
+                description: ""
+            "1":
+                name: /Servos/SERVO_3
+                description: ""
+        highlight: true
+    JP55:
+        description: RC servo output 4
+        groups: [RC servos]
+        pins:
+            "3":
+                name: GND
+                description: ""
+            "2":
+                name: /Servos/SERVO_4_PWR
+                description: ""
+            "1":
+                name: /Servos/SERVO_4
+                description: ""
+        highlight: true
+    JP56:
+        description: \'Smart\' serial servo connector 1
+        groups: [\'Smart\' servos]
+        pins:
+            "1":
+                name: /Servos/ISERVO
+                description: ""
+            "2":
+                name: VCC
+                description: ""
+            "3":
+                name: GND
+                description: ""
+        highlight: true
+    JP57:
+        description: \'Smart\' serial servo connector 2
+        groups: [\'Smart\' servos]
+        pins:
+            "1":
+                name: /Servos/ISERVO
+                description: ""
+            "2":
+                name: VCC
+                description: ""
+            "3":
+                name: GND
+                description: ""
+        highlight: true
+    JP58:
+        description: >
+            I2C interconnect
+
+            May be used to physically join coprocessor and ESP32 I2C signals.
+        pins:
+            "4":
+                name: STM-I2C-SCL
+                description: ""
+            "3":
+                name: ESP-I2C-SCL
+                description: ""
+            "2":
+                name: STM-I2C-SDA
+                description: ""
+            "1":
+                name: ESP-I2C-SDA
+                description: ""
+        highlight: true
+    JP6:
+        description: Ultrasonic rangefinder 1
+        groups: [Ultrasonic rangefinders]
+        pins:
+            "4":
+                name: GND
+                description: ""
+            "3":
+                name: /Connectors/UTS1-ECHO
+                description: ""
+            "2":
+                name: /Connectors/UTS1-TRIG
+                description: ""
+            "1":
+                name: +5V
+                description: ""
+        highlight: true
+    JP7:
+        description: ESP_I2C1_VSEL
+        pins:
+            "4":
+                name: /Connectors/ESP-I2C-SDA-VSEL
+                description: ""
+            "3":
+                name: /Connectors/ESP-I2C-SCL-VSEL
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Connectors/ESP-I2C-PWR
+                description: ""
+        highlight: false
+    JP8:
+        description: ESP_SPI1
+        pins:
+            "6":
+                name: /Connectors/ESP-SPI-~CS1
+                description: ""
+            "5":
+                name: /Connectors/ESP-SPI-SCK
+                description: ""
+            "4":
+                name: /Connectors/ESP-SPI-MISO
+                description: ""
+            "3":
+                name: /Connectors/ESP-SPI-MOSI
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Connectors/ESP_SPI_PWR
+                description: ""
+        highlight: false
+    JP9:
+        description: ESP_UART
+        pins:
+            "4":
+                name: /Connectors/ESP-USART-TX
+                description: ""
+            "3":
+                name: /Connectors/ESP-USART-RX
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "1":
+                name: /Connectors/ESP_USART_PWR
+                description: ""
+        highlight: false
+    LED1:
+        description: VCC - main supply rail power LED
+        groups: [LEDs]
+        highlight: true
+    LED10:
+        description: VUSB - USB (VBUS) power LED
+        groups: [LEDs]
+        highlight: true
+    LED11:
+        description: ESP_+5V - ESP32 power LED
+        groups: [LEDs]
+        highlight: true
+    LED12:
+        description: ESP_+5V - ESP32 power LED
+        groups: [LEDs]
+        highlight: true
+    LED13:
+        description: LED 1
+        groups: [LEDs]
+        highlight: true
+    LED14:
+        description: LED 1B
+        groups: [LEDs]
+        highlight: true
+    LED15:
+        description: LED 2
+        groups: [LEDs]
+        highlight: true
+    LED16:
+        description: LED 2B
+        groups: [LEDs]
+        highlight: true
+    LED17:
+        description: LED 3
+        groups: [LEDs]
+        highlight: true
+    LED18:
+        description: LED 3B
+        groups: [LEDs]
+        highlight: true
+    LED19:
+        description: LED 4
+        groups: [LEDs]
+        highlight: true
+    LED2:
+        description: VCC - main supply rail power LED
+        groups: [LEDs]
+        highlight: true
+    LED20:
+        description: LED 4B
+        groups: [LEDs]
+        highlight: true
+    LED21:
+        description: VCC - main supply rail power LED
+        groups: [LEDs]
+        highlight: true
+    LED22:
+        description: VCC - main supply rail power LED
+        groups: [LEDs]
+        highlight: true
+    LED23:
+        description: 3V3S - STM32 power LED
+        groups: [LEDs]
+        highlight: true
+    LED24:
+        description: 3V3S - STM32 power LED
+        groups: [LEDs]
+        highlight: true
+    LED3:
+        description: 5V - power LED
+        groups: [LEDs]
+        highlight: true
+    LED4:
+        description: 5V - power LED
+        groups: [LEDs]
+        highlight: true
+    LED5:
+        description: 3V3S - STM32 power LED
+        groups: [LEDs]
+        highlight: true
+    LED6:
+        description: 3V3S - STM32 power LED
+        groups: [LEDs]
+        highlight: true
+    LED7:
+        description: 3V3 - power LED
+        groups: [LEDs]
+        pins:
+        highlight: true
+    LED8:
+        description: 3V3 - power LED
+        groups: [LEDs]
+        highlight: true
+    LED9:
+        description: VUSB - USB (VBUS) power LED
+        groups: [LEDs]
+        highlight: true
+    P1:
+        description: Motor 1 connector
+        groups: [DC motors]
+        pins:
+            "1":
+                name: /Motors/M1B
+                description: ""
+            "6":
+                name: /Motors/M1A
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "3":
+                name: /Motors/ENC_1B
+                description: ""
+            "4":
+                name: /Motors/ENC_1A
+                description: ""
+            "5":
+                name: /Motors/ENC12PWR
+                description: ""
+        highlight: true
+    P2:
+        description: Motor 2 connector
+        groups: [DC motors]
+        pins:
+            "1":
+                name: /Motors/M2B
+                description: ""
+            "6":
+                name: /Motors/M2A
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "3":
+                name: /Motors/ENC_2B
+                description: ""
+            "4":
+                name: /Motors/ENC_2A
+                description: ""
+            "5":
+                name: /Motors/ENC12PWR
+                description: ""
+        highlight: true
+    P3:
+        description: Motor 3 connector
+        groups: [DC motors]
+        pins:
+            "1":
+                name: /Motors/M3B
+                description: ""
+            "6":
+                name: /Motors/M3A
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "3":
+                name: /Motors/ENC_3B
+                description: ""
+            "4":
+                name: /Motors/ENC_3A
+                description: ""
+            "5":
+                name: /Motors/ENC34PWR
+                description: ""
+        highlight: true
+    P4:
+        description: Motor 4 connector
+        groups: [DC motors]
+        pins:
+            "1":
+                name: /Motors/M4B
+                description: ""
+            "6":
+                name: /Motors/M4A
+                description: ""
+            "2":
+                name: GND
+                description: ""
+            "3":
+                name: /Motors/ENC_4B
+                description: ""
+            "4":
+                name: /Motors/ENC_4A
+                description: ""
+            "5":
+                name: /Motors/ENC34PWR
+                description: ""
+        highlight: true
+    R118:
+        description: 5mR current sense resistor
+        groups: [Current sense]
+        highlight: true
+    R119:
+        description: 5mR current sense resistor
+        groups: [Current sense]
+        highlight: true
+    R126:
+        description: 5mR current sense resistor
+        groups: [Current sense]
+        highlight: true
+    R127:
+        description: 5mR current sense resistor
+        groups: [Current sense]
+        highlight: true
+    R133:
+        description: 5mR current sense resistor
+        groups: [Current sense]
+        highlight: true
+    R135:
+        description: 5mR current sense resistor
+        groups: [Current sense]
+        highlight: true
+    R137:
+        description: 5mR current sense resistor
+        groups: [Current sense]
+        highlight: true
+    R139:
+        description: 5mR current sense resistor
+        groups: [Current sense]
+        highlight: true
+    S1:
+        description: ON button
+        groups: [Buttons]
+        highlight: true
+    S10:
+        description: Button 4
+        groups: [Buttons]
+        highlight: true
+    S11:
+        description: OFF button
+        groups: [Buttons]
+        highlight: true
+    S12:
+        description: OFF button
+        groups: [Buttons]
+        highlight: true
+    S13:
+        description: ESP_EN button
+        groups: [Buttons]
+        highlight: true
+    S14:
+        description: ESP_EN button
+        groups: [Buttons]
+        highlight: true
+    S2:
+        description: ON button
+        groups: [Buttons]
+        highlight: true
+    S3:
+        description: Button 1
+        groups: [Buttons]
+        highlight: true
+    S4:
+        description: Button 1
+        groups: [Buttons]
+        highlight: true
+    S5:
+        description: Button 2
+        groups: [Buttons]
+        highlight: true
+    S6:
+        description: Button 2
+        groups: [Buttons]
+        highlight: true
+    S7:
+        description: Button 3
+        groups: [Buttons]
+        highlight: true
+    S8:
+        description: Button 3
+        groups: [Buttons]
+        highlight: true
+    S9:
+        description: Button 4
+        groups: [Buttons]
+        highlight: true
+    SJ1:
+        description: SJ2W_DEFAULT
+        pins:
+            "3":
+                name: +3V3
+                description: ""
+            "2":
+                name: /Connectors/ESP_SPI_PWR
+                description: ""
+            "1":
+                name: +5V
+                description: ""
+        highlight: false
+    SJ2:
+        description: SJ2W_DEFAULT
+        pins:
+            "3":
+                name: +3V3
+                description: ""
+            "2":
+                name: /Connectors/ESP-I2C-PWR
+                description: ""
+            "1":
+                name: +5V
+                description: ""
+        highlight: false
+    SJ3:
+        description: SJ2W_DEFAULT
+        pins:
+            "3":
+                name: +5V
+                description: ""
+            "2":
+                name: /Connectors/ESP_USART_PWR
+                description: ""
+            "1":
+                name: +3V3
+                description: ""
+        highlight: false
+    SJ4:
+        description: SJ2W_DEFAULT
+        pins:
+            "3":
+                name: +3V3S
+                description: ""
+            "2":
+                name: /Connectors/STM_UART_PWR
+                description: ""
+            "1":
+                name: +5V
+                description: ""
+        highlight: false
+    SJ5:
+        description: SJ2W_DEFAULT
+        pins:
+            "3":
+                name: +5V
+                description: ""
+            "2":
+                name: /Connectors/ESP_UCOM_PWR
+                description: ""
+            "1":
+                name: +3V3
+                description: ""
+        highlight: false
+    SJ6:
+        description: SJ2W0603
+        pins:
+            "3":
+                name: /Auxiliary connectors/ENC3B-SWO
+                description: ""
+            "2":
+                name: /Auxiliary connectors/SWO
+                description: ""
+            "1":
+                name: /Auxiliary connectors/DEBUG-TX
+                description: ""
+        highlight: false
+    SJ7:
+        description: SJ2W0603
+        pins:
+            "3":
+                name: +5V
+                description: ""
+            "2":
+                name: /Auxiliary connectors/EXPANDER_COM_PWR
+                description: ""
+            "1":
+                name: +3V3S
+                description: ""
+        highlight: false
+    SJ8:
+        description: SJ2W_DEFAULT
+        pins:
+            "3":
+                name: +5V
+                description: ""
+            "2":
+                name: Net-(D15-PadA)
+                description: ""
+            "1":
+                name: +3V3S
+                description: ""
+        highlight: false
+    SJ9:
+        description: SJ2W_DEFAULT
+        pins:
+            "3":
+                name: +5V
+                description: ""
+            "2":
+                name: Net-(D20-PadA)
+                description: ""
+            "1":
+                name: +3V3S
+                description: ""
+        highlight: false
+    TP1:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Power/5V_IN
+                description: ""
+        highlight: false
+    TP10:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: +3V3
+                description: ""
+        highlight: false
+    TP11:
+        description: TP_08MM
+        pins:
+            P$1:
+                name: GND
+                description: ""
+        highlight: false
+    TP12:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: VBAT
+                description: ""
+        highlight: false
+    TP13:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: V_BAT
+                description: ""
+        highlight: false
+    TP14:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: V_BAT/2
+                description: ""
+        highlight: false
+    TP15:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Connectors/ILED_PWR
+                description: ""
+        highlight: false
+    TP16:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Connectors/ILED
+                description: ""
+        highlight: false
+    TP17:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: USB_DP_PULLUP
+                description: ""
+        highlight: false
+    TP18:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: VUSB_DET
+                description: ""
+        highlight: false
+    TP19:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: BOOT0
+                description: ""
+        highlight: false
+    TP2:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Power/BAT+_PROTECTED
+                description: ""
+        highlight: false
+    TP20:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Auxiliary connectors/EXPANDER_COM_PWR
+                description: ""
+        highlight: false
+    TP21:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Motors/ENC12PWR
+                description: ""
+        highlight: false
+    TP22:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: PWM1B
+                description: ""
+        highlight: false
+    TP23:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: PWM1A
+                description: ""
+        highlight: false
+    TP24:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: PWM2B
+                description: ""
+        highlight: false
+    TP25:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: PWM2A
+                description: ""
+        highlight: false
+    TP26:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: ENC1A
+                description: ""
+        highlight: false
+    TP27:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: ENC1B
+                description: ""
+        highlight: false
+    TP28:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: ENC2A
+                description: ""
+        highlight: false
+    TP29:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: ENC2B
+                description: ""
+        highlight: false
+    TP3:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: Net-(Q2-Pad4)
+                description: ""
+        highlight: false
+    TP30:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: MI1
+                description: ""
+        highlight: false
+    TP31:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: MI2
+                description: ""
+        highlight: false
+    TP32:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Motors/ENC34PWR
+                description: ""
+        highlight: false
+    TP33:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: PWM3A
+                description: ""
+        highlight: false
+    TP34:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: PWM3B
+                description: ""
+        highlight: false
+    TP35:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: IN4A
+                description: ""
+        highlight: false
+    TP36:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: PWM4
+                description: ""
+        highlight: false
+    TP37:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: IN4B
+                description: ""
+        highlight: false
+    TP38:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Motors/IN4_A
+                description: ""
+        highlight: false
+    TP39:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Motors/IN4_B
+                description: ""
+        highlight: false
+    TP4:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: Net-(C3-Pad2)
+                description: ""
+        highlight: false
+    TP40:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: ENC3A
+                description: ""
+        highlight: false
+    TP41:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: ENC3B/SWO
+                description: ""
+        highlight: false
+    TP42:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: ENC4A
+                description: ""
+        highlight: false
+    TP43:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: ENC4B
+                description: ""
+        highlight: false
+    TP44:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: MI3
+                description: ""
+        highlight: false
+    TP45:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: MI4
+                description: ""
+        highlight: false
+    TP46:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: SI1
+                description: ""
+        highlight: false
+    TP47:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: SI2
+                description: ""
+        highlight: false
+    TP48:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: SI3
+                description: ""
+        highlight: false
+    TP49:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: SI4
+                description: ""
+        highlight: false
+    TP5:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: VUSB
+                description: ""
+        highlight: false
+    TP50:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Servos/SERVO_1_PWR
+                description: ""
+        highlight: false
+    TP51:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Servos/SERVO_2_PWR
+                description: ""
+        highlight: false
+    TP52:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Servos/SERVO_3_PWR
+                description: ""
+        highlight: false
+    TP53:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Servos/SERVO_4_PWR
+                description: ""
+        highlight: false
+    TP54:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: SERVO1
+                description: ""
+        highlight: false
+    TP55:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: SERVO2
+                description: ""
+        highlight: false
+    TP56:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: SERVO3
+                description: ""
+        highlight: false
+    TP57:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: SERVO4
+                description: ""
+        highlight: false
+    TP58:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: INTELLIGENT_SERVO
+                description: ""
+        highlight: false
+    TP59:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: ESP_EN
+                description: ""
+        highlight: false
+    TP6:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: POWER
+                description: ""
+        highlight: false
+    TP60:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: ESP_+5V
+                description: ""
+        highlight: false
+    TP61:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: /Coprocessor/MPU_INT
+                description: ""
+        highlight: false
+    TP7:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: VCC
+                description: ""
+        highlight: false
+    TP8:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: +5V
+                description: ""
+        highlight: false
+    TP9:
+        description: TP_06MM
+        pins:
+            P$1:
+                name: +3V3S
+                description: ""
+        highlight: false
+    X1:
+        description: Power (battery) input terminals
+        groups: [Terminals]
+        pins:
+            "3":
+                name: /Power/BAT+
+                description: "2S battery positive terminal"
+            "2":
+                name: /Power/BAT_MID
+                description: "2S battery midpoint terminal for individual cell measurement."
+            "1":
+                name: GND
+                description: "2S battery negative terminal"
+        highlight: true
+    X2:
+        description: Power output terminals available to power external devices. Switched on with VCC power.
+        groups: [Terminals]
+        pins:
+            "2":
+                name: VCC
+                description: "Power output positive terminal. Switched on with VCC power"
+            "1":
+                name: GND
+                description: "Power output negative terminal"
+        highlight: true
+    X3:
+        description: \'UI\' connector
+        pins:
+            "30":
+                name: VUSB
+                description: ""
+            "29":
+                name: VUSB
+                description: ""
+            "28":
+                name: USB_DM
+                description: ""
+            "27":
+                name: USB_DP
+                description: ""
+            "26":
+                name: GPIO-2
+                description: ""
+            "25":
+                name: STM-I2C-SCL
+                description: ""
+            "24":
+                name: STM-I2C-SDA
+                description: ""
+            "23":
+                name: GND
+                description: ""
+            "22":
+                name: GND
+                description: ""
+            "21":
+                name: BUTTON-4
+                description: ""
+            "20":
+                name: BUTTON-3
+                description: ""
+            "19":
+                name: BUTTON-2
+                description: ""
+            "18":
+                name: BUTTON-1
+                description: ""
+            "17":
+                name: BUTTON-OFF
+                description: ""
+            "16":
+                name: BUTTON-ON
+                description: ""
+            "15":
+                name: ESP_EN
+                description: ""
+            "14":
+                name: NRST
+                description: ""
+            "13":
+                name: BOOT0
+                description: ""
+            "12":
+                name: +3V3S
+                description: ""
+            "11":
+                name: +3V3S
+                description: ""
+            "10":
+                name: LED-4
+                description: ""
+            "9":
+                name: LED-3
+                description: ""
+            "8":
+                name: LED-2
+                description: ""
+            "7":
+                name: LED-1
+                description: ""
+            M4:
+                name: ""
+                description: ""
+            M3:
+                name: ""
+                description: ""
+            "2":
+                name: VCC
+                description: ""
+            "4":
+                name: ILED-5V
+                description: ""
+            "6":
+                name: +5V
+                description: ""
+            M2:
+                name: ""
+                description: ""
+            M1:
+                name: ""
+                description: ""
+            "5":
+                name: +5V
+                description: ""
+            "3":
+                name: BUZZER-GATE
+                description: ""
+            "1":
+                name: VCC
+                description: ""
+        highlight: true
+    X4:
+        description: Micro-USB receptable
+        groups: [USB]
+        highlight: true
+    X5:
+        description: USB-C receptable
+        groups: [USB]
+        highlight: true
+    Y1:
+        description: STM32 high speed crystal
+        highlight: true
+    Y2:
+        description: STM32 low speed (RTC) crystal
+        highlight: true
