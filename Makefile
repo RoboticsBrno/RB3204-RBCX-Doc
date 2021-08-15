@@ -11,12 +11,17 @@ clean:
 serve:
 	mkdocs serve -a localhost:8080
 
+serve-once:
+	mkdocs serve -a localhost:8080 --no-livereload
+
 debug:
 	mkdocs serve -v -a localhost:8080
-
 
 build:
 	mkdocs build
 
 gh-deploy:
 	mkdocs gh-deploy --force
+
+clean-api:
+	rm -rf docs/api/*

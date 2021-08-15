@@ -4,13 +4,15 @@ theme:
 
 plugins:
     - search
-    # - doxygen-snippets: 
-    #     doxygen-input: build/RB3204-RBCX-library/src/
-    #     doxygen-output: build/RB3204-RBCX-library/doc/
-    #     api-output: docs/api/
-    #     debug: False
-    #     hints: True
-    #     full-doc: True
+    - doxygen-snippets: 
+        doxygen-path: build/RB3204-RBCX-library/
+        doxygen-config: Doxyfile
+        doxygen-input: src
+        doxygen-output: doc
+        api-output: docs/api/
+        debug: False
+        hints: True
+        full-doc: True
 
 markdown_extensions:
   - pymdownx.highlight
@@ -18,7 +20,10 @@ markdown_extensions:
 
 nav:
     - 'Home': 'index.md'
+    - snippetsExample.md
+    - snippetsExampleOld.md
     - 'Test': test.md
+    - 'Functions': 'api/functions.md'
     - 'Classes':
         - 'Class List': 'api/annotated.md'
         - 'Class Index': 'api/classes.md'
