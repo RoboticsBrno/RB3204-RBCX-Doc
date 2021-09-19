@@ -1,6 +1,6 @@
 
 .PHONY: setup
-setup:
+setup: clean
 	mkdir ./build
 	git clone git@github.com:RoboticsBrno/RB3204-RBCX-library.git build/RB3204-RBCX-library/
 	git clone git@github.com:RoboticsBrno/RB3204-RBCX.git build/RB3204-RBCX/
@@ -17,11 +17,11 @@ serve-once:
 debug:
 	mkdocs serve -v -a localhost:8080
 
-build:
+build-site:
 	mkdocs build
+
+serve-static: build
+	python3 -m http.server --directory site
 
 gh-deploy:
 	mkdocs gh-deploy --force
-
-clean-api:
-	rm -rf docs/api/*

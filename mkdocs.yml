@@ -4,18 +4,16 @@ theme:
 
 plugins:
     - search
-    - doxygen-snippets: 
-        doxygen-path: build/RB3204-RBCX-library/
-        doxygen-config: Doxyfile
-        doxygen-input: src
-        doxygen-output: doc
-        api-output: docs/api/
+    - doxygen-snippets:
+        doxygen-source: build/RB3204-RBCX-library/src
+        api-path: api
         debug: False
         hints: True
         full-doc: True
 
 markdown_extensions:
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      linenums: true
   - pymdownx.superfences
 
 nav:
