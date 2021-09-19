@@ -2,8 +2,8 @@
 .PHONY: setup
 setup: clean
 	mkdir ./build
-	git clone git@github.com:RoboticsBrno/RB3204-RBCX-library.git build/RB3204-RBCX-library/
-	git clone git@github.com:RoboticsBrno/RB3204-RBCX.git build/RB3204-RBCX/
+	git clone https://github.com/RoboticsBrno/RB3204-RBCX-library.git build/RB3204-RBCX-library/
+	git clone https://github.com/RoboticsBrno/RB3204-RBCX.git build/RB3204-RBCX/
 
 clean:
 	rm -rf build
