@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrb_1_1Motor" kind="class" language="C++" prot="public">
+    <compoundname>rb::Motor</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classrb_1_1Motor_1ac45590b4202ea5cd3020cbe51d206431" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classrb_1_1Motor" kindref="compound">Motor</ref> &amp;)&gt;</type>
+        <definition>typedef std::function&lt;void(Motor&amp;)&gt; rb::Motor::callback_t</definition>
+        <argsstring></argsstring>
+        <name>callback_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="24" column="27" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classrb_1_1Motor_1adddd5c43ff870a047aa66db4edf82a7e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Manager</definition>
+        <argsstring></argsstring>
+        <name>Manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="20" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classrb_1_1Motor_1a358b05ffa74248e33c9aa4bcff02d0e8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class MotorChangeBuilder</definition>
+        <argsstring></argsstring>
+        <name>MotorChangeBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="21" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrb_1_1Motor_1af246e7dbcca551a2d2b015f002c30140" prot="private" static="no" mutable="no">
+        <type>callback_t</type>
+        <definition>callback_t rb::Motor::m_positionCb</definition>
+        <argsstring></argsstring>
+        <name>m_positionCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="98" column="16" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Motor_1a43db004e88dadb31b6d428f5fca07664" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; callback_t &gt;</type>
+        <definition>std::vector&lt;callback_t&gt; rb::Motor::m_infoCbs</definition>
+        <argsstring></argsstring>
+        <name>m_infoCbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="99" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Motor_1a2c2366d51e954f27637c3a0f4834e24a" prot="private" static="no" mutable="no">
+        <type>CoprocReq_MotorReq</type>
+        <definition>CoprocReq_MotorReq rb::Motor::m_lastReq</definition>
+        <argsstring></argsstring>
+        <name>m_lastReq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="100" column="24" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Motor_1aebf905e6f75ebf92e02d019e8955ee38" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex rb::Motor::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="101" column="16" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Motor_1a08f3f0b5a3a57ff62e01a7f247c54163" prot="private" static="no" mutable="no">
+        <type>MotorId</type>
+        <definition>MotorId rb::Motor::m_id</definition>
+        <argsstring></argsstring>
+        <name>m_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="103" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Motor_1ac25fce22e9fd3ac70e37c5ac4cc7241d" prot="private" static="no" mutable="no">
+        <type>MotorMode</type>
+        <definition>MotorMode rb::Motor::m_mode</definition>
+        <argsstring></argsstring>
+        <name>m_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="104" column="15" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Motor_1a28b1744cf65b38a47c63362bb6304d3f" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t rb::Motor::m_position</definition>
+        <argsstring></argsstring>
+        <name>m_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="105" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Motor_1a38c75f509f3d403921ae36b662757d2f" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t rb::Motor::m_power</definition>
+        <argsstring></argsstring>
+        <name>m_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="106" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Motor_1aabdb4bfd55d6c968d8e8dfc574f9395e" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t rb::Motor::m_speed</definition>
+        <argsstring></argsstring>
+        <name>m_speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="107" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Motor_1ac4a50ace094da5abbf0be2b8fef9ec6e" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t rb::Motor::m_pwm_max_percent</definition>
+        <argsstring></argsstring>
+        <name>m_pwm_max_percent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="109" column="12" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrb_1_1Motor_1a0a1380b62cacaff17ceaded5f24c938c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MotorId</type>
+        <definition>MotorId rb::Motor::id</definition>
+        <argsstring>() const</argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="26" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a656d53bd1a445041a84feb78e8671d2c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t rb::Motor::position</definition>
+        <argsstring>() const</argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="28" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a7ed880c17d5cec71cbf4e0b523adaeab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::requestInfo</definition>
+        <argsstring>(callback_t cb)</argsstring>
+        <name>requestInfo</name>
+        <param>
+          <type>callback_t</type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="30" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="19" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a4231c6f9df4a912598406359d1b919c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::power</definition>
+        <argsstring>(int16_t value)</argsstring>
+        <name>power</name>
+        <param>
+          <type>int16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set motor power. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>power</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the motor &lt;-32768; 32767&gt; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="36" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="42" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a81cc3d1e77b24b9fdd233b22b6110c00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::speed</definition>
+        <argsstring>(int16_t ticksPerSecond)</argsstring>
+        <name>speed</name>
+        <param>
+          <type>int16_t</type>
+          <declname>ticksPerSecond</declname>
+        </param>
+        <briefdescription>
+<para>Set motor speed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ticksPerSecond</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>speed of the motor &lt;-32768; 32767&gt; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="42" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="52" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a2748ddcc1f11819ab21f29ba816ef980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::brake</definition>
+        <argsstring>(uint16_t brakingPower)</argsstring>
+        <name>brake</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>brakingPower</declname>
+        </param>
+        <briefdescription>
+<para>Start braking. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>brakingPower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>braking power in &lt;0, 32767&gt; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="48" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="62" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1abb7e20994614c514bf8f9679f153b441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::pwmMaxPercent</definition>
+        <argsstring>(int8_t percent)</argsstring>
+        <name>pwmMaxPercent</name>
+        <param>
+          <type>int8_t</type>
+          <declname>percent</declname>
+        </param>
+        <briefdescription>
+<para>Limit the maximum PWM value. If you call pwmMaxPercent(70) and then power(100), the motors will spin at 70% of maximum speed. This scales both the power and speed set through <ref refid="classrb_1_1Motor" kindref="compound">Motor</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the max value &lt;0 - 100&gt; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="56" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a009ae376c66370070dcb077e88569a3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t rb::Motor::pwmMaxPercent</definition>
+        <argsstring>() const</argsstring>
+        <name>pwmMaxPercent</name>
+        <briefdescription>
+<para>Get current maximum PWM percent value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="61" column="12" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a4a4078689477ef874ea01e5d6150de32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::driveToValue</definition>
+        <argsstring>(int32_t positionAbsolute, int16_t speedTicksPerSecond, callback_t callback=nullptr)</argsstring>
+        <name>driveToValue</name>
+        <param>
+          <type>int32_t</type>
+          <declname>positionAbsolute</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>speedTicksPerSecond</declname>
+        </param>
+        <param>
+          <type>callback_t</type>
+          <declname>callback</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Drive motor to set position (according absolute value). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="66" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="76" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1aa67d5fdee388057fb7e88e1ac5f6ef79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::drive</definition>
+        <argsstring>(int32_t positionRelative, int16_t speedTicksPerSecond, callback_t callback=nullptr)</argsstring>
+        <name>drive</name>
+        <param>
+          <type>int32_t</type>
+          <declname>positionRelative</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>speedTicksPerSecond</declname>
+        </param>
+        <param>
+          <type>callback_t</type>
+          <declname>callback</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Drive motor to set position (according relative value). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="72" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="89" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a3f015ff35c53242047e6e40da13acb94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::setCurrentPosition</definition>
+        <argsstring>(int32_t pos=0)</argsstring>
+        <name>setCurrentPosition</name>
+        <param>
+          <type>int32_t</type>
+          <declname>pos</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Set the encoder tick counter to some value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="78" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="121" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a6f122e443fb46103139e4c50cae5f6cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::setConfig</definition>
+        <argsstring>(const MotorConfig &amp;cfg)</argsstring>
+        <name>setConfig</name>
+        <param>
+          <type>const MotorConfig &amp;</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Set configuration, see MotorConfig &amp; STM32 firmware. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="83" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="101" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrb_1_1Motor_1a6491253545fb9ede4a9577b13e0a9dd9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Motor::Motor</definition>
+        <argsstring>()</argsstring>
+        <name>Motor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="86" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="10" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a12dc4653e069070aca9d59febe944520" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Motor::Motor</definition>
+        <argsstring>(const Motor &amp;)=delete</argsstring>
+        <name>Motor</name>
+        <param>
+          <type>const <ref refid="classrb_1_1Motor" kindref="compound">Motor</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="87" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a3aeeb4e7a75fb8fdb84a4f9bd8c6c11f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::setId</definition>
+        <argsstring>(MotorId id)</argsstring>
+        <name>setId</name>
+        <param>
+          <type>MotorId</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="89" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1ae5c6bd41389b4d10b6626adf8291c0a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::sendPositionReq</definition>
+        <argsstring>(bool additive, const CoprocReq_MotorReq_SetPosition &amp;req, callback_t &amp;&amp;callback)</argsstring>
+        <name>sendPositionReq</name>
+        <param>
+          <type>bool</type>
+          <declname>additive</declname>
+        </param>
+        <param>
+          <type>const CoprocReq_MotorReq_SetPosition &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>callback_t &amp;&amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="91" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="149" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a856a3de5abd8244f7406406e5584d281" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::sendMotorReq</definition>
+        <argsstring>(const CoprocReq_MotorReq &amp;req)</argsstring>
+        <name>sendMotorReq</name>
+        <param>
+          <type>const CoprocReq_MotorReq &amp;</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="93" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="180" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1abb438bcc8c7c0dae89c466066af7e452" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Motor::onMotorStat</definition>
+        <argsstring>(const CoprocStat_MotorStat &amp;msg)</argsstring>
+        <name>onMotorStat</name>
+        <param>
+          <type>const CoprocStat_MotorStat &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="94" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="218" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Motor_1a26ceeab4be7ed3fd0fcefd432d030123" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t rb::Motor::scale</definition>
+        <argsstring>(int16_t val)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>int16_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="96" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.cpp" bodystart="145" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/RBCXMotor.h" line="19" column="12" bodyfile="build/RB3204-RBCX-library/src/RBCXMotor.h" bodystart="19" bodyend="110"/>
+    <listofallmembers>
+      <member refid="classrb_1_1Motor_1a2748ddcc1f11819ab21f29ba816ef980" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>brake</name></member>
+      <member refid="classrb_1_1Motor_1ac45590b4202ea5cd3020cbe51d206431" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>callback_t</name></member>
+      <member refid="classrb_1_1Motor_1aa67d5fdee388057fb7e88e1ac5f6ef79" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>drive</name></member>
+      <member refid="classrb_1_1Motor_1a4a4078689477ef874ea01e5d6150de32" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>driveToValue</name></member>
+      <member refid="classrb_1_1Motor_1a0a1380b62cacaff17ceaded5f24c938c" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>id</name></member>
+      <member refid="classrb_1_1Motor_1a08f3f0b5a3a57ff62e01a7f247c54163" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>m_id</name></member>
+      <member refid="classrb_1_1Motor_1a43db004e88dadb31b6d428f5fca07664" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>m_infoCbs</name></member>
+      <member refid="classrb_1_1Motor_1a2c2366d51e954f27637c3a0f4834e24a" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>m_lastReq</name></member>
+      <member refid="classrb_1_1Motor_1ac25fce22e9fd3ac70e37c5ac4cc7241d" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>m_mode</name></member>
+      <member refid="classrb_1_1Motor_1aebf905e6f75ebf92e02d019e8955ee38" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>m_mutex</name></member>
+      <member refid="classrb_1_1Motor_1a28b1744cf65b38a47c63362bb6304d3f" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>m_position</name></member>
+      <member refid="classrb_1_1Motor_1af246e7dbcca551a2d2b015f002c30140" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>m_positionCb</name></member>
+      <member refid="classrb_1_1Motor_1a38c75f509f3d403921ae36b662757d2f" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>m_power</name></member>
+      <member refid="classrb_1_1Motor_1ac4a50ace094da5abbf0be2b8fef9ec6e" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>m_pwm_max_percent</name></member>
+      <member refid="classrb_1_1Motor_1aabdb4bfd55d6c968d8e8dfc574f9395e" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>m_speed</name></member>
+      <member refid="classrb_1_1Motor_1adddd5c43ff870a047aa66db4edf82a7e" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>Manager</name></member>
+      <member refid="classrb_1_1Motor_1a6491253545fb9ede4a9577b13e0a9dd9" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>Motor</name></member>
+      <member refid="classrb_1_1Motor_1a12dc4653e069070aca9d59febe944520" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>Motor</name></member>
+      <member refid="classrb_1_1Motor_1a358b05ffa74248e33c9aa4bcff02d0e8" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>MotorChangeBuilder</name></member>
+      <member refid="classrb_1_1Motor_1abb438bcc8c7c0dae89c466066af7e452" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>onMotorStat</name></member>
+      <member refid="classrb_1_1Motor_1a656d53bd1a445041a84feb78e8671d2c" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>position</name></member>
+      <member refid="classrb_1_1Motor_1a4231c6f9df4a912598406359d1b919c6" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>power</name></member>
+      <member refid="classrb_1_1Motor_1abb7e20994614c514bf8f9679f153b441" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>pwmMaxPercent</name></member>
+      <member refid="classrb_1_1Motor_1a009ae376c66370070dcb077e88569a3b" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>pwmMaxPercent</name></member>
+      <member refid="classrb_1_1Motor_1a7ed880c17d5cec71cbf4e0b523adaeab" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>requestInfo</name></member>
+      <member refid="classrb_1_1Motor_1a26ceeab4be7ed3fd0fcefd432d030123" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>scale</name></member>
+      <member refid="classrb_1_1Motor_1a856a3de5abd8244f7406406e5584d281" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>sendMotorReq</name></member>
+      <member refid="classrb_1_1Motor_1ae5c6bd41389b4d10b6626adf8291c0a4" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>sendPositionReq</name></member>
+      <member refid="classrb_1_1Motor_1a6f122e443fb46103139e4c50cae5f6cd" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>setConfig</name></member>
+      <member refid="classrb_1_1Motor_1a3f015ff35c53242047e6e40da13acb94" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>setCurrentPosition</name></member>
+      <member refid="classrb_1_1Motor_1a3aeeb4e7a75fb8fdb84a4f9bd8c6c11f" prot="private" virt="non-virtual"><scope>rb::Motor</scope><name>setId</name></member>
+      <member refid="classrb_1_1Motor_1a81cc3d1e77b24b9fdd233b22b6110c00" prot="public" virt="non-virtual"><scope>rb::Motor</scope><name>speed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

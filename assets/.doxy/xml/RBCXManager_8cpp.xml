@@ -1,0 +1,619 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="RBCXManager_8cpp" kind="file" language="C++">
+    <compoundname>RBCXManager.cpp</compoundname>
+    <includes local="no">driver/i2c.h</includes>
+    <includes local="no">driver/uart.h</includes>
+    <includes local="no">esp_log.h</includes>
+    <includes local="no">freertos/FreeRTOS.h</includes>
+    <includes local="no">freertos/task.h</includes>
+    <includes refid="RBCXBattery_8h" local="yes">RBCXBattery.h</includes>
+    <includes refid="RBCXManager_8h" local="yes">RBCXManager.h</includes>
+    <includes local="yes">rbcx.pb.h</includes>
+    <incdepgraph>
+      <node id="31">
+        <label>RBCXStupidServo.h</label>
+        <link refid="RBCXStupidServo_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>list</label>
+      </node>
+      <node id="22">
+        <label>atomic</label>
+      </node>
+      <node id="11">
+        <label>functional</label>
+      </node>
+      <node id="27">
+        <label>RBCXSmartServo.h</label>
+        <link refid="RBCXSmartServo_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>driver/gpio.h</label>
+      </node>
+      <node id="5">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="33">
+        <label>RBCXTimers.h</label>
+        <link refid="RBCXTimers_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>stdint.h</label>
+      </node>
+      <node id="30">
+        <label>cmath</label>
+      </node>
+      <node id="34">
+        <label>esp_timer.h</label>
+      </node>
+      <node id="23">
+        <label>RBCXPinout.h</label>
+        <link refid="RBCXPinout_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>freertos/queue.h</label>
+      </node>
+      <node id="24">
+        <label>driver/adc.h</label>
+      </node>
+      <node id="19">
+        <label>ratio</label>
+      </node>
+      <node id="8">
+        <label>rbcx.pb.h</label>
+      </node>
+      <node id="29">
+        <label>RBCXAngle.h</label>
+        <link refid="RBCXAngle_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>condition_variable</label>
+      </node>
+      <node id="9">
+        <label>RBCXManager.h</label>
+        <link refid="RBCXManager_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>RBCXLeds.h</label>
+        <link refid="RBCXLeds_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>esp_log.h</label>
+      </node>
+      <node id="7">
+        <label>RBCXBattery.h</label>
+        <link refid="RBCXBattery_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>RBCXUltrasound.h</label>
+        <link refid="RBCXUltrasound_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+      <node id="26">
+        <label>RBCXPiezo.h</label>
+        <link refid="RBCXPiezo_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>driver/uart.h</label>
+      </node>
+      <node id="17">
+        <label>RBCXUtil.h</label>
+        <link refid="RBCXUtil_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>driver/i2c.h</label>
+      </node>
+      <node id="16">
+        <label>RBCXButtons.h</label>
+        <link refid="RBCXButtons_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mutex</label>
+      </node>
+      <node id="18">
+        <label>chrono</label>
+      </node>
+      <node id="6">
+        <label>freertos/task.h</label>
+      </node>
+      <node id="37">
+        <label>coproc_link_parser.h</label>
+      </node>
+      <node id="21">
+        <label>RBCXMotor.h</label>
+        <link refid="RBCXMotor_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>build/RB3204-RBCX-library/src/RBCXManager.cpp</label>
+        <link refid="RBCXManager_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>FreeRTOS.h</label>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacerb">rb</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="RBCXManager_8cpp_1afc3d101f633a076cc1ca84b85b6224b2" prot="public" static="no">
+        <name>TAG</name>
+        <initializer>&quot;RBCXManager&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.cpp" line="12" column="9" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="RBCXManager_8cpp_1a947a6011a6abd5b3417ca9a92388e022" prot="public" static="no">
+        <name>MOTORS_FAILSAFE_PERIOD_MS</name>
+        <initializer>300</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.cpp" line="14" column="9" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="RBCXManager_8cpp_1a206e8fd105b1e3f86d672358b1dc9f16" prot="public" static="no">
+        <name>MAX_COPROC_IDLE_MS</name>
+        <initializer>75</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.cpp" line="15" column="9" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;driver/i2c.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;driver/uart.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;esp_log.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;freertos/FreeRTOS.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;freertos/task.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXBattery.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rbcx.pb.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAG<sp/>&quot;RBCXManager&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOTORS_FAILSAFE_PERIOD_MS<sp/>300</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_COPROC_IDLE_MS<sp/>75</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">rb<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">Manager::Manager()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_keepaliveTask(nullptr)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>m_coprocFwVersion(CoprocStat_VersionStat_init_zero)<sp/>{}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">Manager::~Manager()<sp/>{}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Manager_1a1ab28166aa4799726fd0a4fdc8deaf40" kindref="member">Manager::install</ref>(</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>ManagerInstallFlags<sp/>flags,<sp/>BaseType_t<sp/>managerLoopStackSize)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_keepaliveTask<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;The<sp/>manager<sp/>has<sp/>already<sp/>been<sp/>installed,<sp/>please<sp/>make<sp/>sure<sp/>to<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;only<sp/>call<sp/>install()<sp/>once!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abort();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>UltrasoundsCount;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ultrasounds[i].init(i);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>StupidServosCount;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_stupidServos[i].setId(i);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>MotorId::M1;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;<sp/>MotorId::MAX;<sp/>++id)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_motors[size_t(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)].setId(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>m_motors_last_set<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(flags<sp/>&amp;<sp/>MAN_DISABLE_MOTOR_FAILSAFE))<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Manager_1ab8e317b5cb65d14c4777b2ae45351afc" kindref="member">schedule</ref>(MOTORS_FAILSAFE_PERIOD_MS,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::bind(&amp;Manager::motorsFailSafe,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uart_config_t<sp/>uart_config<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.baud_rate<sp/>=<sp/>921600,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.data_bits<sp/>=<sp/>UART_DATA_8_BITS,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.parity<sp/>=<sp/>UART_PARITY_DISABLE,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.stop_bits<sp/>=<sp/>UART_STOP_BITS_1,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.flow_ctrl<sp/>=<sp/>UART_HW_FLOWCTRL_DISABLE,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_ERROR_CHECK(uart_param_config(UART_NUM_2,<sp/>&amp;uart_config));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_ERROR_CHECK(uart_set_pin(UART_NUM_2,<sp/>GPIO_NUM_2,<sp/>GPIO_NUM_0,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UART_PIN_NO_CHANGE,<sp/>UART_PIN_NO_CHANGE));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_ERROR_CHECK(uart_driver_install(UART_NUM_2,<sp/>1024,<sp/>0,<sp/>0,<sp/>NULL,<sp/>0));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>m_coprocSemaphore<sp/>=<sp/>xSemaphoreCreateBinary();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>esp_timer<sp/>(-&gt;<sp/>rb::Timers)<sp/>task<sp/>runs<sp/>pinned<sp/>on<sp/>core<sp/>0,<sp/>which<sp/>gets<sp/>stalled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>~700<sp/>ms(?!)<sp/>when<sp/>connecting<sp/>to<sp/>a<sp/>WiFi<sp/>network,<sp/>so<sp/>it<sp/>can&apos;t<sp/>be<sp/>used</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>this<sp/>watchdog.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>xTaskCreate(&amp;Manager::keepaliveRoutine,<sp/></highlight><highlight class="stringliteral">&quot;rbmanager_keepalive&quot;</highlight><highlight class="normal">,<sp/>1536,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10,<sp/>&amp;m_keepaliveTask);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>monitorTask(m_keepaliveTask);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>TaskHandle_t<sp/>task;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>xTaskCreate(&amp;Manager::consumerRoutineTrampoline,<sp/></highlight><highlight class="stringliteral">&quot;rbmanager_loop&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>managerLoopStackSize,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>5,<sp/>&amp;task);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>monitorTask(task);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>sendToCoproc(CoprocReq<sp/>{<sp/>.which_payload<sp/>=<sp/>CoprocReq_versionReq_tag<sp/>});</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>sendToCoproc(CoprocReq<sp/>{<sp/>.which_payload<sp/>=<sp/>CoprocReq_getButtons_tag<sp/>});</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(xSemaphoreTake(m_coprocSemaphore,<sp/>pdMS_TO_TICKS(300))<sp/>!=<sp/>pdTRUE)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>acquire<sp/>FW<sp/>version<sp/>from<sp/>STM32,<sp/>message<sp/>not<sp/>received<sp/>in<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;300ms.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>RB_DEBUG_MONITOR_TASKS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Manager_1ab8e317b5cb65d14c4777b2ae45351afc" kindref="member">schedule</ref>(10000,<sp/>[&amp;]()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>printTasksDebugInfo();<sp/>});</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*rb::SmartServoBus&amp;<sp/>Manager::initSmartServoBus(uint8_t<sp/>servo_count)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/>m_servos.install(servo_count);</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>m_servos;</highlight></codeline>
+<codeline lineno="95"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Manager::consumerRoutineTrampoline(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>cookie)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>((Manager*)cookie)-&gt;consumerRoutine();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Manager::consumerRoutine()<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>CoprocLinkParser&lt;CoprocStat,<sp/>&amp;CoprocStat_msg&gt;<sp/>parser(m_codec);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>byte;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(uart_read_bytes(UART_NUM_2,<sp/>&amp;</highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">,<sp/>1,<sp/>portMAX_DELAY)<sp/>!=<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>uart<sp/>read\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!parser.add(</highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>msg<sp/>=<sp/>parser.lastMessage();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(msg.which_payload)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoprocStat_buttonsStat_tag:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_buttons.setState(msg.payload.buttonsStat);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoprocStat_ultrasoundStat_tag:<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>p<sp/>=<sp/>msg.payload.ultrasoundStat;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p.utsIndex<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>p.utsIndex<sp/>&lt;<sp/>UltrasoundsCount)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ultrasounds[p.utsIndex].onMeasuringDone(p);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoprocStat_powerAdcStat_tag:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_battery.setState(msg.payload.powerAdcStat);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoprocStat_versionStat_tag:</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_coprocFwVersion<sp/>=<sp/>msg.payload.versionStat;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xSemaphoreGive(m_coprocSemaphore);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoprocStat_motorStat_tag:<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>p<sp/>=<sp/>msg.payload.motorStat;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p.motorIndex<sp/>&lt;<sp/>(uint32_t)MotorId::MAX)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_motors[p.motorIndex].onMotorStat(p);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoprocStat_ledsStat_tag:</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoprocStat_stupidServoStat_tag:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ignore</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Received<sp/>message<sp/>of<sp/>unknown<sp/>type<sp/>from<sp/>stm32:<sp/>%d\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.which_payload);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Manager::keepaliveRoutine(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>cookie)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>man<sp/>=<sp/>*((Manager*)cookie);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(xTaskNotifyWait(0,<sp/>0,<sp/>NULL,<sp/>pdMS_TO_TICKS(MAX_COPROC_IDLE_MS))</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>pdFALSE)<sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>man.sendToCoproc(CoprocReq<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.which_payload<sp/>=<sp/>CoprocReq_keepalive_tag,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Manager::sendToCoproc(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CoprocReq&amp;<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>m_codecTxMutex.lock();</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>m_codec.encodeWithHeader(</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;CoprocReq_msg,<sp/>&amp;msg,<sp/>m_txBuf,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(m_txBuf));</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uart_write_bytes(UART_NUM_2,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)m_txBuf,<sp/>len);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>m_codecTxMutex.unlock();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>xTaskNotify(m_keepaliveTask,<sp/>0,<sp/>eNoAction);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Manager::coprocFwVersionAssert(uint32_t<sp/>minVersion,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name)<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ignore<sp/>zero<sp/>version<sp/>number<sp/>and<sp/>pass.<sp/>Might<sp/>be<sp/>the<sp/>cmd<sp/>was<sp/>not<sp/>received<sp/>yet,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>but<sp/>better<sp/>than<sp/>to<sp/>crash<sp/>in<sp/>that<sp/>case.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_coprocFwVersion.number<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(minVersion<sp/>&gt;<sp/>m_coprocFwVersion.number)<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n\nERROR:<sp/>Please<sp/>update<sp/>your<sp/>STM32<sp/>FW,<sp/>&apos;%s&apos;<sp/>requires<sp/>version<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;0x%06x<sp/>and<sp/>you<sp/>have<sp/>0x%06x!\n\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name,<sp/>minVersion,<sp/>m_coprocFwVersion.number);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abort();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Manager::resetMotorsFailSafe()<sp/>{<sp/>m_motors_last_set<sp/>=<sp/>xTaskGetTickCount();<sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Manager::motorsFailSafe()<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_motors_last_set<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>now<sp/>=<sp/>xTaskGetTickCount();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(now<sp/>-<sp/>m_motors_last_set</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;<sp/>pdMS_TO_TICKS(MOTORS_FAILSAFE_PERIOD_MS))<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG,<sp/></highlight><highlight class="stringliteral">&quot;Motor<sp/>failsafe<sp/>triggered,<sp/>stopping<sp/>all<sp/>motors!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>m<sp/>:<sp/>m_motors)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m.power(0);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_motors_last_set<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal">MotorChangeBuilder<sp/><ref refid="classrb_1_1Manager_1abb2a07fadc2024cff36ac8b360a379fb" kindref="member">Manager::setMotors</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>MotorChangeBuilder();<sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Manager::monitorTask(TaskHandle_t<sp/>task)<sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>RB_DEBUG_MONITOR_TASKS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>m_tasks_mutex.lock();</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>m_tasks.push_back(task);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>m_tasks_mutex.unlock();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>RB_DEBUG_MONITOR_TASKS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Manager::printTasksDebugInfo()<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>lock(m_tasks_mutex);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%16s<sp/>%5s<sp/>%5s\n&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Name&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;prio&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;stack&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;==========================================\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>task<sp/>:<sp/>m_tasks)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>stackMark<sp/>=<sp/>uxTaskGetStackHighWaterMark(task);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>prio<sp/>=<sp/>uxTaskPriorityGet(task);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%16s<sp/>%5d<sp/>%5d\n&quot;</highlight><highlight class="normal">,<sp/>pcTaskGetTaskName(task),<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)prio,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)stackMark);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal">MotorChangeBuilder::MotorChangeBuilder()<sp/>{}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal">MotorChangeBuilder::MotorChangeBuilder(MotorChangeBuilder&amp;&amp;<sp/>o)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_calls(std::move(o.m_calls))<sp/>{}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal">MotorChangeBuilder::~MotorChangeBuilder()<sp/>{}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal">MotorChangeBuilder&amp;<sp/><ref refid="classrb_1_1MotorChangeBuilder_1ac21271f3221ade65a1247b5e86077136" kindref="member">MotorChangeBuilder::power</ref>(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>int16_t<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>m_calls.emplace_back(</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::move([=]()<sp/>{<sp/><ref refid="classrb_1_1Manager_1a10bfc9edd111072d47db54260462ee08" kindref="member">Manager::get</ref>().motor(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">).<ref refid="classrb_1_1Motor_1a4231c6f9df4a912598406359d1b919c6" kindref="member">power</ref>(value);<sp/>}));</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal">MotorChangeBuilder&amp;<sp/><ref refid="classrb_1_1MotorChangeBuilder_1adacc07cac8d24415fc83013d2adc98b1" kindref="member">MotorChangeBuilder::speed</ref>(</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>int16_t<sp/>ticksPerSecond)<sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>m_calls.emplace_back(</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::move([=]()<sp/>{<sp/><ref refid="classrb_1_1Manager_1a10bfc9edd111072d47db54260462ee08" kindref="member">Manager::get</ref>().motor(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">).<ref refid="classrb_1_1Motor_1a81cc3d1e77b24b9fdd233b22b6110c00" kindref="member">speed</ref>(ticksPerSecond);<sp/>}));</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal">MotorChangeBuilder&amp;<sp/><ref refid="classrb_1_1MotorChangeBuilder_1adfd74ad987be641499277fdeced9472c" kindref="member">MotorChangeBuilder::pwmMaxPercent</ref>(</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>int8_t<sp/>percent)<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>m_calls.emplace_back(</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::move([=]()<sp/>{<sp/><ref refid="classrb_1_1Manager_1a10bfc9edd111072d47db54260462ee08" kindref="member">Manager::get</ref>().motor(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">).<ref refid="classrb_1_1Motor_1abb7e20994614c514bf8f9679f153b441" kindref="member">pwmMaxPercent</ref>(percent);<sp/>}));</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal">MotorChangeBuilder&amp;<sp/><ref refid="classrb_1_1MotorChangeBuilder_1a9b2659215fe8e1911a0003547a59be4a" kindref="member">MotorChangeBuilder::brake</ref>(</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>uint16_t<sp/>brakingPower)<sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>m_calls.emplace_back(</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::move([=]()<sp/>{<sp/><ref refid="classrb_1_1Manager_1a10bfc9edd111072d47db54260462ee08" kindref="member">Manager::get</ref>().motor(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">).<ref refid="classrb_1_1Motor_1a2748ddcc1f11819ab21f29ba816ef980" kindref="member">brake</ref>(brakingPower);<sp/>}));</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal">MotorChangeBuilder&amp;<sp/>MotorChangeBuilder::drive(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>positionRelative,<sp/>int16_t<sp/>speedTicksPerSecond,</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>Motor::callback_t<sp/>callback)<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>m_calls.emplace_back(std::move([=]()<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Manager_1a10bfc9edd111072d47db54260462ee08" kindref="member">Manager::get</ref>().motor(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">).<ref refid="classrb_1_1Motor_1aa67d5fdee388057fb7e88e1ac5f6ef79" kindref="member">drive</ref>(</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>positionRelative,<sp/>speedTicksPerSecond,<sp/>std::move(callback));</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>}));</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal">MotorChangeBuilder&amp;<sp/>MotorChangeBuilder::driveToValue(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>positionAbsolute,<sp/>int16_t<sp/>speedTicksPerSecond,</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>Motor::callback_t<sp/>callback)<sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>m_calls.emplace_back(std::move([=]()<sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Manager_1a10bfc9edd111072d47db54260462ee08" kindref="member">Manager::get</ref>().motor(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">).<ref refid="classrb_1_1Motor_1a4a4078689477ef874ea01e5d6150de32" kindref="member">driveToValue</ref>(</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>positionAbsolute,<sp/>speedTicksPerSecond,<sp/>std::move(callback));</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>}));</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1MotorChangeBuilder_1a11ebf755b9412e2170e66158c4e35a3a" kindref="member">MotorChangeBuilder::set</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>c<sp/>:<sp/>m_calls)<sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c();</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>m_calls.clear();</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="build/RB3204-RBCX-library/src/RBCXManager.cpp"/>
+  </compounddef>
+</doxygen>

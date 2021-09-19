@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_2fb57cfb6554052417264f60890e0af6" kind="dir">
+    <compoundname>build/RB3204-RBCX-library/src</compoundname>
+    <innerfile refid="RBCX_8h">RBCX.h</innerfile>
+    <innerfile refid="RBCXAngle_8cpp">RBCXAngle.cpp</innerfile>
+    <innerfile refid="RBCXAngle_8h">RBCXAngle.h</innerfile>
+    <innerfile refid="RBCXBattery_8cpp">RBCXBattery.cpp</innerfile>
+    <innerfile refid="RBCXBattery_8h">RBCXBattery.h</innerfile>
+    <innerfile refid="RBCXButtons_8cpp">RBCXButtons.cpp</innerfile>
+    <innerfile refid="RBCXButtons_8h">RBCXButtons.h</innerfile>
+    <innerfile refid="RBCXLeds_8cpp">RBCXLeds.cpp</innerfile>
+    <innerfile refid="RBCXLeds_8h">RBCXLeds.h</innerfile>
+    <innerfile refid="RBCXManager_8cpp">RBCXManager.cpp</innerfile>
+    <innerfile refid="RBCXManager_8h">RBCXManager.h</innerfile>
+    <innerfile refid="RBCXMotor_8cpp">RBCXMotor.cpp</innerfile>
+    <innerfile refid="RBCXMotor_8h">RBCXMotor.h</innerfile>
+    <innerfile refid="RBCXNvs_8cpp">RBCXNvs.cpp</innerfile>
+    <innerfile refid="RBCXNvs_8h">RBCXNvs.h</innerfile>
+    <innerfile refid="RBCXPiezo_8cpp">RBCXPiezo.cpp</innerfile>
+    <innerfile refid="RBCXPiezo_8h">RBCXPiezo.h</innerfile>
+    <innerfile refid="RBCXPinout_8h">RBCXPinout.h</innerfile>
+    <innerfile refid="RBCXSmartServo_8cpp">RBCXSmartServo.cpp</innerfile>
+    <innerfile refid="RBCXSmartServo_8h">RBCXSmartServo.h</innerfile>
+    <innerfile refid="RBCXStupidServo_8cpp">RBCXStupidServo.cpp</innerfile>
+    <innerfile refid="RBCXStupidServo_8h">RBCXStupidServo.h</innerfile>
+    <innerfile refid="RBCXTimers_8cpp">RBCXTimers.cpp</innerfile>
+    <innerfile refid="RBCXTimers_8h">RBCXTimers.h</innerfile>
+    <innerfile refid="RBCXUltrasound_8cpp">RBCXUltrasound.cpp</innerfile>
+    <innerfile refid="RBCXUltrasound_8h">RBCXUltrasound.h</innerfile>
+    <innerfile refid="RBCXUtil_8h">RBCXUtil.h</innerfile>
+    <innerfile refid="RBCXVersion_8h">RBCXVersion.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="RBCXLeds_8h" kind="file" language="C++">
+    <compoundname>RBCXLeds.h</compoundname>
+    <includes local="no">mutex</includes>
+    <includes refid="RBCXUtil_8h" local="yes">RBCXUtil.h</includes>
+    <includes local="yes">rbcx.pb.h</includes>
+    <includedby refid="RBCXManager_8h" local="yes">build/RB3204-RBCX-library/src/RBCXManager.h</includedby>
+    <includedby refid="RBCXLeds_8cpp" local="yes">build/RB3204-RBCX-library/src/RBCXLeds.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="7">
+        <label>ratio</label>
+      </node>
+      <node id="8">
+        <label>rbcx.pb.h</label>
+      </node>
+      <node id="1">
+        <label>build/RB3204-RBCX-library/src/RBCXLeds.h</label>
+        <link refid="RBCXLeds_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RBCXUtil.h</label>
+        <link refid="RBCXUtil_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mutex</label>
+      </node>
+      <node id="4">
+        <label>chrono</label>
+      </node>
+      <node id="6">
+        <label>freertos/task.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>build/RB3204-RBCX-library/src/RBCXManager.h</label>
+        <link refid="RBCXManager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>build/RB3204-RBCX-library/src/RBCXLeds.h</label>
+        <link refid="RBCXLeds_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>build/RB3204-RBCX-library/src/RBCX.h</label>
+        <link refid="RBCX_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classrb_1_1Leds" prot="public">rb::Leds</innerclass>
+    <innernamespace refid="namespacerb">rb</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXUtil.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rbcx.pb.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">rb<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>LedId<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>L1<sp/>=<sp/>CoprocReq_LedsEnum_L1,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>L2<sp/>=<sp/>CoprocReq_LedsEnum_L2,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>L3<sp/>=<sp/>CoprocReq_LedsEnum_L3,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>L4<sp/>=<sp/>CoprocReq_LedsEnum_L4,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>Green<sp/>=<sp/>L1,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>Yellow<sp/>=<sp/>L2,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>Red<sp/>=<sp/>L3,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>Blue<sp/>=<sp/>L4,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>All<sp/>=<sp/>L1<sp/>|<sp/>L2<sp/>|<sp/>L3<sp/>|<sp/>L4,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">RBCX_ENUM_IMPL_MASK_OPERATORS(LedId)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classrb_1_1Leds" refkind="compound"><highlight class="normal">class<sp/><ref refid="classrb_1_1Leds" kindref="compound">Leds</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrb_1_1Manager" kindref="compound">Manager</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>red(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>yellow(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>green(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>blue(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>byId(LedId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Leds" kindref="compound">Leds</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Leds" kindref="compound">Leds</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Leds" kindref="compound">Leds</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classrb_1_1Leds" kindref="compound">Leds</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>LedId<sp/>m_ledsOn;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mutex<sp/>m_mutex;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="build/RB3204-RBCX-library/src/RBCXLeds.h"/>
+  </compounddef>
+</doxygen>

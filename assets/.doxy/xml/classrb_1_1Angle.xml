@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrb_1_1Angle" kind="class" language="C++" prot="public">
+    <compoundname>rb::Angle</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classrb_1_1Angle_1af68e8257c2734d89bb709cb5914df620" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float rb::Angle::_T</definition>
+        <argsstring></argsstring>
+        <name>_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="13" column="19" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classrb_1_1Angle_1ad415e3012cd0e835dcebf41a5e9e550c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>const Angle rb::Angle::Pi</definition>
+        <argsstring></argsstring>
+        <name>Pi</name>
+        <initializer>= Angle::rad(Angle::_T(M_PI))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="14" column="24" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrb_1_1Angle_1a7a39f3d3be1da0191fe435c0d6d7ae12" prot="private" static="no" mutable="no">
+        <type>_T</type>
+        <definition>_T rb::Angle::_rads</definition>
+        <argsstring></argsstring>
+        <name>_rads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="47" column="8" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrb_1_1Angle_1aa8645b5e4af80b881842aa5ae318be35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rb::Angle::Angle</definition>
+        <argsstring>()</argsstring>
+        <name>Angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="16" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="16" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Angle_1a25046983b58f79dae7a88993afaea7ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Angle::isNaN</definition>
+        <argsstring>() const</argsstring>
+        <name>isNaN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="23" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Angle_1ad584bcca6b69bee5a579acd53e804703" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref> &amp;</type>
+        <definition>Angle&amp; rb::Angle::operator+=</definition>
+        <argsstring>(Angle a)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="25" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Angle_1aa311699dd42a6c50cbbcf2f93b989002" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref> &amp;</type>
+        <definition>Angle&amp; rb::Angle::operator-=</definition>
+        <argsstring>(Angle a)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="29" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Angle_1a99bb67db9dd8a1da1923f02671fe5ad0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>Angle rb::Angle::operator-</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="33" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Angle_1ad04c6b32b411f1e67187495793537e70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref> &amp;</type>
+        <definition>Angle&amp; rb::Angle::operator*=</definition>
+        <argsstring>(_T c)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>_T</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="34" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Angle_1a17f4fb45092162c3059132f59b2fb5b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref> &amp;</type>
+        <definition>Angle&amp; rb::Angle::operator/=</definition>
+        <argsstring>(_T c)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>_T</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="38" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Angle_1a81557cee772b41f57e5ba3c645522ab6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>_T</type>
+        <definition>_T rb::Angle::deg</definition>
+        <argsstring>() const</argsstring>
+        <name>deg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="43" column="8" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Angle_1ae8ac2b0d2a5a2a03df1759df4a652a32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>_T</type>
+        <definition>_T rb::Angle::rad</definition>
+        <argsstring>() const</argsstring>
+        <name>rad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="44" column="8" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classrb_1_1Angle_1aea08d0552bfd1962727c758aa122d70f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>static Angle rb::Angle::rad</definition>
+        <argsstring>(_T r)</argsstring>
+        <name>rad</name>
+        <param>
+          <type>_T</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="19" column="18" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Angle_1afbb44b0ae680fbfcdbe4c5bfed35e1dd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>static Angle rb::Angle::deg</definition>
+        <argsstring>(_T d)</argsstring>
+        <name>deg</name>
+        <param>
+          <type>_T</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="20" column="18" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Angle_1ae43ca5fc10095ee8cde90f065ef89d27" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>static Angle rb::Angle::nan</definition>
+        <argsstring>()</argsstring>
+        <name>nan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="21" column="18" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrb_1_1Angle_1a1458cfdbf0eba0892746fa039823dce8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rb::Angle::Angle</definition>
+        <argsstring>(_T r)</argsstring>
+        <name>Angle</name>
+        <param>
+          <type>_T</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="48" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="48" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>rb::Angle</label>
+        <link refid="classrb_1_1Angle"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Pi</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="build/RB3204-RBCX-library/src/RBCXAngle.h" line="11" column="12" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.h" bodystart="11" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classrb_1_1Angle_1a7a39f3d3be1da0191fe435c0d6d7ae12" prot="private" virt="non-virtual"><scope>rb::Angle</scope><name>_rads</name></member>
+      <member refid="classrb_1_1Angle_1af68e8257c2734d89bb709cb5914df620" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>_T</name></member>
+      <member refid="classrb_1_1Angle_1aa8645b5e4af80b881842aa5ae318be35" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>Angle</name></member>
+      <member refid="classrb_1_1Angle_1a1458cfdbf0eba0892746fa039823dce8" prot="private" virt="non-virtual"><scope>rb::Angle</scope><name>Angle</name></member>
+      <member refid="classrb_1_1Angle_1afbb44b0ae680fbfcdbe4c5bfed35e1dd" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>deg</name></member>
+      <member refid="classrb_1_1Angle_1a81557cee772b41f57e5ba3c645522ab6" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>deg</name></member>
+      <member refid="classrb_1_1Angle_1a25046983b58f79dae7a88993afaea7ae" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>isNaN</name></member>
+      <member refid="classrb_1_1Angle_1ae43ca5fc10095ee8cde90f065ef89d27" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>nan</name></member>
+      <member refid="classrb_1_1Angle_1ad04c6b32b411f1e67187495793537e70" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>operator*=</name></member>
+      <member refid="classrb_1_1Angle_1ad584bcca6b69bee5a579acd53e804703" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>operator+=</name></member>
+      <member refid="classrb_1_1Angle_1a99bb67db9dd8a1da1923f02671fe5ad0" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>operator-</name></member>
+      <member refid="classrb_1_1Angle_1aa311699dd42a6c50cbbcf2f93b989002" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>operator-=</name></member>
+      <member refid="classrb_1_1Angle_1a17f4fb45092162c3059132f59b2fb5b5" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>operator/=</name></member>
+      <member refid="classrb_1_1Angle_1ad415e3012cd0e835dcebf41a5e9e550c" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>Pi</name></member>
+      <member refid="classrb_1_1Angle_1aea08d0552bfd1962727c758aa122d70f" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>rad</name></member>
+      <member refid="classrb_1_1Angle_1ae8ac2b0d2a5a2a03df1759df4a652a32" prot="public" virt="non-virtual"><scope>rb::Angle</scope><name>rad</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

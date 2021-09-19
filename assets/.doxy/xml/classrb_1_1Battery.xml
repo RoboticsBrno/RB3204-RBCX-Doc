@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrb_1_1Battery" kind="class" language="C++" prot="public">
+    <compoundname>rb::Battery</compoundname>
+    <includes refid="RBCXBattery_8h" local="no">RBCXBattery.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classrb_1_1Battery_1adddd5c43ff870a047aa66db4edf82a7e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Manager</definition>
+        <argsstring></argsstring>
+        <name>Manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="13" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classrb_1_1Battery_1a1b19adacb3a7eea5de1e648bf9a246ed" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t rb::Battery::VOLTAGE_MIN</definition>
+        <argsstring></argsstring>
+        <name>VOLTAGE_MIN</name>
+        <initializer>= 3300
+        * 2</initializer>
+        <briefdescription>
+<para>Minimal battery voltage, in mV, at which the robot shuts down. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="16" column="31" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Battery_1a165d38f448ac4f09e7cb82bd9774bdd2" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t rb::Battery::VOLTAGE_MAX</definition>
+        <argsstring></argsstring>
+        <name>VOLTAGE_MAX</name>
+        <initializer>= 4200 * 2</initializer>
+        <briefdescription>
+<para>Maximal battery voltage, in mV. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="18" column="31" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Battery_1aa44fd2f2530ea4ccfb50df161217c40e" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t rb::Battery::BATTERY_IN_THRESHOLD</definition>
+        <argsstring></argsstring>
+        <name>BATTERY_IN_THRESHOLD</name>
+        <initializer>= 5000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="20" column="31" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrb_1_1Battery_1a5029465fbbdff3eb9330001f79cbd5d3" prot="private" static="no" mutable="no">
+        <type>CoprocStat_PowerAdcStat</type>
+        <definition>CoprocStat_PowerAdcStat rb::Battery::m_state</definition>
+        <argsstring></argsstring>
+        <name>m_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="46" column="29" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrb_1_1Battery_1a88562ff78db7b8f4d75a0c62252ae1f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t rb::Battery::pct</definition>
+        <argsstring>() const</argsstring>
+        <name>pct</name>
+        <briefdescription>
+<para>returns current battery voltage </para>
+        </briefdescription>
+        <detaileddescription>
+<para>returns current battery percentage </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="22" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.cpp" bodystart="22" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Battery_1a9540bf9954b6fb6c9058b5fda26214d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t rb::Battery::temperatureC</definition>
+        <argsstring>() const</argsstring>
+        <name>temperatureC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="30" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Battery_1ac5b28fdad6e57277fc5e5c6750bc39d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Battery::shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>shutdown</name>
+        <briefdescription>
+<para>shuts the robot&apos;s battery power </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the Robot&apos;s battery power branch is on </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="32" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.cpp" bodystart="14" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Battery_1a091888766260c3efa4cd0a502efa644b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Battery::isPoweredByBattery</definition>
+        <argsstring>() const</argsstring>
+        <name>isPoweredByBattery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="35" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrb_1_1Battery_1af97330191ebe5dc292ec34c237b44b9a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Battery::Battery</definition>
+        <argsstring>()</argsstring>
+        <name>Battery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="40" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.cpp" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Battery_1a70944c50719f4824fa21b20a5b7b545e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Battery::Battery</definition>
+        <argsstring>(const Battery &amp;)=delete</argsstring>
+        <name>Battery</name>
+        <param>
+          <type>const <ref refid="classrb_1_1Battery" kindref="compound">Battery</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="41" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Battery_1a14ada64e4dda696838c8f1c38e7660f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Battery::~Battery</definition>
+        <argsstring>()</argsstring>
+        <name>~Battery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="42" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.cpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Battery_1a8d4bc0838af0c890daae6f6b8f720be5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Battery::setState</definition>
+        <argsstring>(const CoprocStat_PowerAdcStat &amp;msg)</argsstring>
+        <name>setState</name>
+        <param>
+          <type>const CoprocStat_PowerAdcStat &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="44" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains the battery state and can control the robot&apos;s power. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/RBCXBattery.h" line="12" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXBattery.h" bodystart="12" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classrb_1_1Battery_1af97330191ebe5dc292ec34c237b44b9a" prot="private" virt="non-virtual"><scope>rb::Battery</scope><name>Battery</name></member>
+      <member refid="classrb_1_1Battery_1a70944c50719f4824fa21b20a5b7b545e" prot="private" virt="non-virtual"><scope>rb::Battery</scope><name>Battery</name></member>
+      <member refid="classrb_1_1Battery_1aa44fd2f2530ea4ccfb50df161217c40e" prot="public" virt="non-virtual"><scope>rb::Battery</scope><name>BATTERY_IN_THRESHOLD</name></member>
+      <member refid="classrb_1_1Battery_1a091888766260c3efa4cd0a502efa644b" prot="public" virt="non-virtual"><scope>rb::Battery</scope><name>isPoweredByBattery</name></member>
+      <member refid="classrb_1_1Battery_1a5029465fbbdff3eb9330001f79cbd5d3" prot="private" virt="non-virtual"><scope>rb::Battery</scope><name>m_state</name></member>
+      <member refid="classrb_1_1Battery_1adddd5c43ff870a047aa66db4edf82a7e" prot="private" virt="non-virtual"><scope>rb::Battery</scope><name>Manager</name></member>
+      <member refid="classrb_1_1Battery_1a88562ff78db7b8f4d75a0c62252ae1f2" prot="public" virt="non-virtual"><scope>rb::Battery</scope><name>pct</name></member>
+      <member refid="classrb_1_1Battery_1a8d4bc0838af0c890daae6f6b8f720be5" prot="private" virt="non-virtual"><scope>rb::Battery</scope><name>setState</name></member>
+      <member refid="classrb_1_1Battery_1ac5b28fdad6e57277fc5e5c6750bc39d3" prot="public" virt="non-virtual"><scope>rb::Battery</scope><name>shutdown</name></member>
+      <member refid="classrb_1_1Battery_1a9540bf9954b6fb6c9058b5fda26214d1" prot="public" virt="non-virtual"><scope>rb::Battery</scope><name>temperatureC</name></member>
+      <member refid="classrb_1_1Battery_1a165d38f448ac4f09e7cb82bd9774bdd2" prot="public" virt="non-virtual"><scope>rb::Battery</scope><name>VOLTAGE_MAX</name></member>
+      <member refid="classrb_1_1Battery_1a1b19adacb3a7eea5de1e648bf9a246ed" prot="public" virt="non-virtual"><scope>rb::Battery</scope><name>VOLTAGE_MIN</name></member>
+      <member refid="classrb_1_1Battery_1a14ada64e4dda696838c8f1c38e7660f2" prot="private" virt="non-virtual"><scope>rb::Battery</scope><name>~Battery</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

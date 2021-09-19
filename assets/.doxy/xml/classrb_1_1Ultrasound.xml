@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrb_1_1Ultrasound" kind="class" language="C++" prot="public">
+    <compoundname>rb::Ultrasound</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classrb_1_1Ultrasound_1a453af959438c89c33fda18c31680d406" prot="public" static="no">
+        <type>std::function&lt; bool(uint32_t)&gt;</type>
+        <definition>typedef std::function&lt;bool(uint32_t)&gt; rb::Ultrasound::callback_t</definition>
+        <argsstring></argsstring>
+        <name>callback_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="24" column="27" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classrb_1_1Ultrasound_1adddd5c43ff870a047aa66db4edf82a7e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Manager</definition>
+        <argsstring></argsstring>
+        <name>Manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="18" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classrb_1_1Ultrasound_1a9958725b46fa880ed5bf237ff4271baf" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float rb::Ultrasound::defaultSpeedOfSound</definition>
+        <argsstring></argsstring>
+        <name>defaultSpeedOfSound</name>
+        <initializer>= 347.13f</initializer>
+        <briefdescription>
+<para>&lt; Default is speed at 25C, 50%, 101 kPa </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="22" column="28" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrb_1_1Ultrasound_1a45812bdd416ab1e0935402de5104ab84" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rb::Ultrasound::m_index</definition>
+        <argsstring></argsstring>
+        <name>m_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="47" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Ultrasound_1ab649c63a8b4c52e70a5988c8beaaa5bf" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t rb::Ultrasound::m_lastUs</definition>
+        <argsstring></argsstring>
+        <name>m_lastUs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="49" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Ultrasound_1ae5c11a295f20c1d6ec2923345de87e32" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t rb::Ultrasound::m_lastDistanceMm</definition>
+        <argsstring></argsstring>
+        <name>m_lastDistanceMm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="50" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Ultrasound_1a91f0f125d5f58009f91099b7bf2b4b1a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float rb::Ultrasound::m_speedOfSound</definition>
+        <argsstring></argsstring>
+        <name>m_speedOfSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="51" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Ultrasound_1ae032cfac6300249fa2567dceecf0c849" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rb::Ultrasound::m_measuring</definition>
+        <argsstring></argsstring>
+        <name>m_measuring</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="52" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Ultrasound_1a6236eaaa00350758f4e3f75522783493" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; callback_t &gt;</type>
+        <definition>std::vector&lt;callback_t&gt; rb::Ultrasound::m_callbacks</definition>
+        <argsstring></argsstring>
+        <name>m_callbacks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="53" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Ultrasound_1a365cf4de6e9a1f06db444ce3fe15e0fd" prot="private" static="no" mutable="no">
+        <type>std::recursive_mutex</type>
+        <definition>std::recursive_mutex rb::Ultrasound::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="54" column="26" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Ultrasound_1aeb53f5899a93ba590761834bae06723e" prot="private" static="no" mutable="no">
+        <type>std::condition_variable_any</type>
+        <definition>std::condition_variable_any rb::Ultrasound::m_measuringDone</definition>
+        <argsstring></argsstring>
+        <name>m_measuringDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="55" column="33" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Ultrasound_1a6fdd8ef30db8af1dbef5524c657e9e9f" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t rb::Ultrasound::m_timeoutTimer</definition>
+        <argsstring></argsstring>
+        <name>m_timeoutTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="56" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1aa9cf90b3368c5c75afa912038081bbb6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t rb::Ultrasound::lastDistanceMm</definition>
+        <argsstring>() const</argsstring>
+        <name>lastDistanceMm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="26" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1aa6c9d26a348ae219e2c3e75483e117ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t rb::Ultrasound::lastDurationUs</definition>
+        <argsstring>() const</argsstring>
+        <name>lastDurationUs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="27" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1a7ced1769ee7bc4064d19fa1ff169c0ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Ultrasound::isLastMeasurementValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isLastMeasurementValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="28" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1a15aa97a9f7111e331b9dc3fd1ee5a558" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Ultrasound::setSpeedOfSound</definition>
+        <argsstring>(float speedOfSoundInMetersPerSecond=defaultSpeedOfSound)</argsstring>
+        <name>setSpeedOfSound</name>
+        <param>
+          <type>float</type>
+          <declname>speedOfSoundInMetersPerSecond</declname>
+          <defval><ref refid="classrb_1_1Ultrasound_1a9958725b46fa880ed5bf237ff4271baf" kindref="member">defaultSpeedOfSound</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="30" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.cpp" bodystart="33" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1a555728575dac06fbe11b27b46ed3f92a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float rb::Ultrasound::getSpeedOfSound</definition>
+        <argsstring>() const</argsstring>
+        <name>getSpeedOfSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="32" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1a163ab5948826f6da1f96921cabc23b5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Ultrasound::measureAsync</definition>
+        <argsstring>(callback_t callback=nullptr)</argsstring>
+        <name>measureAsync</name>
+        <param>
+          <type>callback_t</type>
+          <declname>callback</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="34" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.cpp" bodystart="40" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1afa61efeb631bc9c1b4af906ad9d8b5ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t rb::Ultrasound::measure</definition>
+        <argsstring>()</argsstring>
+        <name>measure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="35" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.cpp" bodystart="61" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1a7393ce65ed736bfea59ab00478b239c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Ultrasound::Ultrasound</definition>
+        <argsstring>()</argsstring>
+        <name>Ultrasound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="38" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.cpp" bodystart="11" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1a9897a52112efff9bc81a57068e57cd91" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Ultrasound::Ultrasound</definition>
+        <argsstring>(const Ultrasound &amp;)=delete</argsstring>
+        <name>Ultrasound</name>
+        <param>
+          <type>const <ref refid="classrb_1_1Ultrasound" kindref="compound">Ultrasound</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1a0a9f8e2493412402ed0c6a57e3e0e789" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Ultrasound::~Ultrasound</definition>
+        <argsstring>()</argsstring>
+        <name>~Ultrasound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="40" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.cpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1a19e5bc805cc65b98a5ef3f41748a1d3a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Ultrasound::init</definition>
+        <argsstring>(uint8_t index)</argsstring>
+        <name>init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="42" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.cpp" bodystart="21" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1a34c5958fabd911e49b0537d9b434d98b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Ultrasound::recalculateLastDistanceLocked</definition>
+        <argsstring>()</argsstring>
+        <name>recalculateLastDistanceLocked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="44" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.cpp" bodystart="101" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Ultrasound_1a3dfa97fef57e6ec21e50029e9ef68f15" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Ultrasound::onMeasuringDone</definition>
+        <argsstring>(const CoprocStat_UltrasoundStat &amp;result)</argsstring>
+        <name>onMeasuringDone</name>
+        <param>
+          <type>const CoprocStat_UltrasoundStat &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="45" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.cpp" bodystart="74" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/RBCXUltrasound.h" line="17" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXUltrasound.h" bodystart="17" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classrb_1_1Ultrasound_1a453af959438c89c33fda18c31680d406" prot="public" virt="non-virtual"><scope>rb::Ultrasound</scope><name>callback_t</name></member>
+      <member refid="classrb_1_1Ultrasound_1a9958725b46fa880ed5bf237ff4271baf" prot="public" virt="non-virtual"><scope>rb::Ultrasound</scope><name>defaultSpeedOfSound</name></member>
+      <member refid="classrb_1_1Ultrasound_1a555728575dac06fbe11b27b46ed3f92a" prot="public" virt="non-virtual"><scope>rb::Ultrasound</scope><name>getSpeedOfSound</name></member>
+      <member refid="classrb_1_1Ultrasound_1a19e5bc805cc65b98a5ef3f41748a1d3a" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>init</name></member>
+      <member refid="classrb_1_1Ultrasound_1a7ced1769ee7bc4064d19fa1ff169c0ab" prot="public" virt="non-virtual"><scope>rb::Ultrasound</scope><name>isLastMeasurementValid</name></member>
+      <member refid="classrb_1_1Ultrasound_1aa9cf90b3368c5c75afa912038081bbb6" prot="public" virt="non-virtual"><scope>rb::Ultrasound</scope><name>lastDistanceMm</name></member>
+      <member refid="classrb_1_1Ultrasound_1aa6c9d26a348ae219e2c3e75483e117ff" prot="public" virt="non-virtual"><scope>rb::Ultrasound</scope><name>lastDurationUs</name></member>
+      <member refid="classrb_1_1Ultrasound_1a6236eaaa00350758f4e3f75522783493" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>m_callbacks</name></member>
+      <member refid="classrb_1_1Ultrasound_1a45812bdd416ab1e0935402de5104ab84" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>m_index</name></member>
+      <member refid="classrb_1_1Ultrasound_1ae5c11a295f20c1d6ec2923345de87e32" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>m_lastDistanceMm</name></member>
+      <member refid="classrb_1_1Ultrasound_1ab649c63a8b4c52e70a5988c8beaaa5bf" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>m_lastUs</name></member>
+      <member refid="classrb_1_1Ultrasound_1ae032cfac6300249fa2567dceecf0c849" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>m_measuring</name></member>
+      <member refid="classrb_1_1Ultrasound_1aeb53f5899a93ba590761834bae06723e" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>m_measuringDone</name></member>
+      <member refid="classrb_1_1Ultrasound_1a365cf4de6e9a1f06db444ce3fe15e0fd" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>m_mutex</name></member>
+      <member refid="classrb_1_1Ultrasound_1a91f0f125d5f58009f91099b7bf2b4b1a" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>m_speedOfSound</name></member>
+      <member refid="classrb_1_1Ultrasound_1a6fdd8ef30db8af1dbef5524c657e9e9f" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>m_timeoutTimer</name></member>
+      <member refid="classrb_1_1Ultrasound_1adddd5c43ff870a047aa66db4edf82a7e" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>Manager</name></member>
+      <member refid="classrb_1_1Ultrasound_1afa61efeb631bc9c1b4af906ad9d8b5ec" prot="public" virt="non-virtual"><scope>rb::Ultrasound</scope><name>measure</name></member>
+      <member refid="classrb_1_1Ultrasound_1a163ab5948826f6da1f96921cabc23b5f" prot="public" virt="non-virtual"><scope>rb::Ultrasound</scope><name>measureAsync</name></member>
+      <member refid="classrb_1_1Ultrasound_1a3dfa97fef57e6ec21e50029e9ef68f15" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>onMeasuringDone</name></member>
+      <member refid="classrb_1_1Ultrasound_1a34c5958fabd911e49b0537d9b434d98b" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>recalculateLastDistanceLocked</name></member>
+      <member refid="classrb_1_1Ultrasound_1a15aa97a9f7111e331b9dc3fd1ee5a558" prot="public" virt="non-virtual"><scope>rb::Ultrasound</scope><name>setSpeedOfSound</name></member>
+      <member refid="classrb_1_1Ultrasound_1a7393ce65ed736bfea59ab00478b239c0" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>Ultrasound</name></member>
+      <member refid="classrb_1_1Ultrasound_1a9897a52112efff9bc81a57068e57cd91" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>Ultrasound</name></member>
+      <member refid="classrb_1_1Ultrasound_1a0a9f8e2493412402ed0c6a57e3e0e789" prot="private" virt="non-virtual"><scope>rb::Ultrasound</scope><name>~Ultrasound</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrb_1_1SmartServoBus" kind="class" language="C++" prot="public">
+    <compoundname>rb::SmartServoBus</compoundname>
+    <innerclass refid="structrb_1_1SmartServoBus_1_1servo__info" prot="private">rb::SmartServoBus::servo_info</innerclass>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classrb_1_1SmartServoBus_1adddd5c43ff870a047aa66db4edf82a7e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Manager</definition>
+        <argsstring></argsstring>
+        <name>Manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="16" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrb_1_1SmartServoBus_1ae3b0aa4f2c0455322d931688cd08961e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; servo_info &gt;</type>
+        <definition>std::vector&lt;servo_info&gt; rb::SmartServoBus::m_servos</definition>
+        <argsstring></argsstring>
+        <name>m_servos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="66" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1SmartServoBus_1a6fb6665b267c41e04050b27003bc13d1" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex rb::SmartServoBus::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="67" column="16" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1a9a44a6ed4abbaab2b2186e081dfd0685" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::SmartServoBus::SmartServoBus</definition>
+        <argsstring>()</argsstring>
+        <name>SmartServoBus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="19" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1a1b3b16697f308c62c9efc288a78ce2b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rb::SmartServoBus::~SmartServoBus</definition>
+        <argsstring>()</argsstring>
+        <name>~SmartServoBus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="20" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1a96e443103fce3e45cf14507289a08009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::SmartServoBus::set</definition>
+        <argsstring>(uint8_t id, Angle ang, float speed=180.f, float speed_raise=0.0015f)</argsstring>
+        <name>set</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+          <declname>ang</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+          <defval>180.f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>speed_raise</declname>
+          <defval>0.0015f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="22" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="66" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1a81f3ef8743007b797ea9551ccb4c6381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::SmartServoBus::limit</definition>
+        <argsstring>(uint8_t id, Angle bottom, Angle top)</argsstring>
+        <name>limit</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="24" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1a6d6657662bfc63ff693ba07007ce3b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>Angle rb::SmartServoBus::pos</definition>
+        <argsstring>(uint8_t id)</argsstring>
+        <name>pos</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="26" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1a2efb165bfa01661a1771d949ff181d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>Angle rb::SmartServoBus::posOffline</definition>
+        <argsstring>(uint8_t id)</argsstring>
+        <name>posOffline</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="27" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="103" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1a146710fbe2d1c7aa4fa5b288917e5d3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::SmartServoBus::setAutoStop</definition>
+        <argsstring>(uint8_t id, bool enable=true)</argsstring>
+        <name>setAutoStop</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="29" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="115" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1a4a0c1348d26e3dca2d4f18df130398c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::SmartServoBus::setId</definition>
+        <argsstring>(uint8_t newId, uint8_t destId=254)</argsstring>
+        <name>setId</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>newId</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>destId</declname>
+          <defval>254</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="31" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1a1ab491dae108e47d67a186d2a39335ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t rb::SmartServoBus::getId</definition>
+        <argsstring>(uint8_t destId=254)</argsstring>
+        <name>getId</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>destId</declname>
+          <defval>254</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="32" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1ab16aff86b88ca57e6d4d4e823bd61478" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::SmartServoBus::SmartServoBus</definition>
+        <argsstring>(const SmartServoBus &amp;)=delete</argsstring>
+        <name>SmartServoBus</name>
+        <param>
+          <type>const <ref refid="classrb_1_1SmartServoBus" kindref="compound">SmartServoBus</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="35" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1a74fde1febe8220f634a163c942a18d72" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::SmartServoBus::install</definition>
+        <argsstring>(uint8_t servo_count)</argsstring>
+        <name>install</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>servo_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="37" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="19" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1a33aa4154e860b001a2238c81a004e5f3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::SmartServoBus::regulatorRoutine</definition>
+        <argsstring>()</argsstring>
+        <name>regulatorRoutine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="40" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="125" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1ab2610c773b62f072df0874b2feba6956" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::SmartServoBus::regulateServo</definition>
+        <argsstring>(QueueHandle_t responseQueue, size_t id, uint32_t timeSliceMs)</argsstring>
+        <name>regulateServo</name>
+        <param>
+          <type>QueueHandle_t</type>
+          <declname>responseQueue</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeSliceMs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="41" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="153" bodyend="219"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classrb_1_1SmartServoBus_1ab29db56860b34ef45e929354dd6c6c4a" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::SmartServoBus::regulatorRoutineTrampoline</definition>
+        <argsstring>(void *cookie)</argsstring>
+        <name>regulatorRoutineTrampoline</name>
+        <param>
+          <type>void *</type>
+          <declname>cookie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="39" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.cpp" bodystart="121" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="15" column="20" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="15" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classrb_1_1SmartServoBus_1a1ab491dae108e47d67a186d2a39335ca" prot="public" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>getId</name></member>
+      <member refid="classrb_1_1SmartServoBus_1a74fde1febe8220f634a163c942a18d72" prot="private" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>install</name></member>
+      <member refid="classrb_1_1SmartServoBus_1a81f3ef8743007b797ea9551ccb4c6381" prot="public" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>limit</name></member>
+      <member refid="classrb_1_1SmartServoBus_1a6fb6665b267c41e04050b27003bc13d1" prot="private" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>m_mutex</name></member>
+      <member refid="classrb_1_1SmartServoBus_1ae3b0aa4f2c0455322d931688cd08961e" prot="private" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>m_servos</name></member>
+      <member refid="classrb_1_1SmartServoBus_1adddd5c43ff870a047aa66db4edf82a7e" prot="private" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>Manager</name></member>
+      <member refid="classrb_1_1SmartServoBus_1a6d6657662bfc63ff693ba07007ce3b3c" prot="public" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>pos</name></member>
+      <member refid="classrb_1_1SmartServoBus_1a2efb165bfa01661a1771d949ff181d73" prot="public" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>posOffline</name></member>
+      <member refid="classrb_1_1SmartServoBus_1ab2610c773b62f072df0874b2feba6956" prot="private" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>regulateServo</name></member>
+      <member refid="classrb_1_1SmartServoBus_1a33aa4154e860b001a2238c81a004e5f3" prot="private" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>regulatorRoutine</name></member>
+      <member refid="classrb_1_1SmartServoBus_1ab29db56860b34ef45e929354dd6c6c4a" prot="private" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>regulatorRoutineTrampoline</name></member>
+      <member refid="classrb_1_1SmartServoBus_1a96e443103fce3e45cf14507289a08009" prot="public" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>set</name></member>
+      <member refid="classrb_1_1SmartServoBus_1a146710fbe2d1c7aa4fa5b288917e5d3a" prot="public" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>setAutoStop</name></member>
+      <member refid="classrb_1_1SmartServoBus_1a4a0c1348d26e3dca2d4f18df130398c3" prot="public" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>setId</name></member>
+      <member refid="classrb_1_1SmartServoBus_1a9a44a6ed4abbaab2b2186e081dfd0685" prot="public" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>SmartServoBus</name></member>
+      <member refid="classrb_1_1SmartServoBus_1ab16aff86b88ca57e6d4d4e823bd61478" prot="private" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>SmartServoBus</name></member>
+      <member refid="classrb_1_1SmartServoBus_1a1b3b16697f308c62c9efc288a78ce2b8" prot="public" virt="non-virtual"><scope>rb::SmartServoBus</scope><name>~SmartServoBus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

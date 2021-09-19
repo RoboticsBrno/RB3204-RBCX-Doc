@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classrb_1_1Angle" kind="class"><name>rb::Angle</name>
+    <member refid="classrb_1_1Angle_1af68e8257c2734d89bb709cb5914df620" kind="typedef"><name>_T</name></member>
+    <member refid="classrb_1_1Angle_1ad415e3012cd0e835dcebf41a5e9e550c" kind="variable"><name>Pi</name></member>
+    <member refid="classrb_1_1Angle_1a7a39f3d3be1da0191fe435c0d6d7ae12" kind="variable"><name>_rads</name></member>
+    <member refid="classrb_1_1Angle_1aa8645b5e4af80b881842aa5ae318be35" kind="function"><name>Angle</name></member>
+    <member refid="classrb_1_1Angle_1a25046983b58f79dae7a88993afaea7ae" kind="function"><name>isNaN</name></member>
+    <member refid="classrb_1_1Angle_1ad584bcca6b69bee5a579acd53e804703" kind="function"><name>operator+=</name></member>
+    <member refid="classrb_1_1Angle_1aa311699dd42a6c50cbbcf2f93b989002" kind="function"><name>operator-=</name></member>
+    <member refid="classrb_1_1Angle_1a99bb67db9dd8a1da1923f02671fe5ad0" kind="function"><name>operator-</name></member>
+    <member refid="classrb_1_1Angle_1ad04c6b32b411f1e67187495793537e70" kind="function"><name>operator*=</name></member>
+    <member refid="classrb_1_1Angle_1a17f4fb45092162c3059132f59b2fb5b5" kind="function"><name>operator/=</name></member>
+    <member refid="classrb_1_1Angle_1a81557cee772b41f57e5ba3c645522ab6" kind="function"><name>deg</name></member>
+    <member refid="classrb_1_1Angle_1ae8ac2b0d2a5a2a03df1759df4a652a32" kind="function"><name>rad</name></member>
+    <member refid="classrb_1_1Angle_1aea08d0552bfd1962727c758aa122d70f" kind="function"><name>rad</name></member>
+    <member refid="classrb_1_1Angle_1afbb44b0ae680fbfcdbe4c5bfed35e1dd" kind="function"><name>deg</name></member>
+    <member refid="classrb_1_1Angle_1ae43ca5fc10095ee8cde90f065ef89d27" kind="function"><name>nan</name></member>
+    <member refid="classrb_1_1Angle_1a1458cfdbf0eba0892746fa039823dce8" kind="function"><name>Angle</name></member>
+  </compound>
+  <compound refid="classrb_1_1Battery" kind="class"><name>rb::Battery</name>
+    <member refid="classrb_1_1Battery_1adddd5c43ff870a047aa66db4edf82a7e" kind="friend"><name>Manager</name></member>
+    <member refid="classrb_1_1Battery_1a1b19adacb3a7eea5de1e648bf9a246ed" kind="variable"><name>VOLTAGE_MIN</name></member>
+    <member refid="classrb_1_1Battery_1a165d38f448ac4f09e7cb82bd9774bdd2" kind="variable"><name>VOLTAGE_MAX</name></member>
+    <member refid="classrb_1_1Battery_1aa44fd2f2530ea4ccfb50df161217c40e" kind="variable"><name>BATTERY_IN_THRESHOLD</name></member>
+    <member refid="classrb_1_1Battery_1a5029465fbbdff3eb9330001f79cbd5d3" kind="variable"><name>m_state</name></member>
+    <member refid="classrb_1_1Battery_1a88562ff78db7b8f4d75a0c62252ae1f2" kind="function"><name>pct</name></member>
+    <member refid="classrb_1_1Battery_1a9540bf9954b6fb6c9058b5fda26214d1" kind="function"><name>temperatureC</name></member>
+    <member refid="classrb_1_1Battery_1ac5b28fdad6e57277fc5e5c6750bc39d3" kind="function"><name>shutdown</name></member>
+    <member refid="classrb_1_1Battery_1a091888766260c3efa4cd0a502efa644b" kind="function"><name>isPoweredByBattery</name></member>
+    <member refid="classrb_1_1Battery_1af97330191ebe5dc292ec34c237b44b9a" kind="function"><name>Battery</name></member>
+    <member refid="classrb_1_1Battery_1a70944c50719f4824fa21b20a5b7b545e" kind="function"><name>Battery</name></member>
+    <member refid="classrb_1_1Battery_1a14ada64e4dda696838c8f1c38e7660f2" kind="function"><name>~Battery</name></member>
+    <member refid="classrb_1_1Battery_1a8d4bc0838af0c890daae6f6b8f720be5" kind="function"><name>setState</name></member>
+  </compound>
+  <compound refid="classrb_1_1Buttons" kind="class"><name>rb::Buttons</name>
+    <member refid="classrb_1_1Buttons_1a40a9f5ca07107162af7910e3dfdb2351" kind="typedef"><name>callback_t</name></member>
+    <member refid="classrb_1_1Buttons_1adddd5c43ff870a047aa66db4edf82a7e" kind="friend"><name>Manager</name></member>
+    <member refid="classrb_1_1Buttons_1a1f04ea286ce3f122056a53c225479b19" kind="variable"><name>Count</name></member>
+    <member refid="classrb_1_1Buttons_1ae20a651f6fef5f826424e65d008833d1" kind="variable"><name>m_callbacks</name></member>
+    <member refid="classrb_1_1Buttons_1a3beef9a576e529a18f1309266d71e6eb" kind="variable"><name>m_mutex</name></member>
+    <member refid="classrb_1_1Buttons_1a889704d4d151687f038355ee0dce53be" kind="variable"><name>m_buttonsSet</name></member>
+    <member refid="classrb_1_1Buttons_1a20a1349d3feebc690241ea8b202f613f" kind="function"><name>byId</name></member>
+    <member refid="classrb_1_1Buttons_1a4b585b626c27275d56264698857a304b" kind="function"><name>up</name></member>
+    <member refid="classrb_1_1Buttons_1a0cc3c2221f5d2a72c002724fc9c0db8e" kind="function"><name>down</name></member>
+    <member refid="classrb_1_1Buttons_1a2a9483eef433fd7ea079424ac6cded30" kind="function"><name>left</name></member>
+    <member refid="classrb_1_1Buttons_1a411a764a5a1404c7606fdf6cf193af5d" kind="function"><name>right</name></member>
+    <member refid="classrb_1_1Buttons_1ac31be5b207ff793b753f6bdebaa8519f" kind="function"><name>on</name></member>
+    <member refid="classrb_1_1Buttons_1aaae0c87ed7e6f5fb1388511822f6b6b0" kind="function"><name>off</name></member>
+    <member refid="classrb_1_1Buttons_1a83659c7ace88783c42f00d1fc52b057c" kind="function"><name>onChange</name></member>
+    <member refid="classrb_1_1Buttons_1a4535684f0aba7d76853e1f4e5c970d64" kind="function"><name>Buttons</name></member>
+    <member refid="classrb_1_1Buttons_1a8707ebfe7e05c1af7095cd57e3296f97" kind="function"><name>Buttons</name></member>
+    <member refid="classrb_1_1Buttons_1a97f2611f55a4cc7ae8fe1b918f30bf45" kind="function"><name>~Buttons</name></member>
+    <member refid="classrb_1_1Buttons_1ad6e46a91538c408415b913c3d3e97136" kind="function"><name>setState</name></member>
+  </compound>
+  <compound refid="classrb_1_1Leds" kind="class"><name>rb::Leds</name>
+    <member refid="classrb_1_1Leds_1adddd5c43ff870a047aa66db4edf82a7e" kind="friend"><name>Manager</name></member>
+    <member refid="classrb_1_1Leds_1af4607db68e37484dcfa62999e58b388b" kind="variable"><name>m_ledsOn</name></member>
+    <member refid="classrb_1_1Leds_1ab75a4a341214bf0aa49a10821e86b7ed" kind="variable"><name>m_mutex</name></member>
+    <member refid="classrb_1_1Leds_1a1cda4fd8310584b208b1ab5db5984ea9" kind="function"><name>red</name></member>
+    <member refid="classrb_1_1Leds_1a2caa0946b676c940fb7f325db84b13c8" kind="function"><name>yellow</name></member>
+    <member refid="classrb_1_1Leds_1a278983244254be7356c76c84d1862ef4" kind="function"><name>green</name></member>
+    <member refid="classrb_1_1Leds_1a6cf78102801a949a2edd0363f9e9827f" kind="function"><name>blue</name></member>
+    <member refid="classrb_1_1Leds_1ab4544c687817e0d02adb220a70a0be7c" kind="function"><name>byId</name></member>
+    <member refid="classrb_1_1Leds_1ad80479bc7bafc894a320a1d63f55fdf5" kind="function"><name>Leds</name></member>
+    <member refid="classrb_1_1Leds_1acf59db9eb2d0668a9351a21b491eade0" kind="function"><name>Leds</name></member>
+    <member refid="classrb_1_1Leds_1a02f1f6ab4d35f260a6403ff3bb34bc45" kind="function"><name>~Leds</name></member>
+  </compound>
+  <compound refid="classrb_1_1Manager" kind="class"><name>rb::Manager</name>
+    <member refid="classrb_1_1Manager_1a86ac95761a7db3069f76d21beabafad1" kind="variable"><name>m_keepaliveTask</name></member>
+    <member refid="classrb_1_1Manager_1ae201f8f729a4c8f5283c17408be98a4c" kind="variable"><name>m_codec</name></member>
+    <member refid="classrb_1_1Manager_1aac206e6a70b8ef0b1236bc153d5c091f" kind="variable"><name>m_txBuf</name></member>
+    <member refid="classrb_1_1Manager_1a245431a3353b8f2cc255d19204b88e73" kind="variable"><name>m_codecTxMutex</name></member>
+    <member refid="classrb_1_1Manager_1abd8c50e0860ff8e200be710f483b6b18" kind="variable"><name>m_coprocWatchdogTimer</name></member>
+    <member refid="classrb_1_1Manager_1adfe4ca0f3e9119f956a9267b492d522d" kind="variable"><name>m_coprocFwVersion</name></member>
+    <member refid="classrb_1_1Manager_1a5db5bc909d03a26f10fb2181de42ab18" kind="variable"><name>m_coprocSemaphore</name></member>
+    <member refid="classrb_1_1Manager_1a9e147a07eafa0e95b2db42ded90c1ecf" kind="variable"><name>m_motors_last_set</name></member>
+    <member refid="classrb_1_1Manager_1a3c7d84f942fa46a5088d5b1ad02da302" kind="variable"><name>m_motors</name></member>
+    <member refid="classrb_1_1Manager_1ac56bc4973aaa1010fed4b1c7efa6ecb6" kind="variable"><name>m_piezo</name></member>
+    <member refid="classrb_1_1Manager_1aaa24b7eb68cdffdcb5f72c75dc168241" kind="variable"><name>m_leds</name></member>
+    <member refid="classrb_1_1Manager_1aee2b0fe406a365acf23085ab7a31e342" kind="variable"><name>m_buttons</name></member>
+    <member refid="classrb_1_1Manager_1a08c560a0ba9c71285a39d38147699e0e" kind="variable"><name>m_battery</name></member>
+    <member refid="classrb_1_1Manager_1a09b1f6c251fe66a7aa87e7cf461db4f9" kind="variable"><name>m_ultrasounds</name></member>
+    <member refid="classrb_1_1Manager_1a5418e392f6d369abb1284c6a988db88f" kind="variable"><name>m_stupidServos</name></member>
+    <member refid="classrb_1_1Manager_1a1ab28166aa4799726fd0a4fdc8deaf40" kind="function"><name>install</name></member>
+    <member refid="classrb_1_1Manager_1a61fbcbfb3aed02ee34450b6b8a8b2c9b" kind="function"><name>ultrasound</name></member>
+    <member refid="classrb_1_1Manager_1a43b478966a7fc22c9364219fc1b221ba" kind="function"><name>stupidServo</name></member>
+    <member refid="classrb_1_1Manager_1aac25a5003ef2eb62d3b2136e93eed179" kind="function"><name>buttons</name></member>
+    <member refid="classrb_1_1Manager_1a78dc13e11831f050bb55324357750c31" kind="function"><name>motor</name></member>
+    <member refid="classrb_1_1Manager_1abb2a07fadc2024cff36ac8b360a379fb" kind="function"><name>setMotors</name></member>
+    <member refid="classrb_1_1Manager_1ab8e317b5cb65d14c4777b2ae45351afc" kind="function"><name>schedule</name></member>
+    <member refid="classrb_1_1Manager_1a6071fb5cf7117ae3893f77ffa5002d50" kind="function"><name>timers</name></member>
+    <member refid="classrb_1_1Manager_1aa98f2dde5f969e3e7a5f42c2fef29982" kind="function"><name>monitorTask</name></member>
+    <member refid="classrb_1_1Manager_1a11779d2a10c101790d22719f18b07dd2" kind="function"><name>sendToCoproc</name></member>
+    <member refid="classrb_1_1Manager_1aa3ed1dd227618400e00c8e1a81a652eb" kind="function"><name>coprocFwVersion</name></member>
+    <member refid="classrb_1_1Manager_1a49db3d7799ebb5f8a5317d95ecf5f55b" kind="function"><name>coprocFwVersionAssert</name></member>
+    <member refid="classrb_1_1Manager_1a02e1837c65fec7560220fea89441d261" kind="function"><name>Manager</name></member>
+    <member refid="classrb_1_1Manager_1a137bc8af1a4ac0d3e3299ebbd1a1b91c" kind="function"><name>~Manager</name></member>
+    <member refid="classrb_1_1Manager_1aa35aff3544f42b04a190a15058bf9ecb" kind="function"><name>consumerRoutine</name></member>
+    <member refid="classrb_1_1Manager_1af85a3d76b1ab6c91dd3b0b41315b85b2" kind="function"><name>resetMotorsFailSafe</name></member>
+    <member refid="classrb_1_1Manager_1a9f2a0d0b41f8ef8355816bd11ae5497f" kind="function"><name>motorsFailSafe</name></member>
+    <member refid="classrb_1_1Manager_1a04a76d7a58f1dcf67338ec51728d2849" kind="function"><name>consumerRoutineTrampoline</name></member>
+    <member refid="classrb_1_1Manager_1abae8665fdf12f62a11afa3ef9396d3e1" kind="function"><name>keepaliveRoutine</name></member>
+    <member refid="classrb_1_1Manager_1a358b05ffa74248e33c9aa4bcff02d0e8" kind="friend"><name>MotorChangeBuilder</name></member>
+    <member refid="classrb_1_1Manager_1a9f0ec0ed691ee924e57d5e71c780681a" kind="friend"><name>Encoder</name></member>
+    <member refid="classrb_1_1Manager_1a698ce4ffb29680794dbfeca5036b7381" kind="friend"><name>PcntInterruptHandler</name></member>
+    <member refid="classrb_1_1Manager_1a2abea0a22831274b2894ed2675e909b4" kind="friend"><name>Motor</name></member>
+    <member refid="classrb_1_1Manager_1abf08bdc9c58a9452c5c0f6312627b651" kind="function"><name>Manager</name></member>
+    <member refid="classrb_1_1Manager_1afb01225d454a7fcbe6c55e9729251804" kind="function"><name>operator=</name></member>
+    <member refid="classrb_1_1Manager_1a10bfc9edd111072d47db54260462ee08" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="classrb_1_1Motor" kind="class"><name>rb::Motor</name>
+    <member refid="classrb_1_1Motor_1ac45590b4202ea5cd3020cbe51d206431" kind="typedef"><name>callback_t</name></member>
+    <member refid="classrb_1_1Motor_1adddd5c43ff870a047aa66db4edf82a7e" kind="friend"><name>Manager</name></member>
+    <member refid="classrb_1_1Motor_1a358b05ffa74248e33c9aa4bcff02d0e8" kind="friend"><name>MotorChangeBuilder</name></member>
+    <member refid="classrb_1_1Motor_1af246e7dbcca551a2d2b015f002c30140" kind="variable"><name>m_positionCb</name></member>
+    <member refid="classrb_1_1Motor_1a43db004e88dadb31b6d428f5fca07664" kind="variable"><name>m_infoCbs</name></member>
+    <member refid="classrb_1_1Motor_1a2c2366d51e954f27637c3a0f4834e24a" kind="variable"><name>m_lastReq</name></member>
+    <member refid="classrb_1_1Motor_1aebf905e6f75ebf92e02d019e8955ee38" kind="variable"><name>m_mutex</name></member>
+    <member refid="classrb_1_1Motor_1a08f3f0b5a3a57ff62e01a7f247c54163" kind="variable"><name>m_id</name></member>
+    <member refid="classrb_1_1Motor_1ac25fce22e9fd3ac70e37c5ac4cc7241d" kind="variable"><name>m_mode</name></member>
+    <member refid="classrb_1_1Motor_1a28b1744cf65b38a47c63362bb6304d3f" kind="variable"><name>m_position</name></member>
+    <member refid="classrb_1_1Motor_1a38c75f509f3d403921ae36b662757d2f" kind="variable"><name>m_power</name></member>
+    <member refid="classrb_1_1Motor_1aabdb4bfd55d6c968d8e8dfc574f9395e" kind="variable"><name>m_speed</name></member>
+    <member refid="classrb_1_1Motor_1ac4a50ace094da5abbf0be2b8fef9ec6e" kind="variable"><name>m_pwm_max_percent</name></member>
+    <member refid="classrb_1_1Motor_1a0a1380b62cacaff17ceaded5f24c938c" kind="function"><name>id</name></member>
+    <member refid="classrb_1_1Motor_1a656d53bd1a445041a84feb78e8671d2c" kind="function"><name>position</name></member>
+    <member refid="classrb_1_1Motor_1a7ed880c17d5cec71cbf4e0b523adaeab" kind="function"><name>requestInfo</name></member>
+    <member refid="classrb_1_1Motor_1a4231c6f9df4a912598406359d1b919c6" kind="function"><name>power</name></member>
+    <member refid="classrb_1_1Motor_1a81cc3d1e77b24b9fdd233b22b6110c00" kind="function"><name>speed</name></member>
+    <member refid="classrb_1_1Motor_1a2748ddcc1f11819ab21f29ba816ef980" kind="function"><name>brake</name></member>
+    <member refid="classrb_1_1Motor_1abb7e20994614c514bf8f9679f153b441" kind="function"><name>pwmMaxPercent</name></member>
+    <member refid="classrb_1_1Motor_1a009ae376c66370070dcb077e88569a3b" kind="function"><name>pwmMaxPercent</name></member>
+    <member refid="classrb_1_1Motor_1a4a4078689477ef874ea01e5d6150de32" kind="function"><name>driveToValue</name></member>
+    <member refid="classrb_1_1Motor_1aa67d5fdee388057fb7e88e1ac5f6ef79" kind="function"><name>drive</name></member>
+    <member refid="classrb_1_1Motor_1a3f015ff35c53242047e6e40da13acb94" kind="function"><name>setCurrentPosition</name></member>
+    <member refid="classrb_1_1Motor_1a6f122e443fb46103139e4c50cae5f6cd" kind="function"><name>setConfig</name></member>
+    <member refid="classrb_1_1Motor_1a6491253545fb9ede4a9577b13e0a9dd9" kind="function"><name>Motor</name></member>
+    <member refid="classrb_1_1Motor_1a12dc4653e069070aca9d59febe944520" kind="function"><name>Motor</name></member>
+    <member refid="classrb_1_1Motor_1a3aeeb4e7a75fb8fdb84a4f9bd8c6c11f" kind="function"><name>setId</name></member>
+    <member refid="classrb_1_1Motor_1ae5c6bd41389b4d10b6626adf8291c0a4" kind="function"><name>sendPositionReq</name></member>
+    <member refid="classrb_1_1Motor_1a856a3de5abd8244f7406406e5584d281" kind="function"><name>sendMotorReq</name></member>
+    <member refid="classrb_1_1Motor_1abb438bcc8c7c0dae89c466066af7e452" kind="function"><name>onMotorStat</name></member>
+    <member refid="classrb_1_1Motor_1a26ceeab4be7ed3fd0fcefd432d030123" kind="function"><name>scale</name></member>
+  </compound>
+  <compound refid="classrb_1_1MotorChangeBuilder" kind="class"><name>rb::MotorChangeBuilder</name>
+    <member refid="classrb_1_1MotorChangeBuilder_1aecaed370ffa81707746701983a0e5033" kind="variable"><name>m_calls</name></member>
+    <member refid="classrb_1_1MotorChangeBuilder_1ad2de10a7e0bc7cbe41df41e120644f00" kind="function"><name>MotorChangeBuilder</name></member>
+    <member refid="classrb_1_1MotorChangeBuilder_1a87de03544a68266e0ff0a5539d60b17b" kind="function"><name>MotorChangeBuilder</name></member>
+    <member refid="classrb_1_1MotorChangeBuilder_1a8fe74f78ab056a272765d60c01df3813" kind="function"><name>MotorChangeBuilder</name></member>
+    <member refid="classrb_1_1MotorChangeBuilder_1aeb4ef5c6a33ea1d8f3e9771806eb22b1" kind="function"><name>~MotorChangeBuilder</name></member>
+    <member refid="classrb_1_1MotorChangeBuilder_1ac21271f3221ade65a1247b5e86077136" kind="function"><name>power</name></member>
+    <member refid="classrb_1_1MotorChangeBuilder_1adacc07cac8d24415fc83013d2adc98b1" kind="function"><name>speed</name></member>
+    <member refid="classrb_1_1MotorChangeBuilder_1a9b2659215fe8e1911a0003547a59be4a" kind="function"><name>brake</name></member>
+    <member refid="classrb_1_1MotorChangeBuilder_1adfd74ad987be641499277fdeced9472c" kind="function"><name>pwmMaxPercent</name></member>
+    <member refid="classrb_1_1MotorChangeBuilder_1a409a741066ca1f9bfae97542fac1503e" kind="function"><name>drive</name></member>
+    <member refid="classrb_1_1MotorChangeBuilder_1a412b114ce12b332040a84f6d95a0d637" kind="function"><name>driveToValue</name></member>
+    <member refid="classrb_1_1MotorChangeBuilder_1a11ebf755b9412e2170e66158c4e35a3a" kind="function"><name>set</name></member>
+  </compound>
+  <compound refid="classrb_1_1Nvs" kind="class"><name>rb::Nvs</name>
+    <member refid="classrb_1_1Nvs_1a14ad5a9931baba16ced88865619a30f7" kind="variable"><name>m_handle</name></member>
+    <member refid="classrb_1_1Nvs_1a4569a13fd27cc25ce61263d9065571ec" kind="variable"><name>m_dirty</name></member>
+    <member refid="classrb_1_1Nvs_1a66f7b0987fdf339cff68f7c30ceb4730" kind="function"><name>Nvs</name></member>
+    <member refid="classrb_1_1Nvs_1aa2aaa2a572b57b4fed6a391b2f60eb28" kind="function"><name>~Nvs</name></member>
+    <member refid="classrb_1_1Nvs_1ae77d5edbef19abecf39001ac29a22675" kind="function"><name>Nvs</name></member>
+    <member refid="classrb_1_1Nvs_1abc9b8ae3b70b8d2bd0b080f297328381" kind="function"><name>existsInt</name></member>
+    <member refid="classrb_1_1Nvs_1a52211ea362c8253327ce9c8de0ae525a" kind="function"><name>getInt</name></member>
+    <member refid="classrb_1_1Nvs_1aebe618314f0eca3ebc3d55d28d9acd23" kind="function"><name>writeInt</name></member>
+    <member refid="classrb_1_1Nvs_1a603e155fcacf1e08bf8e7ef5a371b6df" kind="function"><name>existsString</name></member>
+    <member refid="classrb_1_1Nvs_1a2336dabd5083c1996b89a0d153eaa09c" kind="function"><name>getString</name></member>
+    <member refid="classrb_1_1Nvs_1ac4e17cd6237f79c6864c0d56ff63efe5" kind="function"><name>writeString</name></member>
+    <member refid="classrb_1_1Nvs_1a27dff9274d0a0dde623ca297bb84b9f9" kind="function"><name>commit</name></member>
+    <member refid="classrb_1_1Nvs_1ab57f79d9cbe7c4919d9c05cb149553dc" kind="function"><name>initFlash</name></member>
+  </compound>
+  <compound refid="classrb_1_1Piezo" kind="class"><name>rb::Piezo</name>
+    <member refid="classrb_1_1Piezo_1adddd5c43ff870a047aa66db4edf82a7e" kind="friend"><name>Manager</name></member>
+    <member refid="classrb_1_1Piezo_1ab653976f531e8c305ebc89eef69766a5" kind="variable"><name>m_on</name></member>
+    <member refid="classrb_1_1Piezo_1aeb6988392944e06661006fca9dc3a7f9" kind="function"><name>start</name></member>
+    <member refid="classrb_1_1Piezo_1a4665cb021c295ac72b80c31ff2c440be" kind="function"><name>stop</name></member>
+    <member refid="classrb_1_1Piezo_1a2f9c85c5c23538b9eceb2a06d0c4e540" kind="function"><name>setState</name></member>
+    <member refid="classrb_1_1Piezo_1a7c5f9165d2b4537ec663a18e4d2d7dcb" kind="function"><name>Piezo</name></member>
+    <member refid="classrb_1_1Piezo_1aaa7dedb9e2994c16ee9662c1d45bb414" kind="function"><name>Piezo</name></member>
+    <member refid="classrb_1_1Piezo_1aa479ed70e0ad068de5fe91b14f7b7a22" kind="function"><name>~Piezo</name></member>
+  </compound>
+  <compound refid="structrb_1_1SmartServoBus_1_1servo__info" kind="struct"><name>rb::SmartServoBus::servo_info</name>
+    <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a405ea1ceeb4c8cab5b4caa31c626a95b" kind="variable"><name>speed_coef</name></member>
+    <member refid="structrb_1_1SmartServoBus_1_1servo__info_1aa4a1bfe8c7eb15721d235898ac9e0784" kind="variable"><name>speed_target</name></member>
+    <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a6fd6c3f6f7b0e9b8d06eeb8fd078085d" kind="variable"><name>speed_raise</name></member>
+    <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a47fdf842864056ffe3e0feb83c8b5ec7" kind="variable"><name>current</name></member>
+    <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a04c78eca8d63313ca516e7be112cd5e7" kind="variable"><name>target</name></member>
+    <member refid="structrb_1_1SmartServoBus_1_1servo__info_1ae2ec668e587290a0022eea90210faf5d" kind="variable"><name>auto_stop</name></member>
+    <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a09355869271d24c36ac3143f2755b729" kind="variable"><name>auto_stop_counter</name></member>
+    <member refid="structrb_1_1SmartServoBus_1_1servo__info_1aa48b4fa0b0bb64bb23a4743866a7f35b" kind="function"><name>servo_info</name></member>
+    <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a4e48e36a2a0884c6d7a1f961931cfc60" kind="function"><name>hasValidCurrent</name></member>
+  </compound>
+  <compound refid="classrb_1_1SmartServoBus" kind="class"><name>rb::SmartServoBus</name>
+    <member refid="classrb_1_1SmartServoBus_1adddd5c43ff870a047aa66db4edf82a7e" kind="friend"><name>Manager</name></member>
+    <member refid="classrb_1_1SmartServoBus_1ae3b0aa4f2c0455322d931688cd08961e" kind="variable"><name>m_servos</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a6fb6665b267c41e04050b27003bc13d1" kind="variable"><name>m_mutex</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a9a44a6ed4abbaab2b2186e081dfd0685" kind="function"><name>SmartServoBus</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a1b3b16697f308c62c9efc288a78ce2b8" kind="function"><name>~SmartServoBus</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a96e443103fce3e45cf14507289a08009" kind="function"><name>set</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a81f3ef8743007b797ea9551ccb4c6381" kind="function"><name>limit</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a6d6657662bfc63ff693ba07007ce3b3c" kind="function"><name>pos</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a2efb165bfa01661a1771d949ff181d73" kind="function"><name>posOffline</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a146710fbe2d1c7aa4fa5b288917e5d3a" kind="function"><name>setAutoStop</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a4a0c1348d26e3dca2d4f18df130398c3" kind="function"><name>setId</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a1ab491dae108e47d67a186d2a39335ca" kind="function"><name>getId</name></member>
+    <member refid="classrb_1_1SmartServoBus_1ab16aff86b88ca57e6d4d4e823bd61478" kind="function"><name>SmartServoBus</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a74fde1febe8220f634a163c942a18d72" kind="function"><name>install</name></member>
+    <member refid="classrb_1_1SmartServoBus_1a33aa4154e860b001a2238c81a004e5f3" kind="function"><name>regulatorRoutine</name></member>
+    <member refid="classrb_1_1SmartServoBus_1ab2610c773b62f072df0874b2feba6956" kind="function"><name>regulateServo</name></member>
+    <member refid="classrb_1_1SmartServoBus_1ab29db56860b34ef45e929354dd6c6c4a" kind="function"><name>regulatorRoutineTrampoline</name></member>
+  </compound>
+  <compound refid="classrb_1_1StupidServo" kind="class"><name>rb::StupidServo</name>
+    <member refid="classrb_1_1StupidServo_1adddd5c43ff870a047aa66db4edf82a7e" kind="friend"><name>Manager</name></member>
+    <member refid="classrb_1_1StupidServo_1a8ff265ee603bce0e2fdc72040f15de59" kind="variable"><name>m_mutex</name></member>
+    <member refid="classrb_1_1StupidServo_1ae5d925a2866f0b8823f9c1505bf7b063" kind="variable"><name>m_lastPosition</name></member>
+    <member refid="classrb_1_1StupidServo_1adb3c692ed1aebcf94fcf1e23ae7f1934" kind="variable"><name>m_id</name></member>
+    <member refid="classrb_1_1StupidServo_1a324dab8b2d5a7d30d25f26f8aa37ed65" kind="function"><name>setPosition</name></member>
+    <member refid="classrb_1_1StupidServo_1aadadc359f54dbac7e23ce4783acd3420" kind="function"><name>position</name></member>
+    <member refid="classrb_1_1StupidServo_1a235896ed7a1b0b2d90afbd0545d09c5f" kind="function"><name>disable</name></member>
+    <member refid="classrb_1_1StupidServo_1ac13a334f706b96899c695bb49723c8e7" kind="function"><name>StupidServo</name></member>
+    <member refid="classrb_1_1StupidServo_1abc8abd6bb8f0d7e469364869af7e3ba5" kind="function"><name>~StupidServo</name></member>
+    <member refid="classrb_1_1StupidServo_1ace0da0fd12c0e60bbf9cb6415bca1184" kind="function"><name>StupidServo</name></member>
+    <member refid="classrb_1_1StupidServo_1a66f7d25a7c057189cdda0ea4ade72b32" kind="function"><name>setId</name></member>
+    <member refid="classrb_1_1StupidServo_1a05abd5bff599acca63b4701849afe159" kind="function"><name>sendServoMsg</name></member>
+  </compound>
+  <compound refid="structrb_1_1Timers_1_1timer__t" kind="struct"><name>rb::Timers::timer_t</name>
+    <member refid="structrb_1_1Timers_1_1timer__t_1add289cc4a9f93aa2390b3509090e3d65" kind="variable"><name>callback</name></member>
+    <member refid="structrb_1_1Timers_1_1timer__t_1ac2ae39393184ed98793162f4025d7682" kind="variable"><name>handle</name></member>
+    <member refid="structrb_1_1Timers_1_1timer__t_1afbcdfde8018e0c1cf90cd740c4d89ad9" kind="variable"><name>id</name></member>
+    <member refid="structrb_1_1Timers_1_1timer__t_1a751e8c547abf4b74a13f09f266dbd31f" kind="function"><name>swap</name></member>
+  </compound>
+  <compound refid="classrb_1_1Timers" kind="class"><name>rb::Timers</name>
+    <member refid="classrb_1_1Timers_1ac53aba1f7d100fd8e01973fed7caa833" kind="variable"><name>INVALID_ID</name></member>
+    <member refid="classrb_1_1Timers_1a2ab692d418a5d08407aaf242527d789d" kind="variable"><name>m_timers</name></member>
+    <member refid="classrb_1_1Timers_1a3a1e682de01026870625d81de4b382ad" kind="variable"><name>m_mutex</name></member>
+    <member refid="classrb_1_1Timers_1ab0be09d7ae1e3b39eae52b5f9e51bf62" kind="variable"><name>m_id_counter</name></member>
+    <member refid="classrb_1_1Timers_1a6f5a4df01f28c28edee642a38f611598" kind="function"><name>deleteFreeRtOsTimerTask</name></member>
+    <member refid="classrb_1_1Timers_1a800a6d7e76462bfdea84bfa6dfbe4a28" kind="function"><name>get</name></member>
+    <member refid="classrb_1_1Timers_1a7816c963a9dea456ea73297353693b6a" kind="function"><name>schedule</name></member>
+    <member refid="classrb_1_1Timers_1a0918e5f0b3dafe8db65cd88d353e49a2" kind="function"><name>reset</name></member>
+    <member refid="classrb_1_1Timers_1a26fa0354f91b584d12f63d4a4a24dff2" kind="function"><name>cancel</name></member>
+    <member refid="classrb_1_1Timers_1af887819e53afd268234fb97c412f300c" kind="function"><name>stop</name></member>
+    <member refid="classrb_1_1Timers_1aca804621eac9459c96ea236fdc3eb0c6" kind="function"><name>isOnTimerTask</name></member>
+    <member refid="classrb_1_1Timers_1aa03f9d666eab6d89035b41479cb013fd" kind="function"><name>timerCallback</name></member>
+    <member refid="classrb_1_1Timers_1a809eb685cf315822103af4f572dc0692" kind="function"><name>Timers</name></member>
+    <member refid="classrb_1_1Timers_1a832150c3769744888a29e1667feb2c1e" kind="function"><name>~Timers</name></member>
+    <member refid="classrb_1_1Timers_1a3067027186aa190f2d179043238fb020" kind="function"><name>cancelByIdxLocked</name></member>
+    <member refid="classrb_1_1Timers_1a9834c5b0583e6f32177bee8e55166910" kind="function"><name>getFreeIdLocked</name></member>
+  </compound>
+  <compound refid="classrb_1_1Ultrasound" kind="class"><name>rb::Ultrasound</name>
+    <member refid="classrb_1_1Ultrasound_1a453af959438c89c33fda18c31680d406" kind="typedef"><name>callback_t</name></member>
+    <member refid="classrb_1_1Ultrasound_1adddd5c43ff870a047aa66db4edf82a7e" kind="friend"><name>Manager</name></member>
+    <member refid="classrb_1_1Ultrasound_1a9958725b46fa880ed5bf237ff4271baf" kind="variable"><name>defaultSpeedOfSound</name></member>
+    <member refid="classrb_1_1Ultrasound_1a45812bdd416ab1e0935402de5104ab84" kind="variable"><name>m_index</name></member>
+    <member refid="classrb_1_1Ultrasound_1ab649c63a8b4c52e70a5988c8beaaa5bf" kind="variable"><name>m_lastUs</name></member>
+    <member refid="classrb_1_1Ultrasound_1ae5c11a295f20c1d6ec2923345de87e32" kind="variable"><name>m_lastDistanceMm</name></member>
+    <member refid="classrb_1_1Ultrasound_1a91f0f125d5f58009f91099b7bf2b4b1a" kind="variable"><name>m_speedOfSound</name></member>
+    <member refid="classrb_1_1Ultrasound_1ae032cfac6300249fa2567dceecf0c849" kind="variable"><name>m_measuring</name></member>
+    <member refid="classrb_1_1Ultrasound_1a6236eaaa00350758f4e3f75522783493" kind="variable"><name>m_callbacks</name></member>
+    <member refid="classrb_1_1Ultrasound_1a365cf4de6e9a1f06db444ce3fe15e0fd" kind="variable"><name>m_mutex</name></member>
+    <member refid="classrb_1_1Ultrasound_1aeb53f5899a93ba590761834bae06723e" kind="variable"><name>m_measuringDone</name></member>
+    <member refid="classrb_1_1Ultrasound_1a6fdd8ef30db8af1dbef5524c657e9e9f" kind="variable"><name>m_timeoutTimer</name></member>
+    <member refid="classrb_1_1Ultrasound_1aa9cf90b3368c5c75afa912038081bbb6" kind="function"><name>lastDistanceMm</name></member>
+    <member refid="classrb_1_1Ultrasound_1aa6c9d26a348ae219e2c3e75483e117ff" kind="function"><name>lastDurationUs</name></member>
+    <member refid="classrb_1_1Ultrasound_1a7ced1769ee7bc4064d19fa1ff169c0ab" kind="function"><name>isLastMeasurementValid</name></member>
+    <member refid="classrb_1_1Ultrasound_1a15aa97a9f7111e331b9dc3fd1ee5a558" kind="function"><name>setSpeedOfSound</name></member>
+    <member refid="classrb_1_1Ultrasound_1a555728575dac06fbe11b27b46ed3f92a" kind="function"><name>getSpeedOfSound</name></member>
+    <member refid="classrb_1_1Ultrasound_1a163ab5948826f6da1f96921cabc23b5f" kind="function"><name>measureAsync</name></member>
+    <member refid="classrb_1_1Ultrasound_1afa61efeb631bc9c1b4af906ad9d8b5ec" kind="function"><name>measure</name></member>
+    <member refid="classrb_1_1Ultrasound_1a7393ce65ed736bfea59ab00478b239c0" kind="function"><name>Ultrasound</name></member>
+    <member refid="classrb_1_1Ultrasound_1a9897a52112efff9bc81a57068e57cd91" kind="function"><name>Ultrasound</name></member>
+    <member refid="classrb_1_1Ultrasound_1a0a9f8e2493412402ed0c6a57e3e0e789" kind="function"><name>~Ultrasound</name></member>
+    <member refid="classrb_1_1Ultrasound_1a19e5bc805cc65b98a5ef3f41748a1d3a" kind="function"><name>init</name></member>
+    <member refid="classrb_1_1Ultrasound_1a34c5958fabd911e49b0537d9b434d98b" kind="function"><name>recalculateLastDistanceLocked</name></member>
+    <member refid="classrb_1_1Ultrasound_1a3dfa97fef57e6ec21e50029e9ef68f15" kind="function"><name>onMeasuringDone</name></member>
+  </compound>
+  <compound refid="namespacerb" kind="namespace"><name>rb</name>
+    <member refid="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4e" kind="enum"><name>ButtonId</name></member>
+    <member refid="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4ea196c56763810dec3459bcd749f3ad019" kind="enumvalue"><name>Off</name></member>
+    <member refid="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4eafa9c93515da75d05590dafaaccf8956e" kind="enumvalue"><name>On</name></member>
+    <member refid="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4ea4f5c5da66f26a8585c8cbee36d9b838c" kind="enumvalue"><name>B1</name></member>
+    <member refid="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4eabbe649776452f445e077909cec11d312" kind="enumvalue"><name>B2</name></member>
+    <member refid="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4ea0d65071d001854995c946da7550522ab" kind="enumvalue"><name>B3</name></member>
+    <member refid="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4ea07760f908972ed1fae5e40696c8901f3" kind="enumvalue"><name>B4</name></member>
+    <member refid="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4eafce1e48e7f48ce2558fe94ccd0bf9ef6" kind="enumvalue"><name>Up</name></member>
+    <member refid="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4eaad2cd34621bc0e3276f474757557991b" kind="enumvalue"><name>Down</name></member>
+    <member refid="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4ea7b6188c7aab22158c23b50706db56ac0" kind="enumvalue"><name>Left</name></member>
+    <member refid="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4eaa683f2dfb9bb3bbd140a3b460d9bc8a9" kind="enumvalue"><name>Right</name></member>
+    <member refid="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230e" kind="enum"><name>LedId</name></member>
+    <member refid="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230eaaaf47f038d49a750f9dcb299678aad8b" kind="enumvalue"><name>L1</name></member>
+    <member refid="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230ea57edcca87e7f6763294e5cb2a6e2987a" kind="enumvalue"><name>L2</name></member>
+    <member refid="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230eaa52e7b42e7e09496c8da1d9234302141" kind="enumvalue"><name>L3</name></member>
+    <member refid="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230eac29c312f8fc75f62860246632b83fa25" kind="enumvalue"><name>L4</name></member>
+    <member refid="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230ea528ec0aa73e990a6be2fdc4100a11117" kind="enumvalue"><name>Green</name></member>
+    <member refid="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230ead95c9fec74283d1011f24a416797ebb7" kind="enumvalue"><name>Yellow</name></member>
+    <member refid="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230ea8436a282e447268fe377473c4fa12716" kind="enumvalue"><name>Red</name></member>
+    <member refid="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230eac3a04e8448bd14f2c97db1cc4a39c5cf" kind="enumvalue"><name>Blue</name></member>
+    <member refid="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230ea986ccd0809b958e8286a9eaeb35e4b93" kind="enumvalue"><name>All</name></member>
+    <member refid="RBCXManager_8h_1af3f24c8ea16e1a669a5d4d936ac071ea" kind="enum"><name>ManagerInstallFlags</name></member>
+    <member refid="RBCXManager_8h_1af3f24c8ea16e1a669a5d4d936ac071eaaf951b3337789f86d3aa71d5b612cc489" kind="enumvalue"><name>MAN_NONE</name></member>
+    <member refid="RBCXManager_8h_1af3f24c8ea16e1a669a5d4d936ac071eaae0e87ec183241e195ce754d3bb74ff03" kind="enumvalue"><name>MAN_DISABLE_MOTOR_FAILSAFE</name></member>
+    <member refid="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530" kind="enum"><name>MotorId</name></member>
+    <member refid="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530af31e1eef20f64733a18c538073e78396" kind="enumvalue"><name>M1</name></member>
+    <member refid="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530a9d8322530b67e2366e5b1ba67081ded9" kind="enumvalue"><name>M2</name></member>
+    <member refid="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530af1c6eb6f4e48eb34ab40b2987d4976a8" kind="enumvalue"><name>M3</name></member>
+    <member refid="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530a66b543df60a981ccfcd2d3114605a39a" kind="enumvalue"><name>M4</name></member>
+    <member refid="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530a26a4b44a837bf97b972628509912b4a5" kind="enumvalue"><name>MAX</name></member>
+    <member refid="RBCXPinout_8h_1a22595653ca54a0d12886e4f30593bc00" kind="variable"><name>UltrasoundsCount</name></member>
+    <member refid="RBCXPinout_8h_1a1eace2008c8117d97a408eecb24e32ca" kind="variable"><name>StupidServosCount</name></member>
+    <member refid="RBCXAngle_8cpp_1af99b28ed19aee47f99c88f274a088cc2" kind="function"><name>operator+</name></member>
+    <member refid="RBCXAngle_8cpp_1ace59edd09eaab7f6743f49dba27150f4" kind="function"><name>operator-</name></member>
+    <member refid="RBCXAngle_8cpp_1aab10a5e9109e9f648729bd3f12224f88" kind="function"><name>operator*</name></member>
+    <member refid="RBCXAngle_8cpp_1adaf022caa1aeb846993e2ddf85450415" kind="function"><name>operator/</name></member>
+    <member refid="RBCXAngle_8cpp_1a9e6176b037747197b984b2a2e8297c97" kind="function"><name>operator&quot;&quot;_deg</name></member>
+    <member refid="RBCXAngle_8cpp_1a373297dec29db0f608bb2e6631b86c1c" kind="function"><name>operator&quot;&quot;_rad</name></member>
+    <member refid="RBCXAngle_8cpp_1a89e25a488a1b64f8d217545108d52bc5" kind="function"><name>operator&quot;&quot;_deg</name></member>
+    <member refid="RBCXAngle_8cpp_1a34985eb5e7350b159f10223db69116ab" kind="function"><name>operator&quot;&quot;_rad</name></member>
+    <member refid="RBCXManager_8h_1a4bea1e0498bb0090931dbd64d3e5362c" kind="function"><name>operator|</name></member>
+    <member refid="RBCXPinout_8h_1af2627804f5d67a4d5f65f50606e017c8" kind="function"><name>operator++</name></member>
+    <member refid="RBCXTimers_8cpp_1adc36757172d4c1c9a29367ba8754d745" kind="function"><name>dieTimers</name></member>
+    <member refid="RBCXUtil_8h_1a4d8b84c8ead43cd3459563ddd8d6c0e3" kind="function"><name>clamp</name></member>
+    <member refid="RBCXUtil_8h_1ab36eb23da70e652b55e9ebeebe428fa7" kind="function"><name>delayMs</name></member>
+    <member refid="RBCXUtil_8h_1add0c913f6cbdd805e8e4c619df4da252" kind="function"><name>delay</name></member>
+  </compound>
+  <compound refid="RBCX_8h" kind="file"><name>RBCX.h</name>
+  </compound>
+  <compound refid="RBCXAngle_8cpp" kind="file"><name>RBCXAngle.cpp</name>
+  </compound>
+  <compound refid="RBCXAngle_8h" kind="file"><name>RBCXAngle.h</name>
+    <member refid="RBCXAngle_8h_1ae71449b1cc6e6250b91f539153a7a0d3" kind="define"><name>M_PI</name></member>
+  </compound>
+  <compound refid="RBCXBattery_8cpp" kind="file"><name>RBCXBattery.cpp</name>
+    <member refid="RBCXBattery_8cpp_1afc3d101f633a076cc1ca84b85b6224b2" kind="define"><name>TAG</name></member>
+  </compound>
+  <compound refid="RBCXBattery_8h" kind="file"><name>RBCXBattery.h</name>
+  </compound>
+  <compound refid="RBCXButtons_8cpp" kind="file"><name>RBCXButtons.cpp</name>
+  </compound>
+  <compound refid="RBCXButtons_8h" kind="file"><name>RBCXButtons.h</name>
+  </compound>
+  <compound refid="RBCXLeds_8cpp" kind="file"><name>RBCXLeds.cpp</name>
+  </compound>
+  <compound refid="RBCXLeds_8h" kind="file"><name>RBCXLeds.h</name>
+  </compound>
+  <compound refid="RBCXManager_8cpp" kind="file"><name>RBCXManager.cpp</name>
+    <member refid="RBCXManager_8cpp_1afc3d101f633a076cc1ca84b85b6224b2" kind="define"><name>TAG</name></member>
+    <member refid="RBCXManager_8cpp_1a947a6011a6abd5b3417ca9a92388e022" kind="define"><name>MOTORS_FAILSAFE_PERIOD_MS</name></member>
+    <member refid="RBCXManager_8cpp_1a206e8fd105b1e3f86d672358b1dc9f16" kind="define"><name>MAX_COPROC_IDLE_MS</name></member>
+  </compound>
+  <compound refid="RBCXManager_8h" kind="file"><name>RBCXManager.h</name>
+  </compound>
+  <compound refid="RBCXMotor_8cpp" kind="file"><name>RBCXMotor.cpp</name>
+    <member refid="RBCXMotor_8cpp_1acdade228fea1d9dfb1fcce7cbef7246b" kind="variable"><name>minVersionPositional</name></member>
+  </compound>
+  <compound refid="RBCXMotor_8h" kind="file"><name>RBCXMotor.h</name>
+  </compound>
+  <compound refid="RBCXNvs_8cpp" kind="file"><name>RBCXNvs.cpp</name>
+  </compound>
+  <compound refid="RBCXNvs_8h" kind="file"><name>RBCXNvs.h</name>
+  </compound>
+  <compound refid="RBCXPiezo_8cpp" kind="file"><name>RBCXPiezo.cpp</name>
+  </compound>
+  <compound refid="RBCXPiezo_8h" kind="file"><name>RBCXPiezo.h</name>
+  </compound>
+  <compound refid="RBCXPinout_8h" kind="file"><name>RBCXPinout.h</name>
+  </compound>
+  <compound refid="RBCXSmartServo_8cpp" kind="file"><name>RBCXSmartServo.cpp</name>
+    <member refid="RBCXSmartServo_8cpp_1afc3d101f633a076cc1ca84b85b6224b2" kind="define"><name>TAG</name></member>
+    <member refid="RBCXSmartServo_8cpp_1a73adf9c10352865ff95b5f46e642c560" kind="define"><name>MS_TO_TICKS</name></member>
+  </compound>
+  <compound refid="RBCXSmartServo_8h" kind="file"><name>RBCXSmartServo.h</name>
+  </compound>
+  <compound refid="RBCXStupidServo_8cpp" kind="file"><name>RBCXStupidServo.cpp</name>
+  </compound>
+  <compound refid="RBCXStupidServo_8h" kind="file"><name>RBCXStupidServo.h</name>
+  </compound>
+  <compound refid="RBCXTimers_8cpp" kind="file"><name>RBCXTimers.cpp</name>
+  </compound>
+  <compound refid="RBCXTimers_8h" kind="file"><name>RBCXTimers.h</name>
+  </compound>
+  <compound refid="RBCXUltrasound_8cpp" kind="file"><name>RBCXUltrasound.cpp</name>
+    <member refid="RBCXUltrasound_8cpp_1afc3d101f633a076cc1ca84b85b6224b2" kind="define"><name>TAG</name></member>
+  </compound>
+  <compound refid="RBCXUltrasound_8h" kind="file"><name>RBCXUltrasound.h</name>
+  </compound>
+  <compound refid="RBCXUtil_8h" kind="file"><name>RBCXUtil.h</name>
+    <member refid="RBCXUtil_8h_1a70ff147d9b93065f35580599c6fcbbd3" kind="define"><name>RBCX_ENUM_IMPL_MASK_OPERATORS</name></member>
+  </compound>
+  <compound refid="RBCXVersion_8h" kind="file"><name>RBCXVersion.h</name>
+    <member refid="RBCXVersion_8h_1aed899714fae4d60d288bb87448464cfc" kind="define"><name>RB3204</name></member>
+    <member refid="RBCXVersion_8h_1a81e81cdf3b5c0a0a5bb61111fe06d22c" kind="define"><name>RB3204_RBCX</name></member>
+    <member refid="RBCXVersion_8h_1a55935b8f58810f2594e65abb7495a7f8" kind="define"><name>RBCX</name></member>
+    <member refid="RBCXVersion_8h_1a19e8056885dd55351f08ee6388d76d96" kind="define"><name>RB3204_MAJOR</name></member>
+    <member refid="RBCXVersion_8h_1a40b77b169f7e1d684dbd29bf35d5ace0" kind="define"><name>RB3204_MINOR</name></member>
+    <member refid="RBCXVersion_8h_1a1cd7b9c07a7d00400cf6ba186abdf030" kind="define"><name>RB3204_PATCH</name></member>
+  </compound>
+  <compound refid="dir_4fef79e7177ba769987a8da36c892c5f" kind="dir"><name>build</name>
+  </compound>
+  <compound refid="dir_6e2f6bf38ad600996f360c484704d30b" kind="dir"><name>build/RB3204-RBCX-library</name>
+  </compound>
+  <compound refid="dir_2fb57cfb6554052417264f60890e0af6" kind="dir"><name>build/RB3204-RBCX-library/src</name>
+  </compound>
+</doxygenindex>

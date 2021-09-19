@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structrb_1_1SmartServoBus_1_1servo__info" kind="struct" language="C++" prot="private">
+    <compoundname>rb::SmartServoBus::servo_info</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrb_1_1SmartServoBus_1_1servo__info_1a405ea1ceeb4c8cab5b4caa31c626a95b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float rb::SmartServoBus::servo_info::speed_coef</definition>
+        <argsstring></argsstring>
+        <name>speed_coef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="57" column="15" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrb_1_1SmartServoBus_1_1servo__info_1aa4a1bfe8c7eb15721d235898ac9e0784" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float rb::SmartServoBus::servo_info::speed_target</definition>
+        <argsstring></argsstring>
+        <name>speed_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="58" column="15" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrb_1_1SmartServoBus_1_1servo__info_1a6fd6c3f6f7b0e9b8d06eeb8fd078085d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float rb::SmartServoBus::servo_info::speed_raise</definition>
+        <argsstring></argsstring>
+        <name>speed_raise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="59" column="15" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrb_1_1SmartServoBus_1_1servo__info_1a47fdf842864056ffe3e0feb83c8b5ec7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t rb::SmartServoBus::servo_info::current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="60" column="18" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrb_1_1SmartServoBus_1_1servo__info_1a04c78eca8d63313ca516e7be112cd5e7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t rb::SmartServoBus::servo_info::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="61" column="18" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrb_1_1SmartServoBus_1_1servo__info_1ae2ec668e587290a0022eea90210faf5d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rb::SmartServoBus::servo_info::auto_stop</definition>
+        <argsstring></argsstring>
+        <name>auto_stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="62" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrb_1_1SmartServoBus_1_1servo__info_1a09355869271d24c36ac3143f2755b729" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rb::SmartServoBus::servo_info::auto_stop_counter</definition>
+        <argsstring></argsstring>
+        <name>auto_stop_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="63" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structrb_1_1SmartServoBus_1_1servo__info_1aa48b4fa0b0bb64bb23a4743866a7f35b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rb::SmartServoBus::servo_info::servo_info</definition>
+        <argsstring>()</argsstring>
+        <name>servo_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="45" column="9" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="45" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="structrb_1_1SmartServoBus_1_1servo__info_1a4e48e36a2a0884c6d7a1f961931cfc60" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::SmartServoBus::servo_info::hasValidCurrent</definition>
+        <argsstring>() const</argsstring>
+        <name>hasValidCurrent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="55" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/RBCXSmartServo.h" line="44" column="21" bodyfile="build/RB3204-RBCX-library/src/RBCXSmartServo.h" bodystart="44" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structrb_1_1SmartServoBus_1_1servo__info_1ae2ec668e587290a0022eea90210faf5d" prot="public" virt="non-virtual"><scope>rb::SmartServoBus::servo_info</scope><name>auto_stop</name></member>
+      <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a09355869271d24c36ac3143f2755b729" prot="public" virt="non-virtual"><scope>rb::SmartServoBus::servo_info</scope><name>auto_stop_counter</name></member>
+      <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a47fdf842864056ffe3e0feb83c8b5ec7" prot="public" virt="non-virtual"><scope>rb::SmartServoBus::servo_info</scope><name>current</name></member>
+      <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a4e48e36a2a0884c6d7a1f961931cfc60" prot="public" virt="non-virtual"><scope>rb::SmartServoBus::servo_info</scope><name>hasValidCurrent</name></member>
+      <member refid="structrb_1_1SmartServoBus_1_1servo__info_1aa48b4fa0b0bb64bb23a4743866a7f35b" prot="public" virt="non-virtual"><scope>rb::SmartServoBus::servo_info</scope><name>servo_info</name></member>
+      <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a405ea1ceeb4c8cab5b4caa31c626a95b" prot="public" virt="non-virtual"><scope>rb::SmartServoBus::servo_info</scope><name>speed_coef</name></member>
+      <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a6fd6c3f6f7b0e9b8d06eeb8fd078085d" prot="public" virt="non-virtual"><scope>rb::SmartServoBus::servo_info</scope><name>speed_raise</name></member>
+      <member refid="structrb_1_1SmartServoBus_1_1servo__info_1aa4a1bfe8c7eb15721d235898ac9e0784" prot="public" virt="non-virtual"><scope>rb::SmartServoBus::servo_info</scope><name>speed_target</name></member>
+      <member refid="structrb_1_1SmartServoBus_1_1servo__info_1a04c78eca8d63313ca516e7be112cd5e7" prot="public" virt="non-virtual"><scope>rb::SmartServoBus::servo_info</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

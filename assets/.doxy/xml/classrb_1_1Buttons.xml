@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrb_1_1Buttons" kind="class" language="C++" prot="public">
+    <compoundname>rb::Buttons</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classrb_1_1Buttons_1a40a9f5ca07107162af7910e3dfdb2351" prot="public" static="no">
+        <type>std::function&lt; bool(ButtonId, bool)&gt;</type>
+        <definition>typedef std::function&lt;bool(ButtonId, bool)&gt; rb::Buttons::callback_t</definition>
+        <argsstring></argsstring>
+        <name>callback_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="43" column="27" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classrb_1_1Buttons_1adddd5c43ff870a047aa66db4edf82a7e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Manager</definition>
+        <argsstring></argsstring>
+        <name>Manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="40" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classrb_1_1Buttons_1a1f04ea286ce3f122056a53c225479b19" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t rb::Buttons::Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="45" column="31" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrb_1_1Buttons_1ae20a651f6fef5f826424e65d008833d1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; callback_t &gt;</type>
+        <definition>std::vector&lt;callback_t&gt; rb::Buttons::m_callbacks</definition>
+        <argsstring></argsstring>
+        <name>m_callbacks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="64" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Buttons_1a3beef9a576e529a18f1309266d71e6eb" prot="private" static="no" mutable="no">
+        <type>std::recursive_mutex</type>
+        <definition>std::recursive_mutex rb::Buttons::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="65" column="26" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Buttons_1a889704d4d151687f038355ee0dce53be" prot="private" static="no" mutable="no">
+        <type>ButtonId</type>
+        <definition>ButtonId rb::Buttons::m_buttonsSet</definition>
+        <argsstring></argsstring>
+        <name>m_buttonsSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="66" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrb_1_1Buttons_1a20a1349d3feebc690241ea8b202f613f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Buttons::byId</definition>
+        <argsstring>(ButtonId id) const</argsstring>
+        <name>byId</name>
+        <param>
+          <type>ButtonId</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="47" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Buttons_1a4b585b626c27275d56264698857a304b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Buttons::up</definition>
+        <argsstring>() const</argsstring>
+        <name>up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="48" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Buttons_1a0cc3c2221f5d2a72c002724fc9c0db8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Buttons::down</definition>
+        <argsstring>() const</argsstring>
+        <name>down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="49" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Buttons_1a2a9483eef433fd7ea079424ac6cded30" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Buttons::left</definition>
+        <argsstring>() const</argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="50" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Buttons_1a411a764a5a1404c7606fdf6cf193af5d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Buttons::right</definition>
+        <argsstring>() const</argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="51" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Buttons_1ac31be5b207ff793b753f6bdebaa8519f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Buttons::on</definition>
+        <argsstring>() const</argsstring>
+        <name>on</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="52" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Buttons_1aaae0c87ed7e6f5fb1388511822f6b6b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Buttons::off</definition>
+        <argsstring>() const</argsstring>
+        <name>off</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="53" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Buttons_1a83659c7ace88783c42f00d1fc52b057c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Buttons::onChange</definition>
+        <argsstring>(callback_t callback)</argsstring>
+        <name>onChange</name>
+        <param>
+          <type>callback_t</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="55" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrb_1_1Buttons_1a4535684f0aba7d76853e1f4e5c970d64" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Buttons::Buttons</definition>
+        <argsstring>()</argsstring>
+        <name>Buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="58" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.cpp" bodystart="5" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Buttons_1a8707ebfe7e05c1af7095cd57e3296f97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Buttons::Buttons</definition>
+        <argsstring>(const Buttons &amp;)=delete</argsstring>
+        <name>Buttons</name>
+        <param>
+          <type>const <ref refid="classrb_1_1Buttons" kindref="compound">Buttons</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="59" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Buttons_1a97f2611f55a4cc7ae8fe1b918f30bf45" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Buttons::~Buttons</definition>
+        <argsstring>()</argsstring>
+        <name>~Buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="60" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.cpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Buttons_1ad6e46a91538c408415b913c3d3e97136" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Buttons::setState</definition>
+        <argsstring>(const CoprocStat_ButtonsStat &amp;msg)</argsstring>
+        <name>setState</name>
+        <param>
+          <type>const CoprocStat_ButtonsStat &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="62" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.cpp" bodystart="10" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="39" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="39" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classrb_1_1Buttons_1a4535684f0aba7d76853e1f4e5c970d64" prot="private" virt="non-virtual"><scope>rb::Buttons</scope><name>Buttons</name></member>
+      <member refid="classrb_1_1Buttons_1a8707ebfe7e05c1af7095cd57e3296f97" prot="private" virt="non-virtual"><scope>rb::Buttons</scope><name>Buttons</name></member>
+      <member refid="classrb_1_1Buttons_1a20a1349d3feebc690241ea8b202f613f" prot="public" virt="non-virtual"><scope>rb::Buttons</scope><name>byId</name></member>
+      <member refid="classrb_1_1Buttons_1a40a9f5ca07107162af7910e3dfdb2351" prot="public" virt="non-virtual"><scope>rb::Buttons</scope><name>callback_t</name></member>
+      <member refid="classrb_1_1Buttons_1a1f04ea286ce3f122056a53c225479b19" prot="public" virt="non-virtual"><scope>rb::Buttons</scope><name>Count</name></member>
+      <member refid="classrb_1_1Buttons_1a0cc3c2221f5d2a72c002724fc9c0db8e" prot="public" virt="non-virtual"><scope>rb::Buttons</scope><name>down</name></member>
+      <member refid="classrb_1_1Buttons_1a2a9483eef433fd7ea079424ac6cded30" prot="public" virt="non-virtual"><scope>rb::Buttons</scope><name>left</name></member>
+      <member refid="classrb_1_1Buttons_1a889704d4d151687f038355ee0dce53be" prot="private" virt="non-virtual"><scope>rb::Buttons</scope><name>m_buttonsSet</name></member>
+      <member refid="classrb_1_1Buttons_1ae20a651f6fef5f826424e65d008833d1" prot="private" virt="non-virtual"><scope>rb::Buttons</scope><name>m_callbacks</name></member>
+      <member refid="classrb_1_1Buttons_1a3beef9a576e529a18f1309266d71e6eb" prot="private" virt="non-virtual"><scope>rb::Buttons</scope><name>m_mutex</name></member>
+      <member refid="classrb_1_1Buttons_1adddd5c43ff870a047aa66db4edf82a7e" prot="private" virt="non-virtual"><scope>rb::Buttons</scope><name>Manager</name></member>
+      <member refid="classrb_1_1Buttons_1aaae0c87ed7e6f5fb1388511822f6b6b0" prot="public" virt="non-virtual"><scope>rb::Buttons</scope><name>off</name></member>
+      <member refid="classrb_1_1Buttons_1ac31be5b207ff793b753f6bdebaa8519f" prot="public" virt="non-virtual"><scope>rb::Buttons</scope><name>on</name></member>
+      <member refid="classrb_1_1Buttons_1a83659c7ace88783c42f00d1fc52b057c" prot="public" virt="non-virtual"><scope>rb::Buttons</scope><name>onChange</name></member>
+      <member refid="classrb_1_1Buttons_1a411a764a5a1404c7606fdf6cf193af5d" prot="public" virt="non-virtual"><scope>rb::Buttons</scope><name>right</name></member>
+      <member refid="classrb_1_1Buttons_1ad6e46a91538c408415b913c3d3e97136" prot="private" virt="non-virtual"><scope>rb::Buttons</scope><name>setState</name></member>
+      <member refid="classrb_1_1Buttons_1a4b585b626c27275d56264698857a304b" prot="public" virt="non-virtual"><scope>rb::Buttons</scope><name>up</name></member>
+      <member refid="classrb_1_1Buttons_1a97f2611f55a4cc7ae8fe1b918f30bf45" prot="private" virt="non-virtual"><scope>rb::Buttons</scope><name>~Buttons</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

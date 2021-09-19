@@ -1,0 +1,1123 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.7">
+    
+    
+      
+        <title>Class Member Functions - RBCX Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3c7cdd75.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-member-functions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="RBCX Docs" class="md-header__button md-logo" aria-label="RBCX Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RBCX Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Class Member Functions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="RBCX Docs" class="md-nav__button md-logo" aria-label="RBCX Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    RBCX Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../snippetsExample/" class="md-nav__link">
+        Snippets example
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../snippetsExampleOld.md" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../test.md" class="md-nav__link">
+        Test
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        Functions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Classes
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Classes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Classes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../annotated/" class="md-nav__link">
+        Class List
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes/" class="md-nav__link">
+        Class Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hierarchy/" class="md-nav__link">
+        Class Hierarchy
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_members/" class="md-nav__link">
+        Class Members
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Class Member Functions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Class Member Functions
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    a
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    b
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    c
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    d
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    e
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g" class="md-nav__link">
+    g
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    h
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    i
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" class="md-nav__link">
+    k
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l" class="md-nav__link">
+    l
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    m
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    n
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    o
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    p
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r" class="md-nav__link">
+    r
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s" class="md-nav__link">
+    s
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t" class="md-nav__link">
+    t
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u" class="md-nav__link">
+    u
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w" class="md-nav__link">
+    w
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#y" class="md-nav__link">
+    y
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    ~
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_variables/" class="md-nav__link">
+        Class Member Variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_typedefs/" class="md-nav__link">
+        Class Member Typedefs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_enums/" class="md-nav__link">
+        Class Member Enumerations
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Namespaces
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Namespaces" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Namespaces
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespaces/" class="md-nav__link">
+        Namespace List
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_members/" class="md-nav__link">
+        Namespace Members
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_functions/" class="md-nav__link">
+        Namespace Member Functions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_variables/" class="md-nav__link">
+        Namespace Member Variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_typedefs/" class="md-nav__link">
+        Namespace Member Typedefs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_enums/" class="md-nav__link">
+        Namespace Member Enumerations
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/" class="md-nav__link">
+        Files
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    a
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    b
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    c
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    d
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    e
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g" class="md-nav__link">
+    g
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    h
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    i
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" class="md-nav__link">
+    k
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l" class="md-nav__link">
+    l
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    m
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    n
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    o
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    p
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r" class="md-nav__link">
+    r
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s" class="md-nav__link">
+    s
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t" class="md-nav__link">
+    t
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u" class="md-nav__link">
+    u
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w" class="md-nav__link">
+    w
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#y" class="md-nav__link">
+    y
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    ~
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="class-member-functions">Class Member Functions</h1>
+<h2 id="a">a</h2>
+<ul>
+<li><strong>Angle</strong> (<a href="../classrb_1_1Angle/"><strong>rb::Angle</strong></a>)</li>
+</ul>
+<h2 id="b">b</h2>
+<ul>
+<li><strong>Battery</strong> (<a href="../classrb_1_1Battery/"><strong>rb::Battery</strong></a>)</li>
+<li><strong>Buttons</strong> (<a href="../classrb_1_1Buttons/"><strong>rb::Buttons</strong></a>)</li>
+<li><strong>byId</strong> (<a href="../classrb_1_1Buttons/"><strong>rb::Buttons</strong></a>, <a href="../classrb_1_1Leds/"><strong>rb::Leds</strong></a>)</li>
+<li><strong>blue</strong> (<a href="../classrb_1_1Leds/"><strong>rb::Leds</strong></a>)</li>
+<li><strong>buttons</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>brake</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>, <a href="../classrb_1_1MotorChangeBuilder/"><strong>rb::MotorChangeBuilder</strong></a>)</li>
+</ul>
+<h2 id="c">c</h2>
+<ul>
+<li><strong>consumerRoutine</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>consumerRoutineTrampoline</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>coprocFwVersion</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>coprocFwVersionAssert</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>commit</strong> (<a href="../classrb_1_1Nvs/"><strong>rb::Nvs</strong></a>)</li>
+<li><strong>cancel</strong> (<a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+<li><strong>cancelByIdxLocked</strong> (<a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+</ul>
+<h2 id="d">d</h2>
+<ul>
+<li><strong>deg</strong> (<a href="../classrb_1_1Angle/"><strong>rb::Angle</strong></a>)</li>
+<li><strong>down</strong> (<a href="../classrb_1_1Buttons/"><strong>rb::Buttons</strong></a>)</li>
+<li><strong>drive</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>, <a href="../classrb_1_1MotorChangeBuilder/"><strong>rb::MotorChangeBuilder</strong></a>)</li>
+<li><strong>driveToValue</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>, <a href="../classrb_1_1MotorChangeBuilder/"><strong>rb::MotorChangeBuilder</strong></a>)</li>
+<li><strong>disable</strong> (<a href="../classrb_1_1StupidServo/"><strong>rb::StupidServo</strong></a>)</li>
+<li><strong>deleteFreeRtOsTimerTask</strong> (<a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+</ul>
+<h2 id="e">e</h2>
+<ul>
+<li><strong>existsInt</strong> (<a href="../classrb_1_1Nvs/"><strong>rb::Nvs</strong></a>)</li>
+<li><strong>existsString</strong> (<a href="../classrb_1_1Nvs/"><strong>rb::Nvs</strong></a>)</li>
+</ul>
+<h2 id="g">g</h2>
+<ul>
+<li><strong>green</strong> (<a href="../classrb_1_1Leds/"><strong>rb::Leds</strong></a>)</li>
+<li><strong>get</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>, <a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+<li><strong>getInt</strong> (<a href="../classrb_1_1Nvs/"><strong>rb::Nvs</strong></a>)</li>
+<li><strong>getString</strong> (<a href="../classrb_1_1Nvs/"><strong>rb::Nvs</strong></a>)</li>
+<li><strong>getId</strong> (<a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+<li><strong>getFreeIdLocked</strong> (<a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+<li><strong>getSpeedOfSound</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+</ul>
+<h2 id="h">h</h2>
+<ul>
+<li><strong>hasValidCurrent</strong> (<a href="../structrb_1_1SmartServoBus_1_1servo__info/"><strong>rb::SmartServoBus::servo_info</strong></a>)</li>
+</ul>
+<h2 id="i">i</h2>
+<ul>
+<li><strong>isNaN</strong> (<a href="../classrb_1_1Angle/"><strong>rb::Angle</strong></a>)</li>
+<li><strong>isPoweredByBattery</strong> (<a href="../classrb_1_1Battery/"><strong>rb::Battery</strong></a>)</li>
+<li><strong>install</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>, <a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+<li><strong>id</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>)</li>
+<li><strong>initFlash</strong> (<a href="../classrb_1_1Nvs/"><strong>rb::Nvs</strong></a>)</li>
+<li><strong>isOnTimerTask</strong> (<a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+<li><strong>init</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+<li><strong>isLastMeasurementValid</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+</ul>
+<h2 id="k">k</h2>
+<ul>
+<li><strong>keepaliveRoutine</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+</ul>
+<h2 id="l">l</h2>
+<ul>
+<li><strong>left</strong> (<a href="../classrb_1_1Buttons/"><strong>rb::Buttons</strong></a>)</li>
+<li><strong>Leds</strong> (<a href="../classrb_1_1Leds/"><strong>rb::Leds</strong></a>)</li>
+<li><strong>limit</strong> (<a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+<li><strong>lastDistanceMm</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+<li><strong>lastDurationUs</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+</ul>
+<h2 id="m">m</h2>
+<ul>
+<li><strong>Manager</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>monitorTask</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>motor</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>motorsFailSafe</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>Motor</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>)</li>
+<li><strong>MotorChangeBuilder</strong> (<a href="../classrb_1_1MotorChangeBuilder/"><strong>rb::MotorChangeBuilder</strong></a>)</li>
+<li><strong>measure</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+<li><strong>measureAsync</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+</ul>
+<h2 id="n">n</h2>
+<ul>
+<li><strong>nan</strong> (<a href="../classrb_1_1Angle/"><strong>rb::Angle</strong></a>)</li>
+<li><strong>Nvs</strong> (<a href="../classrb_1_1Nvs/"><strong>rb::Nvs</strong></a>)</li>
+</ul>
+<h2 id="o">o</h2>
+<ul>
+<li><strong>operator*=</strong> (<a href="../classrb_1_1Angle/"><strong>rb::Angle</strong></a>)</li>
+<li><strong>operator+=</strong> (<a href="../classrb_1_1Angle/"><strong>rb::Angle</strong></a>)</li>
+<li><strong>operator-</strong> (<a href="../classrb_1_1Angle/"><strong>rb::Angle</strong></a>)</li>
+<li><strong>operator-=</strong> (<a href="../classrb_1_1Angle/"><strong>rb::Angle</strong></a>)</li>
+<li><strong>operator/=</strong> (<a href="../classrb_1_1Angle/"><strong>rb::Angle</strong></a>)</li>
+<li><strong>off</strong> (<a href="../classrb_1_1Buttons/"><strong>rb::Buttons</strong></a>)</li>
+<li><strong>on</strong> (<a href="../classrb_1_1Buttons/"><strong>rb::Buttons</strong></a>)</li>
+<li><strong>onChange</strong> (<a href="../classrb_1_1Buttons/"><strong>rb::Buttons</strong></a>)</li>
+<li><strong>operator=</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>onMotorStat</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>)</li>
+<li><strong>onMeasuringDone</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+</ul>
+<h2 id="p">p</h2>
+<ul>
+<li><strong>pct</strong> (<a href="../classrb_1_1Battery/"><strong>rb::Battery</strong></a>)</li>
+<li><strong>position</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>, <a href="../classrb_1_1StupidServo/"><strong>rb::StupidServo</strong></a>)</li>
+<li><strong>power</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>, <a href="../classrb_1_1MotorChangeBuilder/"><strong>rb::MotorChangeBuilder</strong></a>)</li>
+<li><strong>pwmMaxPercent</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>, <a href="../classrb_1_1MotorChangeBuilder/"><strong>rb::MotorChangeBuilder</strong></a>)</li>
+<li><strong>Piezo</strong> (<a href="../classrb_1_1Piezo/"><strong>rb::Piezo</strong></a>)</li>
+<li><strong>pos</strong> (<a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+<li><strong>posOffline</strong> (<a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+</ul>
+<h2 id="r">r</h2>
+<ul>
+<li><strong>rad</strong> (<a href="../classrb_1_1Angle/"><strong>rb::Angle</strong></a>)</li>
+<li><strong>right</strong> (<a href="../classrb_1_1Buttons/"><strong>rb::Buttons</strong></a>)</li>
+<li><strong>red</strong> (<a href="../classrb_1_1Leds/"><strong>rb::Leds</strong></a>)</li>
+<li><strong>resetMotorsFailSafe</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>requestInfo</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>)</li>
+<li><strong>regulateServo</strong> (<a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+<li><strong>regulatorRoutine</strong> (<a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+<li><strong>regulatorRoutineTrampoline</strong> (<a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+<li><strong>reset</strong> (<a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+<li><strong>recalculateLastDistanceLocked</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+</ul>
+<h2 id="s">s</h2>
+<ul>
+<li><strong>setState</strong> (<a href="../classrb_1_1Battery/"><strong>rb::Battery</strong></a>, <a href="../classrb_1_1Buttons/"><strong>rb::Buttons</strong></a>, <a href="../classrb_1_1Piezo/"><strong>rb::Piezo</strong></a>)</li>
+<li><strong>shutdown</strong> (<a href="../classrb_1_1Battery/"><strong>rb::Battery</strong></a>)</li>
+<li><strong>schedule</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>, <a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+<li><strong>sendToCoproc</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>setMotors</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>stupidServo</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>scale</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>)</li>
+<li><strong>sendMotorReq</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>)</li>
+<li><strong>sendPositionReq</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>)</li>
+<li><strong>setConfig</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>)</li>
+<li><strong>setCurrentPosition</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>)</li>
+<li><strong>setId</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>, <a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>, <a href="../classrb_1_1StupidServo/"><strong>rb::StupidServo</strong></a>)</li>
+<li><strong>speed</strong> (<a href="../classrb_1_1Motor/"><strong>rb::Motor</strong></a>, <a href="../classrb_1_1MotorChangeBuilder/"><strong>rb::MotorChangeBuilder</strong></a>)</li>
+<li><strong>set</strong> (<a href="../classrb_1_1MotorChangeBuilder/"><strong>rb::MotorChangeBuilder</strong></a>, <a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+<li><strong>start</strong> (<a href="../classrb_1_1Piezo/"><strong>rb::Piezo</strong></a>)</li>
+<li><strong>stop</strong> (<a href="../classrb_1_1Piezo/"><strong>rb::Piezo</strong></a>, <a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+<li><strong>SmartServoBus</strong> (<a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+<li><strong>setAutoStop</strong> (<a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+<li><strong>StupidServo</strong> (<a href="../classrb_1_1StupidServo/"><strong>rb::StupidServo</strong></a>)</li>
+<li><strong>sendServoMsg</strong> (<a href="../classrb_1_1StupidServo/"><strong>rb::StupidServo</strong></a>)</li>
+<li><strong>setPosition</strong> (<a href="../classrb_1_1StupidServo/"><strong>rb::StupidServo</strong></a>)</li>
+<li><strong>setSpeedOfSound</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+<li><strong>servo_info</strong> (<a href="../structrb_1_1SmartServoBus_1_1servo__info/"><strong>rb::SmartServoBus::servo_info</strong></a>)</li>
+<li><strong>swap</strong> (<a href="../structrb_1_1Timers_1_1timer__t/"><strong>rb::Timers::timer_t</strong></a>)</li>
+</ul>
+<h2 id="t">t</h2>
+<ul>
+<li><strong>temperatureC</strong> (<a href="../classrb_1_1Battery/"><strong>rb::Battery</strong></a>)</li>
+<li><strong>timers</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>Timers</strong> (<a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+<li><strong>timerCallback</strong> (<a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+</ul>
+<h2 id="u">u</h2>
+<ul>
+<li><strong>up</strong> (<a href="../classrb_1_1Buttons/"><strong>rb::Buttons</strong></a>)</li>
+<li><strong>ultrasound</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>Ultrasound</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+</ul>
+<h2 id="w">w</h2>
+<ul>
+<li><strong>writeInt</strong> (<a href="../classrb_1_1Nvs/"><strong>rb::Nvs</strong></a>)</li>
+<li><strong>writeString</strong> (<a href="../classrb_1_1Nvs/"><strong>rb::Nvs</strong></a>)</li>
+</ul>
+<h2 id="y">y</h2>
+<ul>
+<li><strong>yellow</strong> (<a href="../classrb_1_1Leds/"><strong>rb::Leds</strong></a>)</li>
+</ul>
+<h2 id="_1">~</h2>
+<ul>
+<li><strong>~Battery</strong> (<a href="../classrb_1_1Battery/"><strong>rb::Battery</strong></a>)</li>
+<li><strong>~Buttons</strong> (<a href="../classrb_1_1Buttons/"><strong>rb::Buttons</strong></a>)</li>
+<li><strong>~Leds</strong> (<a href="../classrb_1_1Leds/"><strong>rb::Leds</strong></a>)</li>
+<li><strong>~Manager</strong> (<a href="../classrb_1_1Manager/"><strong>rb::Manager</strong></a>)</li>
+<li><strong>~MotorChangeBuilder</strong> (<a href="../classrb_1_1MotorChangeBuilder/"><strong>rb::MotorChangeBuilder</strong></a>)</li>
+<li><strong>~Nvs</strong> (<a href="../classrb_1_1Nvs/"><strong>rb::Nvs</strong></a>)</li>
+<li><strong>~Piezo</strong> (<a href="../classrb_1_1Piezo/"><strong>rb::Piezo</strong></a>)</li>
+<li><strong>~SmartServoBus</strong> (<a href="../classrb_1_1SmartServoBus/"><strong>rb::SmartServoBus</strong></a>)</li>
+<li><strong>~StupidServo</strong> (<a href="../classrb_1_1StupidServo/"><strong>rb::StupidServo</strong></a>)</li>
+<li><strong>~Timers</strong> (<a href="../classrb_1_1Timers/"><strong>rb::Timers</strong></a>)</li>
+<li><strong>~Ultrasound</strong> (<a href="../classrb_1_1Ultrasound/"><strong>rb::Ultrasound</strong></a>)</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../class_members/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Class Members" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Class Members
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../class_member_variables/" class="md-footer__link md-footer__link--next" aria-label="Next: Class Member Variables" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Class Member Variables
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.94ec81fe.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.48dfec6c.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrb_1_1Nvs" kind="class" language="C++" prot="public">
+    <compoundname>rb::Nvs</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrb_1_1Nvs_1a14ad5a9931baba16ced88865619a30f7" prot="private" static="no" mutable="no">
+        <type>nvs_handle</type>
+        <definition>nvs_handle rb::Nvs::m_handle</definition>
+        <argsstring></argsstring>
+        <name>m_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="30" column="16" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Nvs_1a4569a13fd27cc25ce61263d9065571ec" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rb::Nvs::m_dirty</definition>
+        <argsstring></argsstring>
+        <name>m_dirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="31" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrb_1_1Nvs_1a66f7b0987fdf339cff68f7c30ceb4730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Nvs::Nvs</definition>
+        <argsstring>(const char *name_space, const char *partition=&quot;nvs&quot;)</argsstring>
+        <name>Nvs</name>
+        <param>
+          <type>const char *</type>
+          <declname>name_space</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>partition</declname>
+          <defval>&quot;nvs&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="13" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.cpp" bodystart="8" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Nvs_1aa2aaa2a572b57b4fed6a391b2f60eb28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Nvs::~Nvs</definition>
+        <argsstring>()</argsstring>
+        <name>~Nvs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="14" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.cpp" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Nvs_1ae77d5edbef19abecf39001ac29a22675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Nvs::Nvs</definition>
+        <argsstring>(const Nvs &amp;)=delete</argsstring>
+        <name>Nvs</name>
+        <param>
+          <type>const <ref refid="classrb_1_1Nvs" kindref="compound">Nvs</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="15" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Nvs_1abc9b8ae3b70b8d2bd0b080f297328381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Nvs::existsInt</definition>
+        <argsstring>(const char *key)</argsstring>
+        <name>existsInt</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="17" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Nvs_1a52211ea362c8253327ce9c8de0ae525a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rb::Nvs::getInt</definition>
+        <argsstring>(const char *key)</argsstring>
+        <name>getInt</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="18" column="9" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.cpp" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Nvs_1aebe618314f0eca3ebc3d55d28d9acd23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Nvs::writeInt</definition>
+        <argsstring>(const char *key, int value)</argsstring>
+        <name>writeInt</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="19" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Nvs_1a603e155fcacf1e08bf8e7ef5a371b6df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Nvs::existsString</definition>
+        <argsstring>(const char *key)</argsstring>
+        <name>existsString</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="21" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Nvs_1a2336dabd5083c1996b89a0d153eaa09c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string rb::Nvs::getString</definition>
+        <argsstring>(const char *key)</argsstring>
+        <name>getString</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="22" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.cpp" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Nvs_1ac4e17cd6237f79c6864c0d56ff63efe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Nvs::writeString</definition>
+        <argsstring>(const char *key, const std::string &amp;value)</argsstring>
+        <name>writeString</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="23" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Nvs_1a27dff9274d0a0dde623ca297bb84b9f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Nvs::commit</definition>
+        <argsstring>()</argsstring>
+        <name>commit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="25" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrb_1_1Nvs_1ab57f79d9cbe7c4919d9c05cb149553dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t rb::Nvs::initFlash</definition>
+        <argsstring>()</argsstring>
+        <name>initFlash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="28" column="15" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.cpp" bodystart="21" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/RBCXNvs.h" line="11" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXNvs.h" bodystart="11" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classrb_1_1Nvs_1a27dff9274d0a0dde623ca297bb84b9f9" prot="public" virt="non-virtual"><scope>rb::Nvs</scope><name>commit</name></member>
+      <member refid="classrb_1_1Nvs_1abc9b8ae3b70b8d2bd0b080f297328381" prot="public" virt="non-virtual"><scope>rb::Nvs</scope><name>existsInt</name></member>
+      <member refid="classrb_1_1Nvs_1a603e155fcacf1e08bf8e7ef5a371b6df" prot="public" virt="non-virtual"><scope>rb::Nvs</scope><name>existsString</name></member>
+      <member refid="classrb_1_1Nvs_1a52211ea362c8253327ce9c8de0ae525a" prot="public" virt="non-virtual"><scope>rb::Nvs</scope><name>getInt</name></member>
+      <member refid="classrb_1_1Nvs_1a2336dabd5083c1996b89a0d153eaa09c" prot="public" virt="non-virtual"><scope>rb::Nvs</scope><name>getString</name></member>
+      <member refid="classrb_1_1Nvs_1ab57f79d9cbe7c4919d9c05cb149553dc" prot="private" virt="non-virtual"><scope>rb::Nvs</scope><name>initFlash</name></member>
+      <member refid="classrb_1_1Nvs_1a4569a13fd27cc25ce61263d9065571ec" prot="private" virt="non-virtual"><scope>rb::Nvs</scope><name>m_dirty</name></member>
+      <member refid="classrb_1_1Nvs_1a14ad5a9931baba16ced88865619a30f7" prot="private" virt="non-virtual"><scope>rb::Nvs</scope><name>m_handle</name></member>
+      <member refid="classrb_1_1Nvs_1a66f7b0987fdf339cff68f7c30ceb4730" prot="public" virt="non-virtual"><scope>rb::Nvs</scope><name>Nvs</name></member>
+      <member refid="classrb_1_1Nvs_1ae77d5edbef19abecf39001ac29a22675" prot="public" virt="non-virtual"><scope>rb::Nvs</scope><name>Nvs</name></member>
+      <member refid="classrb_1_1Nvs_1aebe618314f0eca3ebc3d55d28d9acd23" prot="public" virt="non-virtual"><scope>rb::Nvs</scope><name>writeInt</name></member>
+      <member refid="classrb_1_1Nvs_1ac4e17cd6237f79c6864c0d56ff63efe5" prot="public" virt="non-virtual"><scope>rb::Nvs</scope><name>writeString</name></member>
+      <member refid="classrb_1_1Nvs_1aa2aaa2a572b57b4fed6a391b2f60eb28" prot="public" virt="non-virtual"><scope>rb::Nvs</scope><name>~Nvs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

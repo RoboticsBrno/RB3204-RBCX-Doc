@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="RBCXMotor_8h" kind="file" language="C++">
+    <compoundname>RBCXMotor.h</compoundname>
+    <includes local="no">atomic</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">vector</includes>
+    <includes refid="RBCXPinout_8h" local="yes">RBCXPinout.h</includes>
+    <includes refid="RBCXUtil_8h" local="yes">RBCXUtil.h</includes>
+    <includes local="yes">rbcx.pb.h</includes>
+    <includedby refid="RBCXManager_8h" local="yes">build/RB3204-RBCX-library/src/RBCXManager.h</includedby>
+    <includedby refid="RBCXMotor_8cpp" local="yes">build/RB3204-RBCX-library/src/RBCXMotor.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>atomic</label>
+      </node>
+      <node id="3">
+        <label>functional</label>
+      </node>
+      <node id="9">
+        <label>driver/gpio.h</label>
+      </node>
+      <node id="12">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="7">
+        <label>RBCXPinout.h</label>
+        <link refid="RBCXPinout_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>driver/adc.h</label>
+      </node>
+      <node id="14">
+        <label>ratio</label>
+      </node>
+      <node id="15">
+        <label>rbcx.pb.h</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>RBCXUtil.h</label>
+        <link refid="RBCXUtil_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mutex</label>
+      </node>
+      <node id="11">
+        <label>chrono</label>
+      </node>
+      <node id="13">
+        <label>freertos/task.h</label>
+      </node>
+      <node id="1">
+        <label>build/RB3204-RBCX-library/src/RBCXMotor.h</label>
+        <link refid="RBCXMotor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>build/RB3204-RBCX-library/src/RBCXManager.h</label>
+        <link refid="RBCXManager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>build/RB3204-RBCX-library/src/RBCX.h</label>
+        <link refid="RBCX_8h_source"/>
+      </node>
+      <node id="1">
+        <label>build/RB3204-RBCX-library/src/RBCXMotor.h</label>
+        <link refid="RBCXMotor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classrb_1_1Motor" prot="public">rb::Motor</innerclass>
+    <innernamespace refid="namespacerb">rb</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atomic&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXPinout.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXUtil.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rbcx.pb.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">rb<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Manager;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MotorChangeBuilder;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classrb_1_1Motor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrb_1_1Motor" kindref="compound">Motor</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrb_1_1Manager" kindref="compound">Manager</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;void(<ref refid="classrb_1_1Motor" kindref="compound">Motor</ref>&amp;)&gt;<sp/>callback_t;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>MotorId<sp/>id()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_id;<sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>position()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_position;<sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>requestInfo(callback_t<sp/>cb);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Motor_1a4231c6f9df4a912598406359d1b919c6" kindref="member">power</ref>(int16_t<sp/>value);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Motor_1a81cc3d1e77b24b9fdd233b22b6110c00" kindref="member">speed</ref>(int16_t<sp/>ticksPerSecond);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Motor_1a2748ddcc1f11819ab21f29ba816ef980" kindref="member">brake</ref>(uint16_t<sp/>brakingPower);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Motor_1a009ae376c66370070dcb077e88569a3b" kindref="member">pwmMaxPercent</ref>(int8_t<sp/>percent);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classrb_1_1Motor_1a009ae376c66370070dcb077e88569a3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="classrb_1_1Motor_1a009ae376c66370070dcb077e88569a3b" kindref="member">pwmMaxPercent</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_pwm_max_percent;<sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Motor_1a4a4078689477ef874ea01e5d6150de32" kindref="member">driveToValue</ref>(int32_t<sp/>positionAbsolute,<sp/>int16_t<sp/>speedTicksPerSecond,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>callback_t<sp/>callback<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Motor_1aa67d5fdee388057fb7e88e1ac5f6ef79" kindref="member">drive</ref>(int32_t<sp/>positionRelative,<sp/>int16_t<sp/>speedTicksPerSecond,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>callback_t<sp/>callback<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Motor_1a3f015ff35c53242047e6e40da13acb94" kindref="member">setCurrentPosition</ref>(int32_t<sp/>pos<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Motor_1a6f122e443fb46103139e4c50cae5f6cd" kindref="member">setConfig</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MotorConfig&amp;<sp/>cfg);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Motor" kindref="compound">Motor</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Motor" kindref="compound">Motor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Motor" kindref="compound">Motor</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setId(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{<sp/>m_id<sp/>=<sp/>id;<sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sendPositionReq(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>additive,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CoprocReq_MotorReq_SetPosition&amp;<sp/>req,<sp/>callback_t&amp;&amp;<sp/>callback);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sendMotorReq(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CoprocReq_MotorReq&amp;<sp/>req);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onMotorStat(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CoprocStat_MotorStat&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>scale(int16_t<sp/>val);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>callback_t<sp/>m_positionCb;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;callback_t&gt;<sp/>m_infoCbs;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>CoprocReq_MotorReq<sp/>m_lastReq;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mutex<sp/>m_mutex;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>MotorId<sp/>m_id;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>MotorMode<sp/>m_mode;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>m_position;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>m_power;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>m_speed;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/>m_pwm_max_percent;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rb</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="build/RB3204-RBCX-library/src/RBCXMotor.h"/>
+  </compounddef>
+</doxygen>

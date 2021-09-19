@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="RBCXManager_8h" kind="file" language="C++">
+    <compoundname>RBCXManager.h</compoundname>
+    <includes local="no">freertos/FreeRTOS.h</includes>
+    <includes local="no">freertos/queue.h</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">list</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">vector</includes>
+    <includes refid="RBCXBattery_8h" local="yes">RBCXBattery.h</includes>
+    <includes refid="RBCXButtons_8h" local="yes">RBCXButtons.h</includes>
+    <includes refid="RBCXLeds_8h" local="yes">RBCXLeds.h</includes>
+    <includes refid="RBCXMotor_8h" local="yes">RBCXMotor.h</includes>
+    <includes refid="RBCXPiezo_8h" local="yes">RBCXPiezo.h</includes>
+    <includes refid="RBCXSmartServo_8h" local="yes">RBCXSmartServo.h</includes>
+    <includes refid="RBCXStupidServo_8h" local="yes">RBCXStupidServo.h</includes>
+    <includes refid="RBCXTimers_8h" local="yes">RBCXTimers.h</includes>
+    <includes refid="RBCXUltrasound_8h" local="yes">RBCXUltrasound.h</includes>
+    <includes local="yes">coproc_link_parser.h</includes>
+    <includes local="yes">rbcx.pb.h</includes>
+    <includedby refid="RBCX_8h" local="yes">build/RB3204-RBCX-library/src/RBCX.h</includedby>
+    <includedby refid="RBCXBattery_8cpp" local="yes">build/RB3204-RBCX-library/src/RBCXBattery.cpp</includedby>
+    <includedby refid="RBCXLeds_8cpp" local="yes">build/RB3204-RBCX-library/src/RBCXLeds.cpp</includedby>
+    <includedby refid="RBCXManager_8cpp" local="yes">build/RB3204-RBCX-library/src/RBCXManager.cpp</includedby>
+    <includedby refid="RBCXMotor_8cpp" local="yes">build/RB3204-RBCX-library/src/RBCXMotor.cpp</includedby>
+    <includedby refid="RBCXPiezo_8cpp" local="yes">build/RB3204-RBCX-library/src/RBCXPiezo.cpp</includedby>
+    <includedby refid="RBCXSmartServo_8cpp" local="yes">build/RB3204-RBCX-library/src/RBCXSmartServo.cpp</includedby>
+    <includedby refid="RBCXStupidServo_8cpp" local="yes">build/RB3204-RBCX-library/src/RBCXStupidServo.cpp</includedby>
+    <includedby refid="RBCXTimers_8cpp" local="yes">build/RB3204-RBCX-library/src/RBCXTimers.cpp</includedby>
+    <includedby refid="RBCXUltrasound_8cpp" local="yes">build/RB3204-RBCX-library/src/RBCXUltrasound.cpp</includedby>
+    <incdepgraph>
+      <node id="27">
+        <label>RBCXStupidServo.h</label>
+        <link refid="RBCXStupidServo_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>list</label>
+      </node>
+      <node id="18">
+        <label>atomic</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="23">
+        <label>RBCXSmartServo.h</label>
+        <link refid="RBCXSmartServo_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>driver/gpio.h</label>
+      </node>
+      <node id="2">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="29">
+        <label>RBCXTimers.h</label>
+        <link refid="RBCXTimers_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stdint.h</label>
+      </node>
+      <node id="26">
+        <label>cmath</label>
+      </node>
+      <node id="30">
+        <label>esp_timer.h</label>
+      </node>
+      <node id="19">
+        <label>RBCXPinout.h</label>
+        <link refid="RBCXPinout_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>freertos/queue.h</label>
+      </node>
+      <node id="20">
+        <label>driver/adc.h</label>
+      </node>
+      <node id="15">
+        <label>ratio</label>
+      </node>
+      <node id="10">
+        <label>rbcx.pb.h</label>
+      </node>
+      <node id="25">
+        <label>RBCXAngle.h</label>
+        <link refid="RBCXAngle_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>condition_variable</label>
+      </node>
+      <node id="1">
+        <label>build/RB3204-RBCX-library/src/RBCXManager.h</label>
+        <link refid="RBCXManager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>RBCXLeds.h</label>
+        <link refid="RBCXLeds_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>RBCXBattery.h</label>
+        <link refid="RBCXBattery_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>RBCXUltrasound.h</label>
+        <link refid="RBCXUltrasound_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="22">
+        <label>RBCXPiezo.h</label>
+        <link refid="RBCXPiezo_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>RBCXUtil.h</label>
+        <link refid="RBCXUtil_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>RBCXButtons.h</label>
+        <link refid="RBCXButtons_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mutex</label>
+      </node>
+      <node id="13">
+        <label>chrono</label>
+      </node>
+      <node id="14">
+        <label>freertos/task.h</label>
+      </node>
+      <node id="33">
+        <label>coproc_link_parser.h</label>
+      </node>
+      <node id="17">
+        <label>RBCXMotor.h</label>
+        <link refid="RBCXMotor_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>FreeRTOS.h</label>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>build/RB3204-RBCX-library/src/RBCXManager.h</label>
+        <link refid="RBCXManager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>build/RB3204-RBCX-library/src/RBCX.h</label>
+        <link refid="RBCX_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classrb_1_1Manager" prot="public">rb::Manager</innerclass>
+    <innerclass refid="classrb_1_1MotorChangeBuilder" prot="public">rb::MotorChangeBuilder</innerclass>
+    <innernamespace refid="namespacerb">rb</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;freertos/FreeRTOS.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;freertos/queue.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXBattery.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXButtons.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXLeds.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXMotor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXPiezo.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXSmartServo.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXStupidServo.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXTimers.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXUltrasound.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;coproc_link_parser.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rbcx.pb.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">rb<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MotorChangeBuilder;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>ManagerInstallFlags<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>MAN_NONE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>MAN_DISABLE_MOTOR_FAILSAFE<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>0),</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ManagerInstallFlags<sp/>operator|(</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>ManagerInstallFlags<sp/>a,<sp/>ManagerInstallFlags<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">ManagerInstallFlags</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(a)<sp/>|<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(b));</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Periodically<sp/>print<sp/>info<sp/>about<sp/>all<sp/>RBCX<sp/>tasks<sp/>to<sp/>the<sp/>console</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>RB_DEBUG_MONITOR_TASKS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classrb_1_1Manager" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrb_1_1Manager" kindref="compound">Manager</ref><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Encoder;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">PcntInterruptHandler;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrb_1_1Motor" kindref="compound">Motor</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Manager" kindref="compound">Manager</ref>(<ref refid="classrb_1_1Manager" kindref="compound">Manager</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator=(<ref refid="classrb_1_1Manager" kindref="compound">Manager</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classrb_1_1Manager_1a10bfc9edd111072d47db54260462ee08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Manager" kindref="compound">Manager</ref>&amp;<sp/><ref refid="classrb_1_1Manager_1a10bfc9edd111072d47db54260462ee08" kindref="member">get</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Manager" kindref="compound">Manager</ref><sp/>instance;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>instance;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Manager_1a1ab28166aa4799726fd0a4fdc8deaf40" kindref="member">install</ref>(ManagerInstallFlags<sp/>flags<sp/>=<sp/>MAN_NONE,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BaseType_t<sp/>managerLoopStackSize<sp/>=<sp/>3072);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//SmartServoBus&amp;<sp/>initSmartServoBus(uint8_t<sp/>servo_count);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//SmartServoBus&amp;<sp/>servoBus()<sp/>{<sp/>return<sp/>m_servos;<sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classrb_1_1Manager_1a61fbcbfb3aed02ee34450b6b8a8b2c9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Ultrasound" kindref="compound">Ultrasound</ref>&amp;<sp/><ref refid="classrb_1_1Manager_1a61fbcbfb3aed02ee34450b6b8a8b2c9b" kindref="member">ultrasound</ref>(uint8_t<sp/>index)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_ultrasounds[index];<sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1StupidServo" kindref="compound">StupidServo</ref>&amp;<sp/>stupidServo(uint8_t<sp/>index)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_stupidServos[index];<sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>Piezo&amp;<sp/>piezo()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_piezo;<sp/>}<sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>Battery&amp;<sp/>battery()<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_battery;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>Leds&amp;<sp/>leds()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_leds;<sp/>}<sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>Buttons&amp;<sp/>buttons()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_buttons;<sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>Motor&amp;<sp/>motor(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_motors[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(id)];</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>};<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>MotorChangeBuilder</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Manager_1abb2a07fadc2024cff36ac8b360a379fb" kindref="member">setMotors</ref>();<sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classrb_1_1Manager_1ab8e317b5cb65d14c4777b2ae45351afc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Manager_1ab8e317b5cb65d14c4777b2ae45351afc" kindref="member">schedule</ref>(uint32_t<sp/>period_ms,<sp/>std::function&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">()&gt;<sp/>callback)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timers().<ref refid="classrb_1_1Timers_1a7816c963a9dea456ea73297353693b6a" kindref="member">schedule</ref>(period_ms,<sp/>callback);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1Timers" kindref="compound">Timers</ref>&amp;<sp/>timers()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rb::Timers::get();<sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>internal<sp/>api<sp/>to<sp/>monitor<sp/>RBCX<sp/>tasks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>monitorTask(TaskHandle_t<sp/>task);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sendToCoproc(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CoprocReq&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CoprocStat_VersionStat&amp;<sp/>coprocFwVersion()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_coprocFwVersion;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>coprocFwVersionAssert(uint32_t<sp/>minVersion,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>Manager();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>~Manager();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>consumerRoutineTrampoline(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>cookie);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>consumerRoutine();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>keepaliveRoutine(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>cookie);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resetMotorsFailSafe();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>motorsFailSafe();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>RB_DEBUG_MONITOR_TASKS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>printTasksDebugInfo();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;TaskHandle_t&gt;<sp/>m_tasks;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mutex<sp/>m_tasks_mutex;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>TaskHandle_t<sp/>m_keepaliveTask;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>CoprocCodec<sp/>m_codec;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>m_txBuf[CoprocCodec::MaxFrameSize];</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mutex<sp/>m_codecTxMutex;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>m_coprocWatchdogTimer;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>CoprocStat_VersionStat<sp/>m_coprocFwVersion;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>SemaphoreHandle_t<sp/>m_coprocSemaphore;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>TickType_t<sp/>m_motors_last_set;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>Motor<sp/>m_motors[size_t(MotorId::MAX)];</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Piezo" kindref="compound">rb::Piezo</ref><sp/>m_piezo;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Leds" kindref="compound">rb::Leds</ref><sp/>m_leds;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Buttons" kindref="compound">rb::Buttons</ref><sp/>m_buttons;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Battery" kindref="compound">rb::Battery</ref><sp/>m_battery;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//rb::SmartServoBus<sp/>m_servos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1Ultrasound" kindref="compound">rb::Ultrasound</ref><sp/>m_ultrasounds[UltrasoundsCount];</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1StupidServo" kindref="compound">rb::StupidServo</ref><sp/>m_stupidServos[StupidServosCount];</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="classrb_1_1MotorChangeBuilder" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>&amp;<sp/>o)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>(<ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>&amp;&amp;<sp/>o);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>&amp;<sp/><ref refid="classrb_1_1MotorChangeBuilder_1ac21271f3221ade65a1247b5e86077136" kindref="member">power</ref>(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>int16_t<sp/>value);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>&amp;<sp/><ref refid="classrb_1_1MotorChangeBuilder_1adacc07cac8d24415fc83013d2adc98b1" kindref="member">speed</ref>(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>int16_t<sp/>ticksPerSecond);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>&amp;<sp/><ref refid="classrb_1_1MotorChangeBuilder_1a9b2659215fe8e1911a0003547a59be4a" kindref="member">brake</ref>(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>uint16_t<sp/>brakingPower);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>&amp;<sp/><ref refid="classrb_1_1MotorChangeBuilder_1adfd74ad987be641499277fdeced9472c" kindref="member">pwmMaxPercent</ref>(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>int8_t<sp/>percent);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>&amp;<sp/>drive(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>int32_t<sp/>positionRelative,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/>speedTicksPerSecond,<sp/>Motor::callback_t<sp/>callback<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>&amp;<sp/>driveToValue(MotorId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>int32_t<sp/>positionAbsolute,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/>speedTicksPerSecond,<sp/>Motor::callback_t<sp/>callback<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrb_1_1MotorChangeBuilder_1a11ebf755b9412e2170e66158c4e35a3a" kindref="member">set</ref>();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::function&lt;void()&gt;&gt;<sp/>m_calls;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rb</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="build/RB3204-RBCX-library/src/RBCXManager.h"/>
+  </compounddef>
+</doxygen>

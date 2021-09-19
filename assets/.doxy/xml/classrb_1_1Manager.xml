@@ -1,0 +1,698 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrb_1_1Manager" kind="class" language="C++" prot="public">
+    <compoundname>rb::Manager</compoundname>
+    <includes refid="RBCXManager_8h" local="no">RBCXManager.h</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classrb_1_1Manager_1a86ac95761a7db3069f76d21beabafad1" prot="private" static="no" mutable="no">
+        <type>TaskHandle_t</type>
+        <definition>TaskHandle_t rb::Manager::m_keepaliveTask</definition>
+        <argsstring></argsstring>
+        <name>m_keepaliveTask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="151" column="18" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1ae201f8f729a4c8f5283c17408be98a4c" prot="private" static="no" mutable="no">
+        <type>CoprocCodec</type>
+        <definition>CoprocCodec rb::Manager::m_codec</definition>
+        <argsstring></argsstring>
+        <name>m_codec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="153" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1aac206e6a70b8ef0b1236bc153d5c091f" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rb::Manager::m_txBuf[CoprocCodec::MaxFrameSize]</definition>
+        <argsstring>[CoprocCodec::MaxFrameSize]</argsstring>
+        <name>m_txBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="154" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1a245431a3353b8f2cc255d19204b88e73" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex rb::Manager::m_codecTxMutex</definition>
+        <argsstring></argsstring>
+        <name>m_codecTxMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="155" column="16" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1abd8c50e0860ff8e200be710f483b6b18" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t rb::Manager::m_coprocWatchdogTimer</definition>
+        <argsstring></argsstring>
+        <name>m_coprocWatchdogTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="157" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1adfe4ca0f3e9119f956a9267b492d522d" prot="private" static="no" mutable="no">
+        <type>CoprocStat_VersionStat</type>
+        <definition>CoprocStat_VersionStat rb::Manager::m_coprocFwVersion</definition>
+        <argsstring></argsstring>
+        <name>m_coprocFwVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="159" column="28" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1a5db5bc909d03a26f10fb2181de42ab18" prot="private" static="no" mutable="no">
+        <type>SemaphoreHandle_t</type>
+        <definition>SemaphoreHandle_t rb::Manager::m_coprocSemaphore</definition>
+        <argsstring></argsstring>
+        <name>m_coprocSemaphore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="160" column="23" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1a9e147a07eafa0e95b2db42ded90c1ecf" prot="private" static="no" mutable="no">
+        <type>TickType_t</type>
+        <definition>TickType_t rb::Manager::m_motors_last_set</definition>
+        <argsstring></argsstring>
+        <name>m_motors_last_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="162" column="16" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1a3c7d84f942fa46a5088d5b1ad02da302" prot="private" static="no" mutable="no">
+        <type><ref refid="classrb_1_1Motor" kindref="compound">Motor</ref></type>
+        <definition>Motor rb::Manager::m_motors[size_t(MotorId::MAX)]</definition>
+        <argsstring>[size_t(MotorId::MAX)]</argsstring>
+        <name>m_motors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="163" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1ac56bc4973aaa1010fed4b1c7efa6ecb6" prot="private" static="no" mutable="no">
+        <type><ref refid="classrb_1_1Piezo" kindref="compound">rb::Piezo</ref></type>
+        <definition>rb::Piezo rb::Manager::m_piezo</definition>
+        <argsstring></argsstring>
+        <name>m_piezo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="165" column="15" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1aaa24b7eb68cdffdcb5f72c75dc168241" prot="private" static="no" mutable="no">
+        <type><ref refid="classrb_1_1Leds" kindref="compound">rb::Leds</ref></type>
+        <definition>rb::Leds rb::Manager::m_leds</definition>
+        <argsstring></argsstring>
+        <name>m_leds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="166" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1aee2b0fe406a365acf23085ab7a31e342" prot="private" static="no" mutable="no">
+        <type><ref refid="classrb_1_1Buttons" kindref="compound">rb::Buttons</ref></type>
+        <definition>rb::Buttons rb::Manager::m_buttons</definition>
+        <argsstring></argsstring>
+        <name>m_buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="167" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1a08c560a0ba9c71285a39d38147699e0e" prot="private" static="no" mutable="no">
+        <type><ref refid="classrb_1_1Battery" kindref="compound">rb::Battery</ref></type>
+        <definition>rb::Battery rb::Manager::m_battery</definition>
+        <argsstring></argsstring>
+        <name>m_battery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="168" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1a09b1f6c251fe66a7aa87e7cf461db4f9" prot="private" static="no" mutable="no">
+        <type><ref refid="classrb_1_1Ultrasound" kindref="compound">rb::Ultrasound</ref></type>
+        <definition>rb::Ultrasound rb::Manager::m_ultrasounds[UltrasoundsCount]</definition>
+        <argsstring>[UltrasoundsCount]</argsstring>
+        <name>m_ultrasounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="170" column="20" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrb_1_1Manager_1a5418e392f6d369abb1284c6a988db88f" prot="private" static="no" mutable="no">
+        <type><ref refid="classrb_1_1StupidServo" kindref="compound">rb::StupidServo</ref></type>
+        <definition>rb::StupidServo rb::Manager::m_stupidServos[StupidServosCount]</definition>
+        <argsstring>[StupidServosCount]</argsstring>
+        <name>m_stupidServos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="171" column="21" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1a1ab28166aa4799726fd0a4fdc8deaf40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Manager::install</definition>
+        <argsstring>(ManagerInstallFlags flags=MAN_NONE, BaseType_t managerLoopStackSize=3072)</argsstring>
+        <name>install</name>
+        <param>
+          <type>ManagerInstallFlags</type>
+          <declname>flags</declname>
+          <defval>MAN_NONE</defval>
+        </param>
+        <param>
+          <type>BaseType_t</type>
+          <declname>managerLoopStackSize</declname>
+          <defval>3072</defval>
+        </param>
+        <briefdescription>
+<para>Initialize the manager - must be called once at the start of the program. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>modify the manager&apos;s behavior or toggle some features. SeeManagerInstallFlags} enum. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="75" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="25" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1a61fbcbfb3aed02ee34450b6b8a8b2c9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Ultrasound" kindref="compound">Ultrasound</ref> &amp;</type>
+        <definition>Ultrasound&amp; rb::Manager::ultrasound</definition>
+        <argsstring>(uint8_t index)</argsstring>
+        <name>ultrasound</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the UART servo bus for intelligent servos LX-16. TODO: smart servos not implemented! </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Instance of the class <ref refid="classrb_1_1SmartServoBus" kindref="compound">SmartServoBus</ref> which manage the intelligent servos.</para>
+</simplesect>
+Get the <ref refid="classrb_1_1SmartServoBus" kindref="compound">SmartServoBus</ref> for working with intelligent servos LX-16.. <simplesect kind="return"><para>Instance of the class <ref refid="classrb_1_1SmartServoBus" kindref="compound">SmartServoBus</ref> which manage the intelligent servos. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="90" column="16" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1a43b478966a7fc22c9364219fc1b221ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1StupidServo" kindref="compound">StupidServo</ref> &amp;</type>
+        <definition>StupidServo&amp; rb::Manager::stupidServo</definition>
+        <argsstring>(uint8_t index)</argsstring>
+        <name>stupidServo</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="92" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1aac25a5003ef2eb62d3b2136e93eed179" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Buttons" kindref="compound">Buttons</ref> &amp;</type>
+        <definition>Buttons&amp; rb::Manager::buttons</definition>
+        <argsstring>()</argsstring>
+        <name>buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="99" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1a78dc13e11831f050bb55324357750c31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Motor" kindref="compound">Motor</ref> &amp;</type>
+        <definition>Motor&amp; rb::Manager::motor</definition>
+        <argsstring>(MotorId id)</argsstring>
+        <name>motor</name>
+        <param>
+          <type>MotorId</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="101" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1abb2a07fadc2024cff36ac8b360a379fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref></type>
+        <definition>MotorChangeBuilder rb::Manager::setMotors</definition>
+        <argsstring>()</argsstring>
+        <name>setMotors</name>
+        <briefdescription>
+<para>Get a motor instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create motor power change builder: <ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="105" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="208" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1ab8e317b5cb65d14c4777b2ae45351afc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Manager::schedule</definition>
+        <argsstring>(uint32_t period_ms, std::function&lt; bool()&gt; callback)</argsstring>
+        <name>schedule</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>period_ms</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool()&gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Schedule callback to fire after period (in millisecond). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true from the callback to schedule periodically, false to not (singleshot timer).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>period_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is period in which will be the schedule callback fired </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a function which will be schedule with the set period. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="115" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1a6071fb5cf7117ae3893f77ffa5002d50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Timers" kindref="compound">Timers</ref> &amp;</type>
+        <definition>Timers&amp; rb::Manager::timers</definition>
+        <argsstring>()</argsstring>
+        <name>timers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="119" column="19" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1aa98f2dde5f969e3e7a5f42c2fef29982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Manager::monitorTask</definition>
+        <argsstring>(TaskHandle_t task)</argsstring>
+        <name>monitorTask</name>
+        <param>
+          <type>TaskHandle_t</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="122" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="210" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1a11779d2a10c101790d22719f18b07dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Manager::sendToCoproc</definition>
+        <argsstring>(const CoprocReq &amp;msg)</argsstring>
+        <name>sendToCoproc</name>
+        <param>
+          <type>const CoprocReq &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="124" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="165" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1aa3ed1dd227618400e00c8e1a81a652eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const CoprocStat_VersionStat &amp;</type>
+        <definition>const CoprocStat_VersionStat&amp; rb::Manager::coprocFwVersion</definition>
+        <argsstring>() const</argsstring>
+        <name>coprocFwVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="126" column="34" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1a49db3d7799ebb5f8a5317d95ecf5f55b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Manager::coprocFwVersionAssert</definition>
+        <argsstring>(uint32_t minVersion, const char *name)</argsstring>
+        <name>coprocFwVersionAssert</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>minVersion</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="130" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="177" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1a02e1837c65fec7560220fea89441d261" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Manager::Manager</definition>
+        <argsstring>()</argsstring>
+        <name>Manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="133" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1a137bc8af1a4ac0d3e3299ebbd1a1b91c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Manager::~Manager</definition>
+        <argsstring>()</argsstring>
+        <name>~Manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="134" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1aa35aff3544f42b04a190a15058bf9ecb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Manager::consumerRoutine</definition>
+        <argsstring>()</argsstring>
+        <name>consumerRoutine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="137" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="101" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1af85a3d76b1ab6c91dd3b0b41315b85b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Manager::resetMotorsFailSafe</definition>
+        <argsstring>()</argsstring>
+        <name>resetMotorsFailSafe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="141" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="191" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1a9f2a0d0b41f8ef8355816bd11ae5497f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rb::Manager::motorsFailSafe</definition>
+        <argsstring>()</argsstring>
+        <name>motorsFailSafe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="142" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="193" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1a04a76d7a58f1dcf67338ec51728d2849" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Manager::consumerRoutineTrampoline</definition>
+        <argsstring>(void *cookie)</argsstring>
+        <name>consumerRoutineTrampoline</name>
+        <param>
+          <type>void *</type>
+          <declname>cookie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="136" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1abae8665fdf12f62a11afa3ef9396d3e1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Manager::keepaliveRoutine</definition>
+        <argsstring>(void *cookie)</argsstring>
+        <name>keepaliveRoutine</name>
+        <param>
+          <type>void *</type>
+          <declname>cookie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="139" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="152" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classrb_1_1Manager_1a358b05ffa74248e33c9aa4bcff02d0e8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class MotorChangeBuilder</definition>
+        <argsstring></argsstring>
+        <name>MotorChangeBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="50" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classrb_1_1Manager_1a9f0ec0ed691ee924e57d5e71c780681a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Encoder</definition>
+        <argsstring></argsstring>
+        <name>Encoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="51" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classrb_1_1Manager_1a698ce4ffb29680794dbfeca5036b7381" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PcntInterruptHandler</definition>
+        <argsstring></argsstring>
+        <name>PcntInterruptHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="52" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classrb_1_1Manager_1a2abea0a22831274b2894ed2675e909b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Motor</definition>
+        <argsstring></argsstring>
+        <name>Motor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="53" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrb_1_1Manager_1abf08bdc9c58a9452c5c0f6312627b651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::Manager::Manager</definition>
+        <argsstring>(Manager const &amp;)=delete</argsstring>
+        <name>Manager</name>
+        <param>
+          <type><ref refid="classrb_1_1Manager" kindref="compound">Manager</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="56" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1Manager_1afb01225d454a7fcbe6c55e9729251804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Manager::operator=</definition>
+        <argsstring>(Manager const &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classrb_1_1Manager" kindref="compound">Manager</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="57" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classrb_1_1Manager_1a10bfc9edd111072d47db54260462ee08" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrb_1_1Manager" kindref="compound">Manager</ref> &amp;</type>
+        <definition>static Manager&amp; rb::Manager::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+<para>Get manager instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Always returns the same instance and is thread-safe. Don&apos;t forget to call <ref refid="classrb_1_1Manager_1a1ab28166aa4799726fd0a4fdc8deaf40" kindref="member">install()</ref> to initialize the manager at the start of your program, when you first get the instance. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="65" column="20" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The main library class for working with the RBCX board. Call the <ref refid="classrb_1_1Manager_1a1ab28166aa4799726fd0a4fdc8deaf40" kindref="member">install()</ref> method at the start of your program. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="49" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="49" bodyend="172"/>
+    <listofallmembers>
+      <member refid="classrb_1_1Manager_1aac25a5003ef2eb62d3b2136e93eed179" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>buttons</name></member>
+      <member refid="classrb_1_1Manager_1aa35aff3544f42b04a190a15058bf9ecb" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>consumerRoutine</name></member>
+      <member refid="classrb_1_1Manager_1a04a76d7a58f1dcf67338ec51728d2849" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>consumerRoutineTrampoline</name></member>
+      <member refid="classrb_1_1Manager_1aa3ed1dd227618400e00c8e1a81a652eb" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>coprocFwVersion</name></member>
+      <member refid="classrb_1_1Manager_1a49db3d7799ebb5f8a5317d95ecf5f55b" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>coprocFwVersionAssert</name></member>
+      <member refid="classrb_1_1Manager_1a9f0ec0ed691ee924e57d5e71c780681a" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>Encoder</name></member>
+      <member refid="classrb_1_1Manager_1a10bfc9edd111072d47db54260462ee08" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>get</name></member>
+      <member refid="classrb_1_1Manager_1a1ab28166aa4799726fd0a4fdc8deaf40" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>install</name></member>
+      <member refid="classrb_1_1Manager_1abae8665fdf12f62a11afa3ef9396d3e1" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>keepaliveRoutine</name></member>
+      <member refid="classrb_1_1Manager_1a08c560a0ba9c71285a39d38147699e0e" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_battery</name></member>
+      <member refid="classrb_1_1Manager_1aee2b0fe406a365acf23085ab7a31e342" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_buttons</name></member>
+      <member refid="classrb_1_1Manager_1ae201f8f729a4c8f5283c17408be98a4c" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_codec</name></member>
+      <member refid="classrb_1_1Manager_1a245431a3353b8f2cc255d19204b88e73" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_codecTxMutex</name></member>
+      <member refid="classrb_1_1Manager_1adfe4ca0f3e9119f956a9267b492d522d" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_coprocFwVersion</name></member>
+      <member refid="classrb_1_1Manager_1a5db5bc909d03a26f10fb2181de42ab18" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_coprocSemaphore</name></member>
+      <member refid="classrb_1_1Manager_1abd8c50e0860ff8e200be710f483b6b18" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_coprocWatchdogTimer</name></member>
+      <member refid="classrb_1_1Manager_1a86ac95761a7db3069f76d21beabafad1" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_keepaliveTask</name></member>
+      <member refid="classrb_1_1Manager_1aaa24b7eb68cdffdcb5f72c75dc168241" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_leds</name></member>
+      <member refid="classrb_1_1Manager_1a3c7d84f942fa46a5088d5b1ad02da302" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_motors</name></member>
+      <member refid="classrb_1_1Manager_1a9e147a07eafa0e95b2db42ded90c1ecf" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_motors_last_set</name></member>
+      <member refid="classrb_1_1Manager_1ac56bc4973aaa1010fed4b1c7efa6ecb6" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_piezo</name></member>
+      <member refid="classrb_1_1Manager_1a5418e392f6d369abb1284c6a988db88f" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_stupidServos</name></member>
+      <member refid="classrb_1_1Manager_1aac206e6a70b8ef0b1236bc153d5c091f" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_txBuf</name></member>
+      <member refid="classrb_1_1Manager_1a09b1f6c251fe66a7aa87e7cf461db4f9" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>m_ultrasounds</name></member>
+      <member refid="classrb_1_1Manager_1abf08bdc9c58a9452c5c0f6312627b651" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>Manager</name></member>
+      <member refid="classrb_1_1Manager_1a02e1837c65fec7560220fea89441d261" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>Manager</name></member>
+      <member refid="classrb_1_1Manager_1aa98f2dde5f969e3e7a5f42c2fef29982" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>monitorTask</name></member>
+      <member refid="classrb_1_1Manager_1a78dc13e11831f050bb55324357750c31" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>motor</name></member>
+      <member refid="classrb_1_1Manager_1a2abea0a22831274b2894ed2675e909b4" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>Motor</name></member>
+      <member refid="classrb_1_1Manager_1a358b05ffa74248e33c9aa4bcff02d0e8" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>MotorChangeBuilder</name></member>
+      <member refid="classrb_1_1Manager_1a9f2a0d0b41f8ef8355816bd11ae5497f" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>motorsFailSafe</name></member>
+      <member refid="classrb_1_1Manager_1afb01225d454a7fcbe6c55e9729251804" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>operator=</name></member>
+      <member refid="classrb_1_1Manager_1a698ce4ffb29680794dbfeca5036b7381" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>PcntInterruptHandler</name></member>
+      <member refid="classrb_1_1Manager_1af85a3d76b1ab6c91dd3b0b41315b85b2" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>resetMotorsFailSafe</name></member>
+      <member refid="classrb_1_1Manager_1ab8e317b5cb65d14c4777b2ae45351afc" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>schedule</name></member>
+      <member refid="classrb_1_1Manager_1a11779d2a10c101790d22719f18b07dd2" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>sendToCoproc</name></member>
+      <member refid="classrb_1_1Manager_1abb2a07fadc2024cff36ac8b360a379fb" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>setMotors</name></member>
+      <member refid="classrb_1_1Manager_1a43b478966a7fc22c9364219fc1b221ba" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>stupidServo</name></member>
+      <member refid="classrb_1_1Manager_1a6071fb5cf7117ae3893f77ffa5002d50" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>timers</name></member>
+      <member refid="classrb_1_1Manager_1a61fbcbfb3aed02ee34450b6b8a8b2c9b" prot="public" virt="non-virtual"><scope>rb::Manager</scope><name>ultrasound</name></member>
+      <member refid="classrb_1_1Manager_1a137bc8af1a4ac0d3e3299ebbd1a1b91c" prot="private" virt="non-virtual"><scope>rb::Manager</scope><name>~Manager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

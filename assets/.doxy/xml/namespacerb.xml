@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacerb" kind="namespace" language="C++">
+    <compoundname>rb</compoundname>
+    <innerclass refid="classrb_1_1Angle" prot="public">rb::Angle</innerclass>
+    <innerclass refid="classrb_1_1Battery" prot="public">rb::Battery</innerclass>
+    <innerclass refid="classrb_1_1Buttons" prot="public">rb::Buttons</innerclass>
+    <innerclass refid="classrb_1_1Leds" prot="public">rb::Leds</innerclass>
+    <innerclass refid="classrb_1_1Manager" prot="public">rb::Manager</innerclass>
+    <innerclass refid="classrb_1_1Motor" prot="public">rb::Motor</innerclass>
+    <innerclass refid="classrb_1_1MotorChangeBuilder" prot="public">rb::MotorChangeBuilder</innerclass>
+    <innerclass refid="classrb_1_1Nvs" prot="public">rb::Nvs</innerclass>
+    <innerclass refid="classrb_1_1Piezo" prot="public">rb::Piezo</innerclass>
+    <innerclass refid="classrb_1_1SmartServoBus" prot="public">rb::SmartServoBus</innerclass>
+    <innerclass refid="classrb_1_1StupidServo" prot="public">rb::StupidServo</innerclass>
+    <innerclass refid="classrb_1_1Timers" prot="public">rb::Timers</innerclass>
+    <innerclass refid="classrb_1_1Ultrasound" prot="public">rb::Ultrasound</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4e" prot="public" static="no" strong="no">
+        <type>uint32_t</type>
+        <name>ButtonId</name>
+        <enumvalue id="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4ea196c56763810dec3459bcd749f3ad019" prot="public">
+          <name>Off</name>
+          <initializer>= CoprocStat_ButtonsEnum_BOFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4eafa9c93515da75d05590dafaaccf8956e" prot="public">
+          <name>On</name>
+          <initializer>= CoprocStat_ButtonsEnum_BON</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4ea4f5c5da66f26a8585c8cbee36d9b838c" prot="public">
+          <name>B1</name>
+          <initializer>= CoprocStat_ButtonsEnum_B1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4eabbe649776452f445e077909cec11d312" prot="public">
+          <name>B2</name>
+          <initializer>= CoprocStat_ButtonsEnum_B2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4ea0d65071d001854995c946da7550522ab" prot="public">
+          <name>B3</name>
+          <initializer>= CoprocStat_ButtonsEnum_B3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4ea07760f908972ed1fae5e40696c8901f3" prot="public">
+          <name>B4</name>
+          <initializer>= CoprocStat_ButtonsEnum_B4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4eafce1e48e7f48ce2558fe94ccd0bf9ef6" prot="public">
+          <name>Up</name>
+          <initializer>= B1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4eaad2cd34621bc0e3276f474757557991b" prot="public">
+          <name>Down</name>
+          <initializer>= B2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4ea7b6188c7aab22158c23b50706db56ac0" prot="public">
+          <name>Left</name>
+          <initializer>= B3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXButtons_8h_1a4fd9ce2bf8b0c12e000107573f8f4c4eaa683f2dfb9bb3bbd140a3b460d9bc8a9" prot="public">
+          <name>Right</name>
+          <initializer>= B4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Helper class for controlling the LEDs connected to the expander. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXButtons.h" line="22" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXButtons.h" bodystart="22" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="enum" id="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LedId</name>
+        <enumvalue id="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230eaaaf47f038d49a750f9dcb299678aad8b" prot="public">
+          <name>L1</name>
+          <initializer>= CoprocReq_LedsEnum_L1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230ea57edcca87e7f6763294e5cb2a6e2987a" prot="public">
+          <name>L2</name>
+          <initializer>= CoprocReq_LedsEnum_L2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230eaa52e7b42e7e09496c8da1d9234302141" prot="public">
+          <name>L3</name>
+          <initializer>= CoprocReq_LedsEnum_L3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230eac29c312f8fc75f62860246632b83fa25" prot="public">
+          <name>L4</name>
+          <initializer>= CoprocReq_LedsEnum_L4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230ea528ec0aa73e990a6be2fdc4100a11117" prot="public">
+          <name>Green</name>
+          <initializer>= L1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230ead95c9fec74283d1011f24a416797ebb7" prot="public">
+          <name>Yellow</name>
+          <initializer>= L2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230ea8436a282e447268fe377473c4fa12716" prot="public">
+          <name>Red</name>
+          <initializer>= L3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230eac3a04e8448bd14f2c97db1cc4a39c5cf" prot="public">
+          <name>Blue</name>
+          <initializer>= L4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXLeds_8h_1a351d5716af4d88ace3b147e493c0230ea986ccd0809b958e8286a9eaeb35e4b93" prot="public">
+          <name>All</name>
+          <initializer>= L1 | L2 | L3 | L4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Helper class for controlling the LEDs connected to the expander. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXLeds.h" line="15" column="11" bodyfile="build/RB3204-RBCX-library/src/RBCXLeds.h" bodystart="15" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="enum" id="RBCXManager_8h_1af3f24c8ea16e1a669a5d4d936ac071ea" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ManagerInstallFlags</name>
+        <enumvalue id="RBCXManager_8h_1af3f24c8ea16e1a669a5d4d936ac071eaaf951b3337789f86d3aa71d5b612cc489" prot="public">
+          <name>MAN_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Disables automatic motor failsafe, which stops the motors after 300ms of no set motor power calls. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXManager_8h_1af3f24c8ea16e1a669a5d4d936ac071eaae0e87ec183241e195ce754d3bb74ff03" prot="public">
+          <name>MAN_DISABLE_MOTOR_FAILSAFE</name>
+          <initializer>= (1 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This enum contains flags for the <ref refid="classrb_1_1Manager" kindref="compound">Manager</ref>&apos;s install() method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="29" column="25" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="enum" id="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>MotorId</name>
+        <enumvalue id="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530af31e1eef20f64733a18c538073e78396" prot="public">
+          <name>M1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530a9d8322530b67e2366e5b1ba67081ded9" prot="public">
+          <name>M2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530af1c6eb6f4e48eb34ab40b2987d4976a8" prot="public">
+          <name>M3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530a66b543df60a981ccfcd2d3114605a39a" prot="public">
+          <name>M4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="RBCXPinout_8h_1aac2e52b0d76fb7faf46694b167e3e530a26a4b44a837bf97b972628509912b4a5" prot="public">
+          <name>MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXPinout.h" line="8" column="19" bodyfile="build/RB3204-RBCX-library/src/RBCXPinout.h" bodystart="8" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="RBCXPinout_8h_1a22595653ca54a0d12886e4f30593bc00" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int rb::UltrasoundsCount</definition>
+        <argsstring></argsstring>
+        <name>UltrasoundsCount</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXPinout.h" line="21" column="22" bodyfile="build/RB3204-RBCX-library/src/RBCXPinout.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="RBCXPinout_8h_1a1eace2008c8117d97a408eecb24e32ca" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int rb::StupidServosCount</definition>
+        <argsstring></argsstring>
+        <name>StupidServosCount</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXPinout.h" line="22" column="22" bodyfile="build/RB3204-RBCX-library/src/RBCXPinout.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="RBCXAngle_8cpp_1af99b28ed19aee47f99c88f274a088cc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>Angle rb::operator+</definition>
+        <argsstring>(Angle a, Angle b)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.cpp" line="7" column="7" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.cpp" bodystart="7" bodyend="10" declfile="build/RB3204-RBCX-library/src/RBCXAngle.h" declline="52" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXAngle_8cpp_1ace59edd09eaab7f6743f49dba27150f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>Angle rb::operator-</definition>
+        <argsstring>(Angle a, Angle b)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.cpp" line="12" column="7" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.cpp" bodystart="12" bodyend="15" declfile="build/RB3204-RBCX-library/src/RBCXAngle.h" declline="53" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXAngle_8cpp_1aab10a5e9109e9f648729bd3f12224f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>Angle rb::operator*</definition>
+        <argsstring>(Angle a, Angle::_T c)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Angle::_T</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.cpp" line="17" column="7" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.cpp" bodystart="17" bodyend="20" declfile="build/RB3204-RBCX-library/src/RBCXAngle.h" declline="54" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXAngle_8cpp_1adaf022caa1aeb846993e2ddf85450415" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>Angle rb::operator/</definition>
+        <argsstring>(Angle a, Angle::_T c)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Angle::_T</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.cpp" line="22" column="7" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.cpp" bodystart="22" bodyend="25" declfile="build/RB3204-RBCX-library/src/RBCXAngle.h" declline="55" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXAngle_8cpp_1a9e6176b037747197b984b2a2e8297c97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>Angle rb::operator&quot;&quot;_deg</definition>
+        <argsstring>(long double d)</argsstring>
+        <name>operator&quot;&quot;_deg</name>
+        <param>
+          <type>long double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.cpp" line="27" column="7" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.cpp" bodystart="27" bodyend="27" declfile="build/RB3204-RBCX-library/src/RBCXAngle.h" declline="56" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXAngle_8cpp_1a373297dec29db0f608bb2e6631b86c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>Angle rb::operator&quot;&quot;_rad</definition>
+        <argsstring>(long double r)</argsstring>
+        <name>operator&quot;&quot;_rad</name>
+        <param>
+          <type>long double</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.cpp" line="29" column="7" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.cpp" bodystart="29" bodyend="29" declfile="build/RB3204-RBCX-library/src/RBCXAngle.h" declline="57" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXAngle_8cpp_1a89e25a488a1b64f8d217545108d52bc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>Angle rb::operator&quot;&quot;_deg</definition>
+        <argsstring>(unsigned long long int d)</argsstring>
+        <name>operator&quot;&quot;_deg</name>
+        <param>
+          <type>unsigned long long int</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.cpp" line="31" column="7" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.cpp" bodystart="31" bodyend="31" declfile="build/RB3204-RBCX-library/src/RBCXAngle.h" declline="58" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXAngle_8cpp_1a34985eb5e7350b159f10223db69116ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1Angle" kindref="compound">Angle</ref></type>
+        <definition>Angle rb::operator&quot;&quot;_rad</definition>
+        <argsstring>(unsigned long long int r)</argsstring>
+        <name>operator&quot;&quot;_rad</name>
+        <param>
+          <type>unsigned long long int</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXAngle.cpp" line="33" column="7" bodyfile="build/RB3204-RBCX-library/src/RBCXAngle.cpp" bodystart="33" bodyend="33" declfile="build/RB3204-RBCX-library/src/RBCXAngle.h" declline="59" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXManager_8h_1a4bea1e0498bb0090931dbd64d3e5362c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ManagerInstallFlags</type>
+        <definition>ManagerInstallFlags rb::operator|</definition>
+        <argsstring>(ManagerInstallFlags a, ManagerInstallFlags b)</argsstring>
+        <name>operator|</name>
+        <param>
+          <type>ManagerInstallFlags</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>ManagerInstallFlags</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="36" column="28" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXPinout_8h_1af2627804f5d67a4d5f65f50606e017c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MotorId</type>
+        <definition>MotorId rb::operator++</definition>
+        <argsstring>(MotorId &amp;x)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>MotorId &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXPinout.h" line="17" column="16" bodyfile="build/RB3204-RBCX-library/src/RBCXPinout.h" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXTimers_8cpp_1adc36757172d4c1c9a29367ba8754d745" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void rb::dieTimers</definition>
+        <argsstring>(TimerHandle_t timer)</argsstring>
+        <name>dieTimers</name>
+        <param>
+          <type>TimerHandle_t</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXTimers.cpp" line="9" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXTimers.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXUtil_8h_1a4d8b84c8ead43cd3459563ddd8d6c0e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T rb::clamp</definition>
+        <argsstring>(T value, T min, T max)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUtil.h" line="10" column="15" bodyfile="build/RB3204-RBCX-library/src/RBCXUtil.h" bodystart="10" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXUtil_8h_1ab36eb23da70e652b55e9ebeebe428fa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::delayMs</definition>
+        <argsstring>(int ms)</argsstring>
+        <name>delayMs</name>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUtil.h" line="19" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXUtil.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="RBCXUtil_8h_1add0c913f6cbdd805e8e4c619df4da252" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::delay</definition>
+        <argsstring>(std::chrono::duration&lt; uint32_t, std::milli &gt; delay)</argsstring>
+        <name>delay</name>
+        <param>
+          <type>std::chrono::duration&lt; uint32_t, std::milli &gt;</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXUtil.h" line="21" column="13" bodyfile="build/RB3204-RBCX-library/src/RBCXUtil.h" bodystart="21" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/RBCXAngle.cpp" line="3" column="12"/>
+  </compounddef>
+</doxygen>

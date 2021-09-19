@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structrb_1_1Timers_1_1timer__t" kind="struct" language="C++" prot="private">
+    <compoundname>rb::Timers::timer_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrb_1_1Timers_1_1timer__t_1add289cc4a9f93aa2390b3509090e3d65" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool()&gt;</type>
+        <definition>std::function&lt;bool()&gt; rb::Timers::timer_t::callback</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXTimers.h" line="45" column="23" bodyfile="build/RB3204-RBCX-library/src/RBCXTimers.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrb_1_1Timers_1_1timer__t_1ac2ae39393184ed98793162f4025d7682" prot="public" static="no" mutable="no">
+        <type>esp_timer_handle_t</type>
+        <definition>esp_timer_handle_t rb::Timers::timer_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXTimers.h" line="46" column="28" bodyfile="build/RB3204-RBCX-library/src/RBCXTimers.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrb_1_1Timers_1_1timer__t_1afbcdfde8018e0c1cf90cd740c4d89ad9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t rb::Timers::timer_t::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXTimers.h" line="47" column="18" bodyfile="build/RB3204-RBCX-library/src/RBCXTimers.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structrb_1_1Timers_1_1timer__t_1a751e8c547abf4b74a13f09f266dbd31f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::Timers::timer_t::swap</definition>
+        <argsstring>(timer_t &amp;o)</argsstring>
+        <name>swap</name>
+        <param>
+          <type>timer_t &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXTimers.h" line="49" column="14" bodyfile="build/RB3204-RBCX-library/src/RBCXTimers.h" bodystart="49" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/RBCXTimers.h" line="44" column="18" bodyfile="build/RB3204-RBCX-library/src/RBCXTimers.h" bodystart="44" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structrb_1_1Timers_1_1timer__t_1add289cc4a9f93aa2390b3509090e3d65" prot="public" virt="non-virtual"><scope>rb::Timers::timer_t</scope><name>callback</name></member>
+      <member refid="structrb_1_1Timers_1_1timer__t_1ac2ae39393184ed98793162f4025d7682" prot="public" virt="non-virtual"><scope>rb::Timers::timer_t</scope><name>handle</name></member>
+      <member refid="structrb_1_1Timers_1_1timer__t_1afbcdfde8018e0c1cf90cd740c4d89ad9" prot="public" virt="non-virtual"><scope>rb::Timers::timer_t</scope><name>id</name></member>
+      <member refid="structrb_1_1Timers_1_1timer__t_1a751e8c547abf4b74a13f09f266dbd31f" prot="public" virt="non-virtual"><scope>rb::Timers::timer_t</scope><name>swap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="RBCXVersion_8h" kind="file" language="C++">
+    <compoundname>RBCXVersion.h</compoundname>
+    <includedby refid="RBCX_8h" local="yes">build/RB3204-RBCX-library/src/RBCX.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>build/RB3204-RBCX-library/src/RBCXVersion.h</label>
+        <link refid="RBCXVersion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>build/RB3204-RBCX-library/src/RBCX.h</label>
+        <link refid="RBCX_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="RBCXVersion_8h_1aed899714fae4d60d288bb87448464cfc" prot="public" static="no">
+        <name>RB3204</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXVersion.h" line="3" column="9" bodyfile="build/RB3204-RBCX-library/src/RBCXVersion.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="RBCXVersion_8h_1a81e81cdf3b5c0a0a5bb61111fe06d22c" prot="public" static="no">
+        <name>RB3204_RBCX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXVersion.h" line="4" column="9" bodyfile="build/RB3204-RBCX-library/src/RBCXVersion.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="RBCXVersion_8h_1a55935b8f58810f2594e65abb7495a7f8" prot="public" static="no">
+        <name>RBCX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXVersion.h" line="5" column="9" bodyfile="build/RB3204-RBCX-library/src/RBCXVersion.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="RBCXVersion_8h_1a19e8056885dd55351f08ee6388d76d96" prot="public" static="no">
+        <name>RB3204_MAJOR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXVersion.h" line="7" column="9" bodyfile="build/RB3204-RBCX-library/src/RBCXVersion.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="RBCXVersion_8h_1a40b77b169f7e1d684dbd29bf35d5ace0" prot="public" static="no">
+        <name>RB3204_MINOR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXVersion.h" line="8" column="9" bodyfile="build/RB3204-RBCX-library/src/RBCXVersion.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="RBCXVersion_8h_1a1cd7b9c07a7d00400cf6ba186abdf030" prot="public" static="no">
+        <name>RB3204_PATCH</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXVersion.h" line="9" column="9" bodyfile="build/RB3204-RBCX-library/src/RBCXVersion.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RB3204</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RB3204_RBCX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RBCX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RB3204_MAJOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RB3204_MINOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RB3204_PATCH<sp/>2</highlight></codeline>
+    </programlisting>
+    <location file="build/RB3204-RBCX-library/src/RBCXVersion.h"/>
+  </compounddef>
+</doxygen>

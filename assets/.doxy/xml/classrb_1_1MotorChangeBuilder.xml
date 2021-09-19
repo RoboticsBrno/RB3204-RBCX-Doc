@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrb_1_1MotorChangeBuilder" kind="class" language="C++" prot="public">
+    <compoundname>rb::MotorChangeBuilder</compoundname>
+    <includes refid="RBCXManager_8h" local="no">RBCXManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrb_1_1MotorChangeBuilder_1aecaed370ffa81707746701983a0e5033" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::function&lt; void()&gt; &gt;</type>
+        <definition>std::vector&lt;std::function&lt;void()&gt; &gt; rb::MotorChangeBuilder::m_calls</definition>
+        <argsstring></argsstring>
+        <name>m_calls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="224" column="17" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrb_1_1MotorChangeBuilder_1ad2de10a7e0bc7cbe41df41e120644f00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::MotorChangeBuilder::MotorChangeBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>MotorChangeBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="179" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="234" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1MotorChangeBuilder_1a87de03544a68266e0ff0a5539d60b17b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::MotorChangeBuilder::MotorChangeBuilder</definition>
+        <argsstring>(const MotorChangeBuilder &amp;o)=delete</argsstring>
+        <name>MotorChangeBuilder</name>
+        <param>
+          <type>const <ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="180" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1MotorChangeBuilder_1a8fe74f78ab056a272765d60c01df3813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::MotorChangeBuilder::MotorChangeBuilder</definition>
+        <argsstring>(MotorChangeBuilder &amp;&amp;o)</argsstring>
+        <name>MotorChangeBuilder</name>
+        <param>
+          <type><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref> &amp;&amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="181" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="236" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1MotorChangeBuilder_1aeb4ef5c6a33ea1d8f3e9771806eb22b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rb::MotorChangeBuilder::~MotorChangeBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>~MotorChangeBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="182" column="5" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="239" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1MotorChangeBuilder_1ac21271f3221ade65a1247b5e86077136" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref> &amp;</type>
+        <definition>MotorChangeBuilder &amp; rb::MotorChangeBuilder::power</definition>
+        <argsstring>(MotorId id, int16_t value)</argsstring>
+        <name>power</name>
+        <param>
+          <type>MotorId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set single motor power. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the motor (e.g. rb:MotorId::M1) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>power</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the motor &lt;-32768; 32767&gt; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="189" column="24" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="241" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1MotorChangeBuilder_1adacc07cac8d24415fc83013d2adc98b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref> &amp;</type>
+        <definition>MotorChangeBuilder &amp; rb::MotorChangeBuilder::speed</definition>
+        <argsstring>(MotorId id, int16_t ticksPerSecond)</argsstring>
+        <name>speed</name>
+        <param>
+          <type>MotorId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>ticksPerSecond</declname>
+        </param>
+        <briefdescription>
+<para>Set single motor power. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the motor (e.g. rb:MotorId::M1) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the motor in encoder ticks &lt;-32768; 32767&gt; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="196" column="24" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="247" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1MotorChangeBuilder_1a9b2659215fe8e1911a0003547a59be4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref> &amp;</type>
+        <definition>MotorChangeBuilder &amp; rb::MotorChangeBuilder::brake</definition>
+        <argsstring>(MotorId id, uint16_t brakingPower)</argsstring>
+        <name>brake</name>
+        <param>
+          <type>MotorId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>brakingPower</declname>
+        </param>
+        <briefdescription>
+<para>Start braking. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the motor (e.g. rb:MotorId::M1) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brakingPower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>power of the braking, &lt;0, 32767&gt; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="203" column="24" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="261" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1MotorChangeBuilder_1adfd74ad987be641499277fdeced9472c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref> &amp;</type>
+        <definition>MotorChangeBuilder &amp; rb::MotorChangeBuilder::pwmMaxPercent</definition>
+        <argsstring>(MotorId id, int8_t percent)</argsstring>
+        <name>pwmMaxPercent</name>
+        <param>
+          <type>MotorId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>percent</declname>
+        </param>
+        <briefdescription>
+<para>Limit motor index&apos;s power to percent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the motor (e.g. rb:MotorId::M1) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>percent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the maximal power of the motor &lt;0 - 100&gt; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="210" column="24" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="254" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1MotorChangeBuilder_1a409a741066ca1f9bfae97542fac1503e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref> &amp;</type>
+        <definition>MotorChangeBuilder &amp; rb::MotorChangeBuilder::drive</definition>
+        <argsstring>(MotorId id, int32_t positionRelative, int16_t speedTicksPerSecond, Motor::callback_t callback=nullptr)</argsstring>
+        <name>drive</name>
+        <param>
+          <type>MotorId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>positionRelative</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>speedTicksPerSecond</declname>
+        </param>
+        <param>
+          <type>Motor::callback_t</type>
+          <declname>callback</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="212" column="24" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="268" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1MotorChangeBuilder_1a412b114ce12b332040a84f6d95a0d637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrb_1_1MotorChangeBuilder" kindref="compound">MotorChangeBuilder</ref> &amp;</type>
+        <definition>MotorChangeBuilder &amp; rb::MotorChangeBuilder::driveToValue</definition>
+        <argsstring>(MotorId id, int32_t positionAbsolute, int16_t speedTicksPerSecond, Motor::callback_t callback=nullptr)</argsstring>
+        <name>driveToValue</name>
+        <param>
+          <type>MotorId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>positionAbsolute</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>speedTicksPerSecond</declname>
+        </param>
+        <param>
+          <type>Motor::callback_t</type>
+          <declname>callback</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="215" column="24" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="279" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classrb_1_1MotorChangeBuilder_1a11ebf755b9412e2170e66158c4e35a3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rb::MotorChangeBuilder::set</definition>
+        <argsstring>()</argsstring>
+        <name>set</name>
+        <briefdescription>
+<para>Finish the changes and submit the events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="221" column="10" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.cpp" bodystart="289" bodyend="294"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper class for building the motor change event. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/RB3204-RBCX-library/src/RBCXManager.h" line="177" column="25" bodyfile="build/RB3204-RBCX-library/src/RBCXManager.h" bodystart="177" bodyend="225"/>
+    <listofallmembers>
+      <member refid="classrb_1_1MotorChangeBuilder_1a9b2659215fe8e1911a0003547a59be4a" prot="public" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>brake</name></member>
+      <member refid="classrb_1_1MotorChangeBuilder_1a409a741066ca1f9bfae97542fac1503e" prot="public" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>drive</name></member>
+      <member refid="classrb_1_1MotorChangeBuilder_1a412b114ce12b332040a84f6d95a0d637" prot="public" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>driveToValue</name></member>
+      <member refid="classrb_1_1MotorChangeBuilder_1aecaed370ffa81707746701983a0e5033" prot="private" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>m_calls</name></member>
+      <member refid="classrb_1_1MotorChangeBuilder_1ad2de10a7e0bc7cbe41df41e120644f00" prot="public" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>MotorChangeBuilder</name></member>
+      <member refid="classrb_1_1MotorChangeBuilder_1a87de03544a68266e0ff0a5539d60b17b" prot="public" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>MotorChangeBuilder</name></member>
+      <member refid="classrb_1_1MotorChangeBuilder_1a8fe74f78ab056a272765d60c01df3813" prot="public" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>MotorChangeBuilder</name></member>
+      <member refid="classrb_1_1MotorChangeBuilder_1ac21271f3221ade65a1247b5e86077136" prot="public" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>power</name></member>
+      <member refid="classrb_1_1MotorChangeBuilder_1adfd74ad987be641499277fdeced9472c" prot="public" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>pwmMaxPercent</name></member>
+      <member refid="classrb_1_1MotorChangeBuilder_1a11ebf755b9412e2170e66158c4e35a3a" prot="public" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>set</name></member>
+      <member refid="classrb_1_1MotorChangeBuilder_1adacc07cac8d24415fc83013d2adc98b1" prot="public" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>speed</name></member>
+      <member refid="classrb_1_1MotorChangeBuilder_1aeb4ef5c6a33ea1d8f3e9771806eb22b1" prot="public" virt="non-virtual"><scope>rb::MotorChangeBuilder</scope><name>~MotorChangeBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

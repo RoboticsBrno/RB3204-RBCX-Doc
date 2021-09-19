@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="RBCX_8h" kind="file" language="C++">
+    <compoundname>RBCX.h</compoundname>
+    <includes refid="RBCXManager_8h" local="yes">RBCXManager.h</includes>
+    <includes refid="RBCXPinout_8h" local="yes">RBCXPinout.h</includes>
+    <includes refid="RBCXVersion_8h" local="yes">RBCXVersion.h</includes>
+    <incdepgraph>
+      <node id="28">
+        <label>RBCXStupidServo.h</label>
+        <link refid="RBCXStupidServo_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>list</label>
+      </node>
+      <node id="19">
+        <label>atomic</label>
+      </node>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="35">
+        <label>RBCXVersion.h</label>
+        <link refid="RBCXVersion_8h_source"/>
+      </node>
+      <node id="24">
+        <label>RBCXSmartServo.h</label>
+        <link refid="RBCXSmartServo_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>driver/gpio.h</label>
+      </node>
+      <node id="3">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="30">
+        <label>RBCXTimers.h</label>
+        <link refid="RBCXTimers_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>stdint.h</label>
+      </node>
+      <node id="27">
+        <label>cmath</label>
+      </node>
+      <node id="31">
+        <label>esp_timer.h</label>
+      </node>
+      <node id="20">
+        <label>RBCXPinout.h</label>
+        <link refid="RBCXPinout_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>freertos/queue.h</label>
+      </node>
+      <node id="21">
+        <label>driver/adc.h</label>
+      </node>
+      <node id="16">
+        <label>ratio</label>
+      </node>
+      <node id="11">
+        <label>rbcx.pb.h</label>
+      </node>
+      <node id="26">
+        <label>RBCXAngle.h</label>
+        <link refid="RBCXAngle_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>condition_variable</label>
+      </node>
+      <node id="2">
+        <label>RBCXManager.h</label>
+        <link refid="RBCXManager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>RBCXLeds.h</label>
+        <link refid="RBCXLeds_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>RBCXBattery.h</label>
+        <link refid="RBCXBattery_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>RBCXUltrasound.h</label>
+        <link refid="RBCXUltrasound_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+      <node id="23">
+        <label>RBCXPiezo.h</label>
+        <link refid="RBCXPiezo_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>RBCXUtil.h</label>
+        <link refid="RBCXUtil_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>RBCXButtons.h</label>
+        <link refid="RBCXButtons_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mutex</label>
+      </node>
+      <node id="14">
+        <label>chrono</label>
+      </node>
+      <node id="1">
+        <label>build/RB3204-RBCX-library/src/RBCX.h</label>
+        <link refid="RBCX_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>freertos/task.h</label>
+      </node>
+      <node id="34">
+        <label>coproc_link_parser.h</label>
+      </node>
+      <node id="18">
+        <label>RBCXMotor.h</label>
+        <link refid="RBCXMotor_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>FreeRTOS.h</label>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXPinout.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RBCXVersion.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="build/RB3204-RBCX-library/src/RBCX.h"/>
+  </compounddef>
+</doxygen>

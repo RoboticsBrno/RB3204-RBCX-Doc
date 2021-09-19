@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="RBCXPinout_8h" kind="file" language="C++">
+    <compoundname>RBCXPinout.h</compoundname>
+    <includes local="no">driver/adc.h</includes>
+    <includes local="no">driver/gpio.h</includes>
+    <includedby refid="RBCXMotor_8h" local="yes">build/RB3204-RBCX-library/src/RBCXMotor.h</includedby>
+    <includedby refid="RBCX_8h" local="yes">build/RB3204-RBCX-library/src/RBCX.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>driver/gpio.h</label>
+      </node>
+      <node id="1">
+        <label>build/RB3204-RBCX-library/src/RBCXPinout.h</label>
+        <link refid="RBCXPinout_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>driver/adc.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>build/RB3204-RBCX-library/src/RBCXPinout.h</label>
+        <link refid="RBCXPinout_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>build/RB3204-RBCX-library/src/RBCXManager.h</label>
+        <link refid="RBCXManager_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>build/RB3204-RBCX-library/src/RBCX.h</label>
+        <link refid="RBCX_8h_source"/>
+      </node>
+      <node id="2">
+        <label>build/RB3204-RBCX-library/src/RBCXMotor.h</label>
+        <link refid="RBCXMotor_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacerb">rb</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;driver/adc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;driver/gpio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">rb<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>MotorId<sp/>:<sp/>uint8_t<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>M1,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>M2,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>M3,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>M4,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>MAX,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>MotorId<sp/>operator++(MotorId&amp;<sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>MotorId(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint8_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(x)<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>UltrasoundsCount<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>StupidServosCount<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rb</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="build/RB3204-RBCX-library/src/RBCXPinout.h"/>
+  </compounddef>
+</doxygen>
